@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="../../assets/stylesheets/bootstrap.min.css" />
+  <link rel="stylesheet" href="../../assets/stylesheets/main.css" />
+  <script src="../../assets/javascript/jquery.min.js"></script>
+  <script src="../../assets/javascript/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="menubar">
+    <ul>
+      <li class="logo">
+        <a href="#"></a>
+      </li>
+      <li class="hamburger">
+        <a href="#"></a>
+      </li>
+      <li class="home">
+        <a href="#"></a>
+      </li>
+      <li class="world">
+        <a href="#"></a>
+      </li>
+      <li class="profile">
+        <a href="#"></a>
+      </li>
+      <li class="money">
+        <a href="#"></a>
+      </li>
+      <li class="settings active">
+        <a href="#"></a>
+      </li>
+    </ul>
+  </div>
+  <div class="content-container">
+    <div class="navbar">
+      <div class="group-logo"\>
+        <img src="../../assets/images/programs/Arsenal_FC_lg.png" />
+        <p>Arsenal FC</p>
+      </div>
+      <div class="profile-info">
+        <div class="nameplate">
+          Tony Alvarez
+        </div>
+        <img class="avatar" src="" />
+        <img class="dropdown" src="../../assets/images/dropdown.png" />
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="sidebar">
+        <ul>
+          <li>
+            <a href="#" class="active">Business Details <span class="done"></span></a>
+          </li>
+          <li>
+            <a href="#">Legal Representative <span></span></a>
+          </li>
+          <li>
+            <a href="#">Proof of ID <span></span></a>
+          </li>
+          <li>
+            <a href="#">Bank Information <span></span></a>
+          </li>
+          <li>
+            <a href="#">Payment Method <span></span></a>
+          </li>
+          <li>
+            <a href="#">Administrators <span></span></a>
+          </li>
+        </ul>
+      </div>
+      <div class="content" id="administrators">
+        <div class="heading">
+          Administrators
+          <a href="#" class="button" data-toggle="modal" data-target="#addAdministratorModal">ADD NEW</a>
+          <a href="#" class="button">ADD ROLES</a>
+        </div>
+        <table cellpadding="0" cellspacing="0">
+          <tr>
+            <th class="select">
+              <input type="checkbox" />
+            </th>
+            <th class="image">Image</th>
+            <th class="name">Name</th>
+            <th class="email">Email</th>
+            <th class="phone">Phone</th>
+            <th class="access">Access</th>
+            <th></th>
+          </tr>
+          <tr>
+            <td class="select">
+              <input type="checkbox" />
+            </td>
+            <td class="image">
+              <img class="avatar" src="" />
+            </td>
+            <td>Jimmy Smyth</td>
+            <td>jimmy@smyth.com</td>
+            <td>(408) 381-1234</td>
+            <td class="access">
+              <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  SUPER ADMIN
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div>
+            <td class="more">
+              <img src="../../assets/images/ellipses.png" data-toggle="popover" data-placement="right" data-content="Edit | Delete" />
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="addAdministratorModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Invite New Administrator</h4>
+        </div>
+        <div class="modal-body">
+          <input placeholder="Full Name" />
+          <input placeholder="Email" />
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="selectRole" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              Select Role
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(function () {
+      $('[data-toggle="popover"]').popover()
+    })
+  </script>
+</body>
+</html>

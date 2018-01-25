@@ -1,0 +1,31 @@
+.ProgramSteps {
+  padding-top: 26px; }
+  .ProgramSteps li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 92px 0 37px; }
+    .ProgramSteps li:first-child {
+      padding-left: 28px; }
+    .ProgramSteps li:last-child {
+      padding-right: 0; }
+  .ProgramSteps .checkmark-circle {
+    border: 3px solid #F5F5F5;
+    height: 60px;
+    width: 60px;
+    border-radius: 60px;
+    text-align: center;
+    padding-top: 21px;
+    padding-left: 13px;
+    background: url(../images/programs/checkmark.png) center no-repeat; }
+    .ProgramSteps .checkmark-circle.completed {
+      border-color: #000;
+      background: url(../images/programs/checkmark-ticked.png) center no-repeat; }
+  .ProgramSteps h3 {
+    color: #CCCCCC;
+    font-size: 10px;
+    text-transform: uppercase;
+    margin-top: 10px; }
+  .ProgramSteps p {
+    color: #666666;
+    font-size: 14px;
+    margin-bottom: 14px; }

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="../../assets/stylesheets/bootstrap.min.css" />
+  <link rel="stylesheet" href="../../assets/stylesheets/main.css" />
+  <script src="../../assets/javascript/jquery.min.js"></script>
+  <script src="../../assets/javascript/chart.min.js"></script>
+  <script src="../../assets/javascript/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="menubar">
+    <ul>
+      <li class="logo">
+        <a href="#"></a>
+      </li>
+      <li class="hamburger">
+        <a href="#"></a>
+      </li>
+      <li class="home">
+        <a href="#"></a>
+      </li>
+      <li class="world">
+        <a href="#"></a>
+      </li>
+      <li class="profile">
+        <a href="#"></a>
+      </li>
+      <li class="money">
+        <a href="#"></a>
+      </li>
+      <li class="settings active">
+        <a href="#"></a>
+      </li>
+    </ul>
+  </div>
+  <div class="content-container">
+    <div class="navbar">
+      <div class="group-logo"\>
+        <img src="../../assets/images/programs/Arsenal_FC_lg.png" />
+        <p>Arsenal FC</p>
+      </div>
+      <div class="profile-info">
+        <div class="nameplate">
+          Tony Alvarez
+        </div>
+        <img class="avatar" src="" />
+        <img class="dropdown" src="../../assets/images/dropdown.png" />
+      </div>
+    </div>
+    <div class="wrapper">
+      <div id="number-summary" class="section">
+        <ul>
+          <li class="registrations">
+            <div class="icon"></div>
+            <div class="description">
+              <h2>8956</h2>
+              <p>Total Registrations</p>
+            </div>
+          </li>
+          <li class="income">
+            <div class="icon"></div>
+            <div class="description">
+              <h2>$7841.78</h2>
+              <p>Annual Income</p>
+            </div>
+          </li>
+          <li class="members">
+            <div class="icon"></div>
+            <div class="description">
+              <h2>6521</h2>
+              <p>Total Members</p>
+            </div>
+          </li>
+          <li class="programs">
+            <div class="icon"></div>
+            <div class="description">
+              <h2>5</h2>
+              <p>Active Programs</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div id="key-performance-indicators" class="section">
+        <div class="heading">
+          Key Performance Indicators
+        </div>
+        <div>
+          <ul>
+            <li>
+              <p class="label">Revenue</p>
+              <p class="total">$ 8749</p>
+              <p class="net positive">+54%</p>
+            </li>
+            <li>
+              <p class="label">Registrations</p>
+              <p class="total">65</p>
+              <p class="net positive">+21%</p>
+            </li>
+            <li>
+              <p class="label">Profit</p>
+              <p class="total">$ 177.62</p>
+              <p class="net negative">-11%</p>
+            </li>
+            <li>
+              <p class="label">Average Cost</p>
+              <p class="total">$ 33.11</p>
+              <p class="net negative">-11%</p>
+            </li>
+            <li>
+              <p class="label">Refunded</p>
+              <p class="total">25%</p>
+              <p class="net negative">-11%</p>
+            </li>
+            <li>
+              <p class="label">Growth</p>
+              <p class="total">25</p>
+              <p class="net negative">-11%</p>
+            </li>
+          </ul>
+          <div class="graph">
+            <canvas id="chart" width="800" height="300"></canvas>
+          </div>
+        </div>
+      </div>
+      <div id="current-program-registration" class="section">
+        <div class="heading">
+          Current Program Registration
+        </div>
+        <ul>
+          <li id="program-1">
+            <p class="label">Recreational</p>
+            <div class="bar"></div>
+            <div class="percentage">100%</div>
+            <div class="total">2577</div>
+          </li>
+          <li id="program-2">
+            <p class="label">Camps</p>
+            <div class="bar"></div>
+            <div class="percentage">79%</div>
+            <div class="total">2035</div>
+          </li>
+          <li id="program-3">
+            <p class="label">Competitive</p>
+            <div class="bar"></div>
+            <div class="percentage">59%</div>
+            <div class="total">1520</div>
+          </li>
+          <li id="program-4">
+            <p class="label">Skills Clinic 1</p>
+            <div class="bar"></div>
+            <div class="percentage">56%</div>
+            <div class="total">1443</div>
+          </li>
+          <li id="program-5">
+            <p class="label">Spring Shooting</p>
+            <div class="bar"></div>
+            <div class="percentage">49%</div>
+            <div class="total">1262</div>
+          </li>
+          <li id="program-6">
+            <p class="label">Referee Course</p>
+            <div class="bar"></div>
+            <div class="percentage">46%</div>
+            <div class="total">1185</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script>
+
+    var programs = [100, 79, 59, 56, 49, 46];
+
+    for (var x = 0; x < programs.length; x++) {
+      $("#program-" + (x+1) + " .bar").width(250* programs[x] / 100);
+    }
+    var ctx = document.getElementById("chart").getContext("2d"); 
+
+    /*** Gradient ***/
+    var gradient = ctx.createLinearGradient(0, 0, 0, 500);
+    gradient.addColorStop(0.3, 'rgba(225,238,255,1)');   
+    gradient.addColorStop(1, 'rgba(225,238,255,0)');
+    /***************/
+
+    var data = {
+      labels : ["1 Jan","1 Feb","1 Mar","1 Apr","1 May","1 Jun","1 Jul","1 Aug","1 Sep"],
+      datasets: [{
+        label: "Orders",
+        backgroundColor : gradient, // Put the gradient here as a fill color
+        borderColor: "#1875F0",
+        strokeColor : "#ff6c23",
+        pointColor : "#fff",
+        pointStrokeColor : "#ff6c23",
+        pointHighlightFill: "#fff",
+        pointHighlightStroke: "#ff6c23",
+        lineTension: 0,
+        data : [3000, 6100, 3900, 5500, 6300, 4300, 5000, 4500, 5700]
+      }]
+    };
+
+    var options = {
+      responsive: true,
+      datasetStrokeWidth : 3,
+      pointDotStrokeWidth : 4,
+      tooltipFillColor: "rgba(0,0,0,0.8)",
+      tooltipFontStyle: "bold",
+      tooltipTemplate: "<%if (label){%><%=label + ' hod' %>: <%}%><%= value + '°C' %>",
+      scales: {
+        xAxes: [{
+          ticks: {
+            fontColor: "#B3B3B3"
+          }
+        }],
+        yAxes: [{
+          ticks: {
+            beginAtZero: true,
+            callback: function(value, index, values) {
+              return value/1000 + 'K';
+            },
+            fontColor: "#B3B3B3"
+          }
+        }]
+      },
+      legend: {
+
+      }
+    };
+
+    var myLineChart = new Chart(ctx, {
+      type: 'line',
+      data: data,
+      options: options
+    });
+  </script>
+</body>
+</html>

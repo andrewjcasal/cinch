@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="../../assets/stylesheets/bootstrap.min.css" />
+  <link rel="stylesheet" href="../../assets/stylesheets/bootstrap-datetimepicker.min.css" />
+  <link rel="stylesheet" href="../../assets/stylesheets/main.css" />
+  <script src="../../assets/javascript/jquery.min.js"></script>
+  <script type="text/javascript" src="../../assets/javascript/moment.js"></script>
+  <script src="../../assets/javascript/chart.min.js"></script>
+  <script src="../../assets/javascript/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../../assets/javascript/bootstrap-datetimepicker.min.js"></script>
+  <script type="text/javascript" src="../../assets/javascript/bootstrap3-wysihtml5.min.js"></script>
+</head>
+<body>
+  <div class="menubar">
+    <ul>
+      <li class="logo">
+        <a href="#"></a>
+      </li>
+      <li class="hamburger">
+        <a href="#"></a>
+      </li>
+      <li class="home">
+        <a href="#"></a>
+      </li>
+      <li class="world">
+        <a href="#"></a>
+      </li>
+      <li class="profile">
+        <a href="#"></a>
+      </li>
+      <li class="money">
+        <a href="#"></a>
+      </li>
+      <li class="settings active">
+        <a href="#"></a>
+      </li>
+    </ul>
+  </div>
+  <div class="content-container">
+    <div class="navbar">
+      <div class="group-logo"\>
+        <img src="../../assets/images/programs/Arsenal_FC_lg.png" />
+        <p>Arsenal FC</p>
+      </div>
+      <div class="profile-info">
+        <div class="nameplate">
+          Tony Alvarez
+        </div>
+        <img class="avatar" src="" />
+        <img class="dropdown" src="../../assets/images/dropdown.png" />
+      </div>
+    </div>
+    <div class="wrapper">
+      <div id="registrations" class="programs section">
+        <div class="heading">
+          Program Name
+          <div class="left-buttons">
+            <div class="dropdown">
+              <button class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <span class="dropdown-label">BULK</span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <button class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <span class="dropdown-label">ACTIVE</span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="right-buttons">
+            <button class="email">EMAIL</button>
+          </div>
+        </div>
+        <div class="headings">
+            <div class="check">
+              <input type="checkbox" />
+            </div>
+            <div class="image">
+              Image
+            </div>
+            <div class="player-name">
+              Player Name
+            </div>
+            <div class="birthday">
+              Birthday
+            </div>
+            <div class="parent">
+              Parent
+            </div>
+            <div class="email">
+              Email
+            </div>
+            <div class="phone">
+              Phone
+            </div>
+            <div class="paid">
+              Paid
+            </div>
+            <div class="pending">
+              Pending
+            </div>
+          <div class="ellipses-container">
+            <img src="../../assets/images/ellipses.png" data-toggle="popover" data-placement="right" data-content="Edit | Delete" />
+          </div>
+        </div>
+        <ul>
+          <li>
+            <div class="check">
+              <input type="checkbox" />
+            </div>
+            <div class="image">
+              Image
+            </div>
+            <div class="player-name">
+              Player Name
+            </div>
+            <div class="birthday">
+              Birthday
+            </div>
+            <div class="parent">
+              Parent
+            </div>
+            <div class="email">
+              Email
+            </div>
+            <div class="phone">
+              Phone
+            </div>
+            <div class="paid">
+              Paid
+            </div>
+            <div class="pending">
+              Pending
+            </div>
+            <div class="ellipses-container">
+              <img src="../../assets/images/ellipses.png" data-toggle="popover" data-placement="right" data-content="Edit | Delete" />
+            </div>
+          </li>
+          <li>
+            <div class="check">
+              <input type="checkbox" />
+            </div>
+            <div class="image">
+              Image
+            </div>
+            <div class="player-name">
+              Player Name
+            </div>
+            <div class="birthday">
+              Birthday
+            </div>
+            <div class="parent">
+              Parent
+            </div>
+            <div class="email">
+              Email
+            </div>
+            <div class="phone">
+              Phone
+            </div>
+            <div class="paid">
+              Paid
+            </div>
+            <div class="pending">
+              Pending
+            </div>
+            <div class="ellipses-container">
+              <img src="../../assets/images/ellipses.png" data-toggle="popover" data-placement="right" data-content="Edit | Delete" />
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+      $(function () {
+          $('.datetimepicker').datetimepicker({
+            format: "M/D/YY"
+          });
+
+          $('[data-toggle="popover"]').popover();
+
+          $('textarea').wysihtml5({
+            toolbar: {
+              "font-styles": false, //Font styling, e.g. h1, h2, etc. Default true
+              "emphasis": true, //Italics, bold, etc. Default true
+              "lists": true, //(Un)ordered lists, e.g. Bullets, Numbers. Default true
+              "html": false, //Button which allows you to edit the generated HTML. Default false
+              "link": true, //Button to insert a link. Default true
+              "image": true, //Button to insert an image. Default true,
+              "color": false, //Button to change color of font  
+              "blockquote": true, //Blockquote 
+            }
+          });
+      });
+  </script>
+</body>
+</html>
