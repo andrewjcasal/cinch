@@ -1,34 +1,137 @@
-.menubar {
-  position: fixed;
-  width: 68px;
-  height: 100%;
-  z-index: 2; }
-  .menubar li {
-    text-align: center;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    height: 56px;
-    box-sizing: border-box; }
-    .menubar li.active a {
-      border-left: 2px solid #1875F0; }
-    .menubar li a {
-      display: inline-block;
-      width: 100%;
-      height: 50px;
-      background-repeat: no-repeat;
-      background-position: center;
-      box-sizing: border-box; }
-    .menubar li.logo a {
-      background-image: url("assets/images/logo.png"); }
-    .menubar li.hamburger a {
-      background-image: url("assets/images/hamburger.png"); }
-    .menubar li.home a {
-      background-image: url("assets/images/home.png"); }
-    .menubar li.world a {
-      background-image: url("assets/images/world.png"); }
-    .menubar li.profile a {
-      background-image: url("assets/images/profile.png"); }
-    .menubar li.money a {
-      background-image: url("assets/images/money.png"); }
-    .menubar li.settings a {
-      background-image: url("assets/images/settings.png"); }
+* {
+  margin: 0;
+  padding: 0; }
+
+@font-face {
+  font-family: "Roboto Medium";
+  src: url("assets/fonts/Roboto-Medium.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Roboto Black";
+  src: url("assets/fonts/Roboto-Black.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Roboto Bold";
+  src: url("assets/fonts/Roboto-Black.ttf") format("truetype"); }
+
+body {
+  background-color: #FAFAFA;
+  font-family: "Roboto Medium"; }
+
+.Menubar, .Navbar, .sidebar, .content {
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); }
+
+.section {
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  margin-bottom: 12px; }
+
+.content-container {
+  width: 1142px;
+  margin: 0 auto; }
+
+#divisions .content-left {
+  padding-top: 12px; }
+
+#divisions #waitlist + label {
+  color: #666666;
+  font-size: 12px;
+  margin-left: 13px; }
+
+#divisions .checkbox-row {
+  margin-bottom: 4px; }
+
+#divisions .role {
+  font-size: 13px;
+  padding-left: 18px;
+  width: 246px; }
+
+#divisions .headings .role {
+  width: 232px; }
+
+#divisions .enable {
+  width: 102px; }
+
+#divisions .headings > p {
+  display: inline-block; }
+
+#divisions li > * {
+  display: inline-block; }
+
+.programs div[class*="col-md-"].subheading {
+  font-size: 12px;
+  margin-bottom: 9px;
+  color: #666666; }
+
+.programs .content-left {
+  width: 718px;
+  vertical-align: top;
+  display: inline-block;
+  padding-left: 24px;
+  padding-top: 48px; }
+
+.programs .content-right {
+  width: 395px;
+  vertical-align: top;
+  display: inline-block; }
+
+input[type=text], button {
+  border: 2px solid #F5F5F5;
+  padding: 16px 16px 17px;
+  border-radius: 4px;
+  font-size: 12px; }
+
+input[type="text"], button {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 0; }
+
+div[class*="col-md-"] {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 20px; }
+
+button.dropdown-toggle {
+  color: #999;
+  padding-left: 22px;
+  padding-right: 22px;
+  background: url(assets/images/programs/dropdown-caret.png) right 22px top 20px no-repeat; }
+  button.dropdown-toggle .dropdown-label {
+    float: left; }
+
+.datetimepicker {
+  background: url(assets/images/programs/calendar.png) right 9px top 12px no-repeat; }
+
+input {
+  margin-bottom: 10px; }
+  input::placeholder {
+    color: #999; }
+
+.form-element-group input {
+  padding-left: 21px;
+  padding-right: 21px;
+  width: 110px;
+  margin-right: 8px; }
+  .form-element-group input.state {
+    width: 87px; }
+  .form-element-group input.zip {
+    width: 113px; }
+  .form-element-group input.email {
+    width: 272px; }
+
+.button {
+  width: 104px;
+  height: 40px;
+  border-radius: 4px;
+  border: 2px solid #000;
+  box-sizing: border-box;
+  display: block;
+  text-decoration: none;
+  color: #000;
+  font-size: 10px;
+  font-family: "Roboto Black";
+  text-align: center;
+  padding-top: 12px;
+  letter-spacing: 1.25px; }

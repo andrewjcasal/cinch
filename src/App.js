@@ -1,24 +1,27 @@
 import React, { Component } from 'react';
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css'
-import Menubar from './Menubar';
-import Navbar from './Navbar';
-import ProgramSteps from './ProgramSteps';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import 'jquery'
+import Registrations from './Pages/Registrations';
+import Divisions from './Pages/Divisions';
+import Family from './Pages/Family';
+import OrderHistory from './Pages/OrderHistory';
+import Documents from './Pages/Documents';
+require('bootstrap/dist/css/bootstrap.css');
+require('./App.css');
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Menubar />
-        <div className="content-container">
-          <Navbar />
-          <div className="wrapper">
-            <ProgramSteps />
-          </div>
-        </div>
-      </div>
-    );
-  }
-}
+const Home = () => <h1>Home</h1>
+
+const App = () => (
+  <Router>
+    <div>
+      <Route exact path="/" component={Home} />
+      <Route path="/registrations" component={Registrations} />
+      <Route path="/divisions" component={Divisions} />
+      <Route path="/family" component={Family} />
+      <Route path="/order-history" component={OrderHistory} />
+      <Route path="/documents" component={Documents} />
+    </div>
+  </Router>
+);
 
 export default App;

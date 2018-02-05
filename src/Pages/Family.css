@@ -1,0 +1,33 @@
+.gen-info, .notes {
+  width: 555px;
+  display: inline-block;
+  vertical-align: top;
+  height: 227px;
+  position: relative; }
+
+.gen-info {
+  margin-right: 28px; }
+
+.gen-info-content {
+  padding: 22px 34px; }
+
+.gen-info-content .name-label {
+  display: inline-block;
+  width: 178px;
+  vertical-align: top;
+  margin-bottom: 25px;
+  color: #666666;
+  font-size: 13px; }
+
+.gen-info-content .info {
+  vertical-align: top;
+  display: inline-block;
+  width: 200px;
+  color: #B3B3B3;
+  font-size: 13px; }
+
+.gen-info .heading .options,
+.notes .heading .options {
+  position: absolute;
+  top: 23px;
+  right: 30px; }
