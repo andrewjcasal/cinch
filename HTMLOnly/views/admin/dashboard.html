@@ -1,0 +1,375 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../../assets/stylesheets/admin.css"></link>
+  <script src="../../assets/javascript/jquery.min.js"></script>
+  <script src="../../assets/javascript/chart.min.js"></script>
+  <title>Dashboard</title>
+</head>
+<body class="dashboard-body">
+  <div class="side-menu">
+    <div class="list-item logo">
+      <a href="#"></a>
+    </div>
+    <div class="list-item home">
+      <a href="#"></a>
+    </div>
+    <div class="list-item group">
+      <a href="#"></a>
+    </div>
+    <div class="list-item login" style="padding-top: 2px; padding-bottom: 2px;">
+      <a href="#"></a>
+    </div>
+    <div class="list-item email" style="padding-top: 0px; margin-bottom: 5px;">
+      <a href="#"></a>
+    </div>
+    <div class="list-item merchandise" style="margin-bottom: 10px;">
+      <a href="#"></a>
+    </div>
+    <div class="list-item finance" style="margin-bottom: 8px;">
+      <a href="#"></a>
+    </div>
+    <div class="list-item calendar">
+      <a href="#"></a>
+    </div>
+  </div>
+  <div class="dashboard-container">
+    <div class="nav-bar roboto">
+      <form action="">
+        <input type="text" class="nav-bar-search" placeholder="Search">
+      </form>
+      <div class="nav-bar-profile roboto">
+        <p>Tony Alvarez</p>
+        <img src="../../assets/images/placeholder.png" alt="User Image">
+        <img src="../../assets/images/arrow icon.png" alt="Drop Down Menu">
+      </div>
+    </div>
+    <div class="content-container">
+      <div class="content roboto">
+        <a class="content-menu" href="#"><img src="../../assets/images/menu icon.png" alt="menu"></a>
+        <div class="content-header">Monthly Active iOS Users</div>
+        <div class="content-body">
+          <div>
+            <p class="content-ratio">1:31</p>
+            <p class="content-percent positive">+16.7%</p>
+          </div>
+          <div class="content-chart">
+            <canvas class="chart" width="180" height="80"></canvas>
+          </div>
+        </div>
+      </div>
+      <div class="content roboto">
+        <a class="content-menu" href="#"><img src="../../assets/images/menu icon.png" alt="menu"></a>
+        <div class="content-header">Monthly Active Android Users</div>
+        <div class="content-body">
+          <div>
+            <p class="content-ratio">1:31</p>
+            <p class="content-percent positive">+16.7%</p>
+          </div>
+          <div class="content-chart">
+            <canvas class="chart" width="180" height="80"></canvas>
+          </div>
+        </div>
+      </div>
+      <div class="content roboto">
+        <a class="content-menu" href="#"><img src="../../assets/images/menu icon.png" alt="menu"></a>
+        <div class="content-header">Page Views</div>
+        <div class="content-body">
+          <div>
+            <p class="content-ratio">1:31</p>
+            <p class="content-percent positive">+16.7%</p>
+          </div>
+          <div class="content-chart">
+            <canvas class="chart" width="180" height="80"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dashboard-performance-container">
+      <div class="dashboard-performance-headline">
+        <p>Key Performance Indicators</p>
+        <a class="dashboard-menu" href="#"><img src="../../assets/images/menu icon.png" alt="menu"></a>
+      </div>
+      <div class="dashboard-performance-information">
+        <div class="dashboard-performance-sidebar">
+          <div class="dashboard-performance-info">
+            <div class="dashboard-info-title roboto">Revenue</div>
+            <div class="dashboard-numbers-container">
+              <p class="dashboard-info-numbers">$ 8749</p>
+              <p class="dashboard-info-percent positive">+54%</p>
+            </div>
+          </div>
+          <div class="dashboard-performance-info">
+            <div class="dashboard-info-title roboto">Registrations</div>
+            <div class="dashboard-numbers-container">
+              <p class="dashboard-info-numbers">65</p>
+              <p class="dashboard-info-percent positive">+21%</p>
+            </div>
+          </div>
+          <div class="dashboard-performance-info">
+            <div class="dashboard-info-title roboto">Profit</div>
+            <div class="dashboard-numbers-container">
+              <p class="dashboard-info-numbers">$ 117.62</p>
+              <p class="dashboard-info-percent negative">-11%</p>
+            </div>
+          </div>
+          <div class="dashboard-performance-info">
+            <div class="dashboard-info-title roboto">Average Cost</div>
+            <div class="dashboard-numbers-container">
+              <p class="dashboard-info-numbers">$ 33.11</p>
+              <p class="dashboard-info-percent negative">-11%</p>
+            </div>
+          </div>
+          <div class="dashboard-performance-info">
+            <div class="dashboard-info-title roboto">Refunded</div>
+            <div class="dashboard-numbers-container">
+              <p class="dashboard-info-numbers">25%</p>
+              <p class="dashboard-info-percent negative">-11%</p>
+            </div>
+          </div>
+          <div class="dashboard-performance-info">
+            <div class="dashboard-info-title roboto">Growth</div>
+            <div class="dashboard-numbers-container">
+              <p class="dashboard-info-numbers">25%</p>
+              <p class="dashboard-info-percent negative">-11%</p>
+            </div>
+          </div>
+        </div>
+        <div class="dashboard-performance-chart content-chart">
+          <canvas class="chart" width="790" height="288"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="dashboard-organizations-container content">
+      <div class="dashboard-organizations-title-container">
+        <p class="dashboard-organizations-title">
+          Top Organizations
+        </p>
+        <a class="dashboard-organizations-menu" href="#">
+          <img src="../../assets/images/menu icon.png" alt="menu">
+        </a>
+      </div>
+      <div class="dashboard-organizations-table-head">
+        <div class="dashboard-organizations-table-row">
+          <div class="dashboard-organizations-table-item flex-start" style="width: 125px;">
+            Logo
+          </div>
+          <div class="dashboard-organizations-table-item flex-start">
+            Name
+          </div>
+          <div class="spacer" style="width: 215px; margin-right: 11px;"></div>
+          <div class="dashboard-organizations-table-item flex-start" >
+            Registrations
+          </div>
+          <div class="dashboard-organizations-table-item flex-start" style="padding-left: 5px;">
+            Revenue
+          </div>
+        </div>
+      </div>
+      <div class="dashboard-organizations-table-body">
+        <div class="dashboard-organizations-table-row">
+          <div class="dashboard-organizations-table-item flex-start" style="width: 125px;">
+            <img src="../../assets/images/Arsenal_FC.png" alt="Arsenal">
+          </div>
+          <div class="dashboard-organizations-table-item flex-start">
+            Arsenal
+          </div>
+          <div class="spacer"></div>
+          <div class="dashboard-organizations-table-item center">
+            54
+          </div>
+          <div class="dashboard-organizations-table-item flex-start" style="padding-left: 20px; width: 137px;">
+            $ 915.66
+          </div>
+        </div>
+      </div>
+      <div class="dashboard-organizations-table-body">
+        <div class="dashboard-organizations-table-row">
+          <div class="dashboard-organizations-table-item flex-start" style="width: 125px;">
+            <img src="../../assets/images/ac-milan.png" alt="AC Milan">
+          </div>
+          <div class="dashboard-organizations-table-item flex-start">
+            AC Milan
+          </div>
+          <div class="spacer"></div>
+          <div class="dashboard-organizations-table-item center">
+            48
+          </div>
+          <div class="dashboard-organizations-table-item flex-start" style="padding-left: 20px; width: 137px;">
+            $ 456.75
+          </div>
+        </div>
+      </div>
+      <div class="dashboard-organizations-table-body">
+        <div class="dashboard-organizations-table-row">
+          <div class="dashboard-organizations-table-item flex-start" style="width: 125px;">
+            <img src="../../assets/images/barcelona-fc.png" alt="Barcelona">
+          </div>
+          <div class="dashboard-organizations-table-item flex-start">
+            Barcelona
+          </div>
+          <div class="spacer"></div>
+          <div class="dashboard-organizations-table-item center">
+            47
+          </div>
+          <div class="dashboard-organizations-table-item flex-start" style="padding-left: 20px; width: 137px;">
+            $ 696.5
+          </div>
+        </div>
+      </div>
+      <div class="dashboard-organizations-table-body">
+        <div class="dashboard-organizations-table-row">
+          <div class="dashboard-organizations-table-item flex-start" style="width: 110px;">
+            <img src="../../assets/images/borussia-dortmund.png" alt="Borussia Dortmund">
+          </div>
+          <div class="dashboard-organizations-table-item flex-start" style="flex-wrap: nowrap; width: 230px;">
+             Borussia Dortmund
+          </div>
+          <div class="spacer" style="width: 34px;"></div>
+          <div class="dashboard-organizations-table-item center">
+            34
+          </div>
+          <div class="dashboard-organizations-table-item flex-start" style="padding-left: 12px; width: 137px;">
+            $ 465.48
+          </div>
+        </div>
+      </div>
+      <div class="dashboard-organizations-footer">
+        <p class="dashboard-view-all">
+          <strong>VIEW ALL</strong>
+        </p>
+      </div>
+    </div>
+  </div>
+  <script>
+    var programs = [100, 79, 59, 56, 49, 46];
+
+    for (var x = 0; x < programs.length; x++) {
+      $("#program-" + (x + 1) + " .bar").width(250 * programs[x] / 100);
+    }
+    console.log('ctx (╯°□°)╯︵ ┻━┻ ', document.querySelectorAll(".chart"))
+    var ctx = document.querySelectorAll(".chart")
+    ctx.forEach( (chartEle, index) => {
+      chartEle = chartEle.getContext("2d");
+      /*** Gradient ***/
+      console.log('chartEle (╯°□°)╯︵ ┻━┻ ', chartEle)
+      var gradient = chartEle.createLinearGradient(0, 0, 0, 400);
+      gradient.addColorStop(0.3, 'rgba(225,238,255,.7)');
+      gradient.addColorStop(1, 'rgba(255,238,255,0)');
+      /***************/
+      if(index === 3) {
+        var data = {
+          labels: ["1 Jan", "1 Feb", "1 Mar", "1 Apr", "1 May", "1 Jun", "1 Jul", "1 Aug", "1 Sep"],
+          datasets: [{
+            label: "Orders",
+            backgroundColor: gradient, // Put the gradient here as a fill color
+            borderColor: "#1875F0",
+            pointColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "#ff6c23",
+            lineTension: 0,
+            data: [3000, 6100, 3900, 5500, 6300, 4300, 5000, 4500, 5700]
+          }]
+        };
+      } else {
+        var data = {
+          display: true,
+          labels: ["", "", "", "", "", "", "", "", ""],
+          labelString: false,
+          datasets: [{
+            label: "",
+            backgroundColor: gradient, // Put the gradient here as a fill color
+            borderColor: "#1875F0",
+            lineTension: 0,
+            data: [3000, 6100, 3900, 5500, 6300, 4300, 5000, 4500, 5700]
+          }]
+        };
+
+      }
+      if (index === 3) {
+        var options = {
+          responsive: true,
+          datasetStrokeWidth: 3,
+          pointDotStrokeWidth: 4,
+          tooltipFillColor: "rgba(0,0,0,0.8)",
+          tooltipFontStyle: "bold",
+          tooltipTemplate: "<%if (label){%><%=label + ' hod' %>: <%}%><%= value + '°C' %>",
+          scales: {
+            xAxes: [{
+              ticks: {
+                fontColor: "#B3B3B3"
+              }
+            }],
+            yAxes: [{
+              ticks: {
+                beginAtZero: true,
+                callback: function (value, index, values) {
+                  return value / 1000 + 'K';
+                },
+                fontColor: "#B3B3B3"
+              }
+            }]
+          },
+          legend: {
+            display: true,
+            position: 'top',
+            usePointStyle: true,
+            fontSize: 12,
+            fontColor: 'rgba(50,50,50,.5)',
+            fontFamily: 'Roboto',
+            fontStyle: 'bold',
+            labels: {
+            generateLabels: (chartEle) => {
+
+              chartEle.legend.afterFit = function () {
+                var width = this.width;
+                console.log(this);
+
+                this.lineWidths = this.lineWidths.map(() => this.width - 12);
+
+                this.options.labels.padding = 30;
+                this.options.labels.boxWidth = 15;
+                }
+              },
+            }
+          },
+        }
+    } else {
+      var options = {
+        responsive: true,
+        scaleLineColor: "rgba(0,0,0,0)",
+        scaleShowLabels: false,
+        scaleShowGridLines: false,
+        pointDot: false,
+        datasetFill: false, 
+        scaleFontSize: 1,
+        scaleFontColor: "rgba(0,0,0,0)",
+        scales: {
+          xAxes: [{
+            display: false
+          }],
+          yAxes: [{
+            display: false
+          }]
+        },
+        legend: {
+          display: false
+        },
+        elements: {
+          point: { 
+            radius: 0 
+          }
+        }
+      }
+    }
+    var myLineChart = new Chart(chartEle, {
+      type: 'line',
+      data: data,
+      options: options
+    });
+  })
+  </script>
+</body>
+</html>
