@@ -33,3 +33,33 @@
   position: absolute;
   top: 0;
   left: 0; }
+
+.ReactTable .pagination-top {
+  position: absolute;
+  top: 0;
+  right: 200px;
+  width: 250px; }
+  .ReactTable .pagination-top .-pagination > * {
+    display: inline-block; }
+  .ReactTable .pagination-top .-btn {
+    text-indent: 110%;
+    overflow: hidden;
+    width: 36px;
+    height: 30px;
+    border-radius: 4px;
+    padding: 0; }
+  .ReactTable .pagination-top .-pageJump {
+    display: inline-block; }
+    .ReactTable .pagination-top .-pageJump input {
+      width: 30px;
+      border-radius: 4px;
+      text-align: center;
+      border: 2px solid #F5F5F5; }
+  .ReactTable .pagination-top .-previous button {
+    background: url(../assets/images/caret-left.png);
+    background-repeat: no-repeat;
+    background-position: center; }
+  .ReactTable .pagination-top .-next button {
+    background: url(../assets/images/caret-right.png);
+    background-repeat: no-repeat;
+    background-position: center; }

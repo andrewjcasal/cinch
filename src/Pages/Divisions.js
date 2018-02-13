@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Container from '../Components/Container';
-import ProgramSteps from '../ProgramSteps';
+import ProgramSteps from '../Components/ProgramSteps';
 require('bootstrap/dist/css/bootstrap.css');
 require('../App.css');
 

@@ -24,6 +24,7 @@ body {
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
   margin-bottom: 12px;
+  position: relative;
 }
 .content-container {
     width: 1142px;
@@ -79,6 +80,7 @@ body {
     display: inline-block;
     padding-left: 24px;
     padding-top: 48px;
+    padding-right: 15px;
   }
 
   .content-right {
@@ -167,4 +169,19 @@ input {
   text-align: center;
   padding-top: 12px;
   letter-spacing: 1.25px;
+}
+
+.content-left {
+  width: 718px;
+  vertical-align: top;
+  display: inline-block;
+  padding-left: 24px;
+  padding-top: 48px;
+  padding-right: 15px;
+}
+
+.content-right {
+  width: 395px;
+  vertical-align: top;
+  display: inline-block;
 }

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Menubar from '../Menubar';
 import Navbar from '../Navbar';
-import ProgramSteps from '../ProgramSteps';
 require('bootstrap/dist/css/bootstrap.css');
 require('../App.css');
 

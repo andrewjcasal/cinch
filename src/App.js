@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import 'jquery'
-import Registrations from './Pages/Registrations';
+import Programs from './Pages/Programs';
+import CreateProgram from './Pages/CreateProgram';
+import CreateProgramDocuments from './Pages/CreateProgramDocuments';
 import Divisions from './Pages/Divisions';
+import Registrations from './Pages/Registrations';
 import Family from './Pages/Family';
 import OrderHistory from './Pages/OrderHistory';
 import Documents from './Pages/Documents';
@@ -16,6 +19,9 @@ const App = () => (
     <div>
       <Route exact path="/" component={Home} />
       <Route path="/registrations" component={Registrations} />
+      <Route path="/programs" component={Programs} />
+      <Route path="/create-program" component={CreateProgram} />
+      <Route path="/create-program-documents" component={CreateProgramDocuments} />
       <Route path="/divisions" component={Divisions} />
       <Route path="/family" component={Family} />
       <Route path="/order-history" component={OrderHistory} />

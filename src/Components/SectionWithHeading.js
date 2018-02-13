@@ -47,6 +47,7 @@ const SectionWithHeading = (props) => (
           </div> }
       </div>
       {props.addnew && <a href="#" class="add-new button">ADD NEW</a>}
+      {props.createnew && <a href="#" class="add-new button">CREATE NEW</a>}
       {props.export && <a href="#" class="export button">EXPORT</a>}
       {props.email && <a href="#" class="email button">EMAIL</a>}
     </div>
