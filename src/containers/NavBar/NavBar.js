@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+require('./Navbar.css');
 
 class NavBar extends Component {
   render() {
     return (
-      <div className="navbar">
+      <div className="Navbar">
         <div className="group-logo">
           <img src="../../assets/images/programs/Arsenal_FC_lg.png" />
           <p>Arsenal FC</p>

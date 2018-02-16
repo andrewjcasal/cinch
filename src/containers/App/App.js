@@ -1,24 +1,33 @@
 import React, { Component } from 'react';
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css'
-import MenuBar from '../MenuBar/MenuBar';
-import NavBar from '../NavBar/NavBar';
-import ProgramSteps from '../ProgramSteps/ProgramSteps';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import 'jquery'
+import Programs from '../../Pages/Programs';
+import CreateProgram from '../../Pages/CreateProgram';
+import CreateProgramDocuments from '../../Pages/CreateProgramDocuments';
+import Divisions from '../../Pages/Divisions';
+import Registrations from '../../Pages/Registrations';
+import Family from '../../Pages/Family';
+import OrderHistory from '../../Pages/OrderHistory';
+import Documents from '../../Pages/Documents';
+require('bootstrap/dist/css/bootstrap.css');
+require('./App.css');
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <MenuBar />
-        <div className="content-container">
-          <NavBar />
-          <div className="wrapper">
-            <ProgramSteps />
-          </div>
-        </div>
-      </div>
-    );
-  }
-}
+const Home = () => <h1>Home</h1>
+
+const App = () => (
+  <Router>
+    <div>
+      <Route exact path="/" component={Home} />
+      <Route path="/registrations" component={Registrations} />
+      <Route path="/programs" component={Programs} />
+      <Route path="/create-program" component={CreateProgram} />
+      <Route path="/create-program-documents" component={CreateProgramDocuments} />
+      <Route path="/divisions" component={Divisions} />
+      <Route path="/family" component={Family} />
+      <Route path="/order-history" component={OrderHistory} />
+      <Route path="/documents" component={Documents} />
+    </div>
+  </Router>
+);
 
 export default App;

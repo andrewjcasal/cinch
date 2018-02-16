@@ -1,0 +1,10 @@
+#OrderHistory .total-bar {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #808080; }
+  #OrderHistory .total-bar .left {
+    float: left;
+    padding-left: 30px; }
+  #OrderHistory .total-bar .right {
+    float: right;
+    padding-right: 40px; }

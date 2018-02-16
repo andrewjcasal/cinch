@@ -1,0 +1,32 @@
+.households-selection {
+  padding-left: 16px;
+
+  li {
+    display:inline-block;
+  
+    div {
+      height: 2px;
+      width: 35px; 
+      margin: 0 auto;
+    }
+
+    &.selected {
+      a{
+        color: #1875F0;
+      }
+
+      div {
+        background-color: #1875F0;
+      }
+    }
+  }
+
+  a {
+    display: block;
+    height: 59px;
+    padding: 20px 14px 10px;
+    box-sizing: border-box;
+    color: #808080;
+    text-decoration: none;
+  }
+}

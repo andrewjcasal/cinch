@@ -800,23 +800,6 @@ input {
 #programs-list .ellipses-container {
   width: 80px;
   padding-left: 50px; }
-#programs-list .headings {
-  border-bottom: 2px solid #F5F5F5;
-  font-size: 13px;
-  color: #666666;
-  padding-top: 20px;
-  padding-bottom: 20px; }
-  #programs-list .headings > * {
-    display: inline-block; }
-#programs-list li {
-  border-bottom: 2px solid #F5F5F5;
-  list-style: none;
-  color: #999999;
-  padding-top: 9px;
-  padding-bottom: 8px;
-  font-size: 13px; }
-  #programs-list li > * {
-    display: inline-block; }
 
 #complete li {
   list-style: none; }
@@ -895,3 +878,123 @@ input {
   color: #999999; }
 
 /*# sourceMappingURL=main.css.map */
+
+
+.households-selection {
+  padding-left: 16px;
+}
+.households-selection li {
+    display:inline-block;
+}
+.households-selection li div {
+  height: 2px;
+  width: 35px; 
+  margin: 0 auto;
+}
+.households-selection a {
+  display: block;
+  height: 59px;
+  padding: 20px 14px 10px;
+  box-sizing: border-box;
+  color: #808080;
+  text-decoration: none;
+}
+
+.households-selection li.selected a{
+  color: #1875F0;
+}
+
+.households-selection li.selected div {
+  background-color: #1875F0;
+}
+
+.gen-info, .notes {
+  width: 555px;
+  display: inline-block;
+  vertical-align: top;
+  height: 227px;
+  position: relative;
+}
+
+.gen-info {
+  margin-right: 28px;
+}
+
+.gen-info-content {
+  padding: 22px 34px;
+}
+
+.gen-info-content .name-label {
+  display: inline-block;
+  width: 178px;
+  vertical-align: top;
+  margin-bottom: 25px;
+  color: #666666;
+  font-size: 13px;
+}
+
+.gen-info-content .info {
+  vertical-align: top;
+  display: inline-block;
+  width: 200px;
+  color: #B3B3B3;
+  font-size: 13px;
+}
+.gen-info .heading .options,
+.notes .heading .options {
+  position: absolute;
+  top: 23px;
+  right: 30px;
+}
+
+.add-new.button {
+  width: 120px;
+  height: 30px;
+  margin: -1px 9px 0;
+  font-size: 9px;
+  padding-top: 6px;
+  float: right; }
+
+.table .headings {
+  border-bottom: 2px solid #F5F5F5;
+  font-size: 13px;
+  color: #666666;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+.table .headings > * {
+    display: inline-block; }
+.table li {
+  border-bottom: 2px solid #F5F5F5;
+  list-style: none;
+  color: #999999;
+  padding-top: 9px;
+  padding-bottom: 8px;
+  font-size: 13px; }
+
+.table li > * {
+    display: inline-block; }
+
+#order-history .check {
+  width: 50px;
+}
+#order-history .star {
+  width: 50px;
+}
+#order-history .image {
+  width: 50px;
+}
+#order-history .name {
+  width: 50px;
+}
+#order-history .type {
+  width: 50px;
+}
+#order-history .card-num {
+  width: 50px;
+}
+#order-history .expiration {
+  width: 50px;
+}
+#order-history .ellipses-container {
+  width: 50px;
+}
