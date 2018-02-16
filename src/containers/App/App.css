@@ -19,16 +19,16 @@
       background-position: center;
       box-sizing: border-box; }
     .menubar li.logo a {
-      background-image: url("assets/images/logo.png"); }
+      background-image: url("../../assets/images/logo.png"); }
     .menubar li.hamburger a {
-      background-image: url("assets/images/hamburger.png"); }
+      background-image: url("../../assets/images/hamburger.png"); }
     .menubar li.home a {
-      background-image: url("assets/images/home.png"); }
+      background-image: url("../../assets/images/home.png"); }
     .menubar li.world a {
-      background-image: url("assets/images/world.png"); }
+      background-image: url("../../assets/images/world.png"); }
     .menubar li.profile a {
-      background-image: url("assets/images/profile.png"); }
+      background-image: url("../../assets/images/profile.png"); }
     .menubar li.money a {
-      background-image: url("assets/images/money.png"); }
+      background-image: url("../../assets/images/money.png"); }
     .menubar li.settings a {
-      background-image: url("assets/images/settings.png"); }
+      background-image: url("../../assets/images/settings.png"); }

@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 
 
-class Menubar extends Component {
+class MenuBar extends Component {
   render() {
     return (
-
       <div className="menubar">
         <ul>
           <li className="logo">
@@ -34,4 +33,4 @@ class Menubar extends Component {
   }
 }
 
-export default Menubar;
+export default MenuBar;
