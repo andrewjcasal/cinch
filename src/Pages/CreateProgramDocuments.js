@@ -1,16 +1,39 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Container from '../Components/Container';
 import ProgramSteps from '../Components/ProgramSteps';
 import DragFile from '../Components/DragFile';
+import Table from '../Components/Table';
 import SectionWithHeading from '../Components/SectionWithHeading';
-import ContentContainer from '../Components/ContentContainer';
-import Dropdown from '../Components/Dropdown';
 import Ellipses from '../assets/images/ellipses.png';
-import Star from '../assets/images/star.png';
+import ContentContainer from '../Components/ContentContainer';
+import Wysiwyg from '../Components/Wysiwyg';
+import FooterButtons from '../Components/FooterButtons';
 require('bootstrap/dist/css/bootstrap.css');
 require('../App.css');
-require('../Components/CinchTable.css');
+require('../Components/Table.css');
 require('./Family.css');
+
+const TableData = [{
+  check: "&nbsp;",
+  name: "Jimmy Smyth",
+  required: "Parent",
+  photo: "Male",
+  more: "12/3/2017"
+}];
+const TableColumns = [
+  {Header: "",          accessor: "check", width: 50},
+  {Header: "Name",      accessor: "name", width: 161},
+  {Header: "Required",  accessor: "required", width: 100},
+  {Header: "Photo",     accessor: "photo", width: 44},
+  {
+    Header: "",
+    accessor: "more",
+    width: 38, 
+    Cell: row => (
+      <img src={Ellipses} data-toggle="popover" data-placement="right" data-content="Edit | Delete" />
+      )
+  }
+]
 
 const CreateProgramDocuments = () => (
   <div id="CreateProgram">
@@ -23,57 +46,32 @@ const CreateProgramDocuments = () => (
               <div className="col-md-12">
                 <input type="text" placeholder="Document Name" />
               </div>
-          <div class="file-upload">
-              <span>Upload</span>
-              <input id="uploadBtn" type="file" class="upload" />
-          </div>
-          <input id="uploadFile" placeholder="No Document Uploaded" disabled="disabled" />
-          <div class="row">
-            <div class="col-md-12">
-              <div class="textarea">
-                <!-- <div class="wysiwyg">
-                  <a href="#">
-                    <img class="bold" src="assets/images/programs/bold.png" />
-                  </a>
-                  <a href="#">
-                    <img class="italic" src="assets/images/programs/italic.png" />
-                  </a>
-                  <a href="#">
-                    <img class="link" src="assets/images/programs/link.png" />
-                  </a>
-                  <a href="#">
-                    <img class="image" src="assets/images/programs/image.png" />
-                  </a>
-                  <a href="#">
-                    <img class="unordered" src="assets/images/programs/unordered.png" />
-                  </a>
-                  <a href="#">
-                    <img class="ordered" src="assets/images/programs/ordered.png" />
-                  </a>
-                  <a href="#">
-                    <img class="code" src="assets/images/programs/code.png" />
-                  </a>
-                  <a href="#">
-                    <img class="quote" src="assets/images/programs/quote.png" />
-                  </a>
-                </div> -->
-                <textarea></textarea>
-              </div>
-              <button class="save-button">SAVE</button>
             </div>
-          </div>
+            <div className="file-upload">
+                <span>Upload</span>
+                <input id="uploadBtn" type="file" className="upload" />
+            </div>
+            <input id="uploadFile" placeholder="No Document Uploaded" disabled="disabled" />
+            <div className="row">
+              <div className="col-md-12">
+                <Wysiwyg />
+                <FooterButtons save />
+              </div>
             </div>
           </div>
         } right= {
-          <div>
-            <DragFile label="Program Logo" />
-            <DragFile label="Program Photo" />
+          <div class="bordered">
+            <Table
+              data={TableData}
+              columns={TableColumns}
+              minRows={0}
+              showPaginationTop={false}
+              showPaginationBottom={false}
+            />
           </div>
-        } />
-        <div class="footer-buttons">
-          <button class="cancel-button">CANCEL</button>
-          <button class="next-button">NEXT</button>
-        </div>
+        }>
+          <FooterButtons cancel next />
+        </ ContentContainer>
       </SectionWithHeading>
     </Container>
   </div>

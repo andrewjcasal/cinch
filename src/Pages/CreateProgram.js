@@ -1,15 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Container from '../Components/Container';
 import ProgramSteps from '../Components/ProgramSteps';
 import DragFile from '../Components/DragFile';
 import SectionWithHeading from '../Components/SectionWithHeading';
 import ContentContainer from '../Components/ContentContainer';
 import Dropdown from '../Components/Dropdown';
-import Ellipses from '../assets/images/ellipses.png';
-import Star from '../assets/images/star.png';
+import Wysiwyg from '../Components/Wysiwyg';
+import FooterButtons from '../Components/FooterButtons';
+import Datepicker from '../Components/Datepicker';
 require('bootstrap/dist/css/bootstrap.css');
 require('../App.css');
-require('../Components/CinchTable.css');
+require('../Components/Table.css');
 require('./Family.css');
 
 const CreateProgram = () => (
@@ -36,28 +37,22 @@ const CreateProgram = () => (
             </div>
           </div>
           <div className="row">
-            <div className="col-md-3">
-              <input type="text" placeholder="Registration Open" className="datetimepicker" id='datetimepicker1' />
+            <div className="col-md-6">
+              <Datepicker placeholder="Registration Open Date/Time" includeTime/>
             </div>
             <div className="col-md-3">
-              <input type="text" placeholder="Open Time" />
-            </div>
-            <div className="col-md-3">
-              <input type="text" placeholder="Event Start" className="datetimepicker" id='datetimepicker2' />
+              <Datepicker placeholder="Event Start" />
             </div>
             <div className="col-md-3">
               <Dropdown title="Payment Plan" />
             </div>
           </div>
           <div className="row">
-            <div className="col-md-3">
-              <input type="text" placeholder="Registration Close" class="datetimepicker" id='datetimepicker3' />
+            <div className="col-md-6">
+              <Datepicker placeholder="Registration Close Date/Time" includeTime/>
             </div>
             <div className="col-md-3">
-              <input type="text" placeholder="Close Time" />
-            </div>
-            <div className="col-md-3">
-              <input type="text" placeholder="Event End" className="datetimepicker" id='datetimepicker4' />
+              <Datepicker placeholder="Event End" />
             </div>
             <div className="col-md-3">
               <Dropdown title="Registration Fee" />
@@ -65,9 +60,7 @@ const CreateProgram = () => (
           </div>
           <div class="row">
             <div class="col-md-12">
-              <div class="textarea">
-                <textarea></textarea>
-              </div>
+              <Wysiwyg />
             </div>
           </div>
           </div>
@@ -76,11 +69,9 @@ const CreateProgram = () => (
             <DragFile label="Program Logo" />
             <DragFile label="Program Photo" />
           </div>
-        } />
-        <div class="footer-buttons">
-          <button class="cancel-button">CANCEL</button>
-          <button class="next-button">NEXT</button>
-        </div>
+        }>
+          <FooterButtons cancel next />
+        </ ContentContainer>
       </SectionWithHeading>
     </Container>
   </div>

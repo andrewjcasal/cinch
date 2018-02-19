@@ -6,7 +6,7 @@ import SectionWithHeading from '../Components/SectionWithHeading';
 import Ellipses from '../assets/images/ellipses.png';
 require('bootstrap/dist/css/bootstrap.css');
 require('../App.css');
-require('../Components/CinchTable.css');
+require('../Components/Table.css');
 require('./OrderHistory.css');
 
 const DocumentsData = [{
@@ -59,7 +59,7 @@ const DocumentsColumns = [
 const Registrations = () => (
   <div id="ProgramName">
     <Container>
-      <SectionWithHeading heading="Program Name" bulk="true" active="true" email="true">
+      <SectionWithHeading heading="Program Name" bulk active email>
         <ReactTable
           data={DocumentsData}
           columns={DocumentsColumns}

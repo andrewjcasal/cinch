@@ -2,16 +2,16 @@ import React, { Component } from 'react';
 require('./SectionWithHeading.css');
 
 const SectionWithHeading = (props) => (
-  <div class="table section">
+  <div className="table section">
     <div className="heading">
       {props.heading}
-      <div class="left-buttons">
+      <div className="left-buttons">
         {props.completed && 
-          <div class="dropdown completed">
-            <button class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-              <span class="dropdown-label">COMPLETED</span>
+          <div className="dropdown completed">
+            <button className="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              <span className="dropdown-label">COMPLETED</span>
             </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <ul className="dropdown-menu" aria-labelledby="dropdownMenu1">
               <li><a href="#">Action</a></li>
               <li><a href="#">Another action</a></li>
               <li><a href="#">Something else here</a></li>
@@ -20,36 +20,36 @@ const SectionWithHeading = (props) => (
             </ul>
           </div> }
         {props.bulk && 
-          <div class="dropdown bulk">
-            <button class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-              <span class="dropdown-label">BULK</span>
+          <div className="dropdown bulk">
+            <button className="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              <span className="dropdown-label">BULK</span>
             </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <ul className="dropdown-menu" aria-labelledby="dropdownMenu1">
               <li><a href="#">Action</a></li>
               <li><a href="#">Another action</a></li>
               <li><a href="#">Something else here</a></li>
-              <li role="separator" class="divider"></li>
+              <li role="separator" className="divider"></li>
               <li><a href="#">Separated link</a></li>
             </ul>
           </div> }
         {props.active && 
-          <div class="dropdown active">
-            <button class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-              <span class="dropdown-label">ACTIVE</span>
+          <div className="dropdown active">
+            <button className="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              <span className="dropdown-label">ACTIVE</span>
             </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <ul className="dropdown-menu" aria-labelledby="dropdownMenu1">
               <li><a href="#">Action</a></li>
               <li><a href="#">Another action</a></li>
               <li><a href="#">Something else here</a></li>
-              <li role="separator" class="divider"></li>
+              <li role="separator" className="divider"></li>
               <li><a href="#">Separated link</a></li>
             </ul>
           </div> }
       </div>
-      {props.addnew && <a href="#" class="add-new button">ADD NEW</a>}
-      {props.createnew && <a href="#" class="add-new button">CREATE NEW</a>}
-      {props.export && <a href="#" class="export button">EXPORT</a>}
-      {props.email && <a href="#" class="email button">EMAIL</a>}
+      {props.addnew && <a href="#" className="add-new button">ADD NEW</a>}
+      {props.createnew && <a href="#" className="add-new button">CREATE NEW</a>}
+      {props.export && <a href="#" className="export button">EXPORT</a>}
+      {props.email && <a href="#" className="email button">EMAIL</a>}
     </div>
     {props.children}
   </div>

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Menubar from '../Menubar';
 import Navbar from '../Navbar';
 require('bootstrap/dist/css/bootstrap.css');
