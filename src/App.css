@@ -145,3 +145,6 @@ input {
 
 .bordered {
   border: 2px solid #F5F5F5; }
+
+.centered {
+  text-align: center; }

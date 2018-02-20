@@ -8,7 +8,7 @@ import Ellipses from '../assets/images/ellipses.png';
 import ContentContainer from '../Components/ContentContainer';
 import Wysiwyg from '../Components/Wysiwyg';
 import FooterButtons from '../Components/FooterButtons';
-require('bootstrap/dist/css/bootstrap.css');
+import {Row, Col} from 'react-bootstrap';
 require('../App.css');
 require('../Components/Table.css');
 require('./Family.css');
@@ -21,9 +21,17 @@ const TableData = [{
   more: "12/3/2017"
 }];
 const TableColumns = [
-  {Header: "",          accessor: "check", width: 50},
+  {Header: "",          accessor: "check", width: 50,
+  Cell: row => (
+    <div className="centered">
+      <input type="checkbox" />
+    </div>)},
   {Header: "Name",      accessor: "name", width: 161},
-  {Header: "Required",  accessor: "required", width: 100},
+  {Header: "Required",  accessor: "required", width: 100,
+  Cell: row => (
+    <div className="centered">
+      <input type="checkbox" />
+    </div>)},
   {Header: "Photo",     accessor: "photo", width: 44},
   {
     Header: "",
@@ -42,22 +50,22 @@ const CreateProgramDocuments = () => (
       <SectionWithHeading heading="Description">
         <ContentContainer left={
           <div>
-            <div className="row">
-              <div className="col-md-12">
+            <Row>
+              <Col md={12}>
                 <input type="text" placeholder="Document Name" />
-              </div>
-            </div>
+              </Col>
+            </Row>
             <div className="file-upload">
                 <span>Upload</span>
                 <input id="uploadBtn" type="file" className="upload" />
             </div>
             <input id="uploadFile" placeholder="No Document Uploaded" disabled="disabled" />
-            <div className="row">
-              <div className="col-md-12">
+            <Row>
+              <Col md={12}>
                 <Wysiwyg />
                 <FooterButtons save />
-              </div>
-            </div>
+              </Col>
+            </Row>
           </div>
         } right= {
           <div class="bordered">
