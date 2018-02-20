@@ -1,12 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
+require('./ContentContainer.css');
+
 const ContentContainer = (props) => (
-  <div>
-    <div class="content-left">
+  <div className="Content-Container">
+    <div className="content-left">
       {props.left}
     </div>
-    <div class="content-right">
+    <div className="content-right">
       {props.right}
     </div>
+    {props.children}
   </div>
 )
 

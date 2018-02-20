@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import Container from '../Components/Container';
 import PageToggle from '../Components/PageToggle';
-import ReactTable from 'react-table';
+import Table from 'react-table';
 import SectionWithHeading from '../Components/SectionWithHeading';
 import Ellipses from '../assets/images/ellipses.png';
 require('bootstrap/dist/css/bootstrap.css');
 require('../App.css');
-require('../Components/CinchTable.css');
 require('./OrderHistory.css');
 
 const DocumentsData = [{
@@ -46,7 +45,7 @@ const Documents = () => (
     <Container>
       <PageToggle selected="documents" />
       <SectionWithHeading heading="Documents" dropdown="true">
-        <ReactTable
+        <Table
           data={DocumentsData}
           columns={DocumentsColumns}
           minRows={0}
