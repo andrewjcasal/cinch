@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Container from '../Components/Container';
-import PageToggle from '../Components/PageToggle';
+import Container from '../Components/UI/Container/Container';
+import PageToggle from '../Components/UI/PageToggle/PageToggle';
 import ReactTable from 'react-table';
-import SectionWithHeading from '../Components/SectionWithHeading';
+import SectionWithHeading from '../Components/UI/SectionWithHeading/SectionWithHeading';
 import Ellipses from '../assets/images/ellipses.png';
 require('bootstrap/dist/css/bootstrap.css');
 require('../containers/App/App.css');
@@ -56,20 +56,31 @@ const DocumentsColumns = [
   },
 ]
 
-const Registrations = () => (
-  <div id="ProgramName">
-    <Container>
-      <SectionWithHeading heading="Program Name" bulk="true" active="true" email="true">
-        <ReactTable
-          data={DocumentsData}
-          columns={DocumentsColumns}
-          minRows={0}
-          showPaginationTop={false}
-          showPaginationBottom={false}
-        />
-      </SectionWithHeading>
-    </Container>
-  </div>
-)
+export default class Registrations extends Component {
+  state = {
+    options: {
+      heading: "Program Name",
+      bulk: true,
+      active: true,
+      email: true
+    }
+  }
 
-export default Registrations;
+
+  render() {
+    return (
+      <div id="ProgramName">
+        <Container>
+          <SectionWithHeading options={this.state.options} />
+            <ReactTable
+              data={DocumentsData}
+              columns={DocumentsColumns}
+              minRows={0}
+              showPaginationTop={false}
+              showPaginationBottom={false}
+            />
+        </Container>
+      </div>
+    )
+  }
+}

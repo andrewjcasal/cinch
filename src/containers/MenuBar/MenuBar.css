@@ -1,34 +1,34 @@
-.Menubar {
+.menubar {
   position: fixed;
   width: 68px;
   height: 100%;
   z-index: 2; }
-  .Menubar li {
+  .menubar li {
     text-align: center;
     padding-top: 3px;
     padding-bottom: 3px;
     height: 56px;
     box-sizing: border-box; }
-    .Menubar li.active a {
+    .menubar li.active a {
       border-left: 2px solid #1875F0; }
-    .Menubar li a {
+    .menubar li a {
       display: inline-block;
       width: 100%;
       height: 50px;
       background-repeat: no-repeat;
       background-position: center;
       box-sizing: border-box; }
-    .Menubar li.logo a {
+    .menubar li.logo a {
       background-image: url("../../assets/images/logo.png"); }
-    .Menubar li.hamburger a {
+    .menubar li.hamburger a {
       background-image: url("../../assets/images/hamburger.png"); }
-    .Menubar li.home a {
+    .menubar li.home a {
       background-image: url("../../assets/images/home.png"); }
-    .Menubar li.world a {
+    .menubar li.world a {
       background-image: url("../../assets/images/world.png"); }
-    .Menubar li.profile a {
+    .menubar li.profile a {
       background-image: url("../../assets/images/profile.png"); }
-    .Menubar li.money a {
+    .menubar li.money a {
       background-image: url("../../assets/images/money.png"); }
-    .Menubar li.settings a {
+    .menubar li.settings a {
       background-image: url("../../assets/images/settings.png"); }

@@ -20,8 +20,8 @@ const App = () => (
       <Route exact path="/" component={Home} />
       <Route path="/registrations" component={Registrations} />
       <Route path="/programs" component={Programs} />
-      <Route path="/create-program" component={CreateProgram} />
       <Route path="/create-program-documents" component={CreateProgramDocuments} />
+      <Route path="/create-program" exact component={CreateProgram} />
       <Route path="/divisions" component={Divisions} />
       <Route path="/family" component={Family} />
       <Route path="/order-history" component={OrderHistory} />

@@ -99,12 +99,12 @@ button.dropdown-toggle {
   color: #999;
   padding-left: 22px;
   padding-right: 22px;
-  background: url(../../assets/images/programs/dropdown-caret.png) right 22px top 20px no-repeat; }
+  background: url(assets/images/programs/dropdown-caret.png) right 22px top 20px no-repeat; }
   button.dropdown-toggle .dropdown-label {
     float: left; }
 
 .datetimepicker {
-  background: url(../../assets/images/programs/calendar.png) right 9px top 12px no-repeat; }
+  background: url(assets/images/programs/calendar.png) right 9px top 12px no-repeat; }
 
 input {
   margin-bottom: 10px; }

@@ -24,13 +24,13 @@
       vertical-align: middle; }
     .heading .left-buttons button.dropdown-toggle {
       margin-right: 9px;
-      background-image: url("../assets/images/dropdown.png");
+      background-image: url("../../../assets/images/dropdown.png");
       background-position: right 11px top 11px; }
   .heading .right-buttons {
     float: right; }
     .heading .right-buttons .email {
       padding-left: 35px;
-      background-image: url("../assets/images/registrations/email-icon.png");
+      background-image: url("../../../assets/images/registrations/email-icon.png");
       background-position: 13px 10px;
       background-repeat: no-repeat; }
   .heading .completed .dropdown-toggle {

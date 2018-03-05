@@ -56,10 +56,10 @@
       text-align: center;
       border: 2px solid #F5F5F5; }
   .ReactTable .pagination-top .-previous button {
-    background: url(../assets/images/caret-left.png);
+    background: url(../../../assets/images/caret-left.png);
     background-repeat: no-repeat;
     background-position: center; }
   .ReactTable .pagination-top .-next button {
-    background: url(../assets/images/caret-right.png);
+    background: url(../../../assets/images/caret-right.png);
     background-repeat: no-repeat;
     background-position: center; }
