@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import 'jquery'
 import Programs from '../../Pages/Programs';
 import CreateProgram from '../../Pages/CreateProgram';
@@ -18,16 +18,18 @@ const Home = () => <h1>Home</h1>
 const App = () => (
   <Router>
     <div>
-      <Route exact path="/" component={Home} />
-      <Route path="/registrations" component={Registrations} />
-      <Route path="/programs" component={Programs} />
-      <Route path="/create-program-documents" component={CreateProgramDocuments} />
-      <Route path="/create-program" exact component={CreateProgram} />
-      <Route path="/divisions" component={Divisions} />
-      <Route path="/family" component={Family} />
-      <Route path="/organizations" component={Organizations} />
-      <Route path="/order-history" component={OrderHistory} />
-      <Route path="/documents" component={Documents} />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/registrations" component={Registrations} />
+        <Route path="/programs" component={Programs} />
+        <Route path="/create-program-documents" component={CreateProgramDocuments} />
+        <Route path="/create-program" exact component={CreateProgram} />
+        <Route path="/divisions" component={Divisions} />
+        <Route path="/family" component={Family} />
+        <Route path="/organizations" component={Organizations} />
+        <Route path="/order-history" component={OrderHistory} />
+        <Route path="/documents" component={Documents} />
+      </Switch>
     </div>
   </Router>
 );

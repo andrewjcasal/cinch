@@ -1,10 +1,8 @@
 import axios from 'axios'
 
-const instance = axios.create({
-  url: 'http://localhost:3000',
-  crossdomain: true,
-  headers: '*'
-})
+const instance = axios.create({})
+
+instance.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 
 export default instance;
