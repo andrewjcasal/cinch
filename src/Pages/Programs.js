@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import Container from '../Components/UI/Container/Container';
 import PageToggle from '../Components/UI/PageToggle/PageToggle';
+import Table from '../Components/Table';
 import ReactTable from 'react-table';
 import SectionWithHeading from '../Components/UI/SectionWithHeading/SectionWithHeading';
 import Ellipses from '../assets/images/ellipses.png';
 import Star from '../assets/images/star.png';
 require('bootstrap/dist/css/bootstrap.css');
 require('../containers/App/App.css');
-require('../Components/CinchTable.css');
+require('../Components/Table.css');
 require('./Family.css');
 
 const MembersData = [{
@@ -85,7 +86,7 @@ const Programs = () => (
   <div id="Programs">
     <Container>
       <SectionWithHeading heading="Program Name" bulk="true" active="true" createnew="true">
-        <ReactTable
+        <Table
           data={ProgramsData}
           columns={ProgramsColumns}
           minRows={0}

@@ -1,0 +1,13 @@
+.rdw-editor-wrapper {
+  border: 2px solid #F5F5F5;
+  border-radius: 4px; }
+  .rdw-editor-wrapper .rdw-editor-toolbar {
+    border: 0;
+    border-bottom: 2px solid #F5F5F5; }
+  .rdw-editor-wrapper .rdw-option-wrapper {
+    border: 0; }
+  .rdw-editor-wrapper .rdw-editor-main {
+    color: #999;
+    font-size: 12px;
+    padding: 0 16px;
+    height: 120px; }

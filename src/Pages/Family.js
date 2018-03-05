@@ -5,9 +5,10 @@ import ReactTable from 'react-table';
 import SectionWithHeading from '../Components/UI/SectionWithHeading/SectionWithHeading';
 import Ellipses from '../assets/images/ellipses.png';
 import Star from '../assets/images/star.png';
-require('bootstrap/dist/css/bootstrap.css');
+import Table from 'react-table';
 require('../containers/App/App.css');
-require('../Components/CinchTable.css');
+require('bootstrap/dist/css/bootstrap.css');
+require('../Components/Table.css');
 require('./Family.css');
 
 const MembersData = [{
@@ -114,7 +115,7 @@ const Family = () => (
         </div>
       </div>
       <SectionWithHeading heading="Members">
-        <ReactTable
+        <Table
           data={MembersData}
           columns={MembersColumns}
           minRows={0}
@@ -123,7 +124,7 @@ const Family = () => (
         />
       </SectionWithHeading>
       <SectionWithHeading heading="Emergency Contacts" addnew="true">
-        <ReactTable
+        <Table
           data={ContactsData}
           columns={ContactsColumns}
           minRows={0}

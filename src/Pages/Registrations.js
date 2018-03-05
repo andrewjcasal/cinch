@@ -6,7 +6,7 @@ import SectionWithHeading from '../Components/UI/SectionWithHeading/SectionWithH
 import Ellipses from '../assets/images/ellipses.png';
 require('bootstrap/dist/css/bootstrap.css');
 require('../containers/App/App.css');
-require('../Components/CinchTable.css');
+require('../Components/Table.css');
 require('./OrderHistory.css');
 
 const DocumentsData = [{
@@ -56,6 +56,7 @@ const DocumentsColumns = [
   },
 ]
 
+<<<<<<< HEAD
 export default class Registrations extends Component {
   state = {
     options: {
@@ -65,6 +66,23 @@ export default class Registrations extends Component {
       email: true
     }
   }
+=======
+const Registrations = () => (
+  <div id="ProgramName">
+    <Container>
+      <SectionWithHeading heading="Program Name" bulk active email>
+        <ReactTable
+          data={DocumentsData}
+          columns={DocumentsColumns}
+          minRows={0}
+          showPaginationTop={false}
+          showPaginationBottom={false}
+        />
+      </SectionWithHeading>
+    </Container>
+  </div>
+)
+>>>>>>> ddde08f86201bbf23fd27617e89b567254638fb6
 
 
   render() {
