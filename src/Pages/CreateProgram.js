@@ -1,9 +1,9 @@
 import React from 'react';
-import Container from '../Components/Container';
+import Container from '../Layouts/Container';
 import ProgramSteps from '../Components/ProgramSteps';
-import DragFile from '../Components/DragFile';
 import SectionWithHeading from '../Components/SectionWithHeading';
-import ContentContainer from '../Components/ContentContainer';
+import ContentContainer from '../Layouts/ContentContainer';
+import DragFile from '../Components/DragFile';
 import Dropdown from '../Components/Dropdown';
 import Wysiwyg from '../Components/Wysiwyg';
 import FooterButtons from '../Components/FooterButtons';
@@ -18,7 +18,7 @@ const CreateProgram = () => (
     <Container>
       <ProgramSteps completed="1" />
       <SectionWithHeading heading="Description">
-        <ContentContainer left={
+        <ContentContainer type="programs" left={
           <div>
             <Row>
               <Col md={12}><input type="text" placeholder="Program Name" /></Col>
@@ -44,8 +44,8 @@ const CreateProgram = () => (
           </div>
         } right= {
           <div>
-            <DragFile label="Program Logo" />
-            <DragFile label="Program Photo" />
+            <DragFile type="Program" label="Program Logo" />
+            <DragFile type="Program" label="Program Photo" />
           </div>
         }>
           <FooterButtons cancel next />

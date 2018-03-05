@@ -1,18 +1,32 @@
 import React from 'react';
 require('./FooterButtons.css');
 
-const FooterButtons = (props) => (
-  <div className="footer-buttons">
-    {props.save &&
-      <button className="save-button">SAVE</button>
+class FooterButtons extends React.Component {
+  render() {
+    let options = "";
+    let footerOptions = "";
+
+    if (this.props.save == "black") {
+      options += "black ";
     }
-    {props.cancel &&
-      <button className="cancel-button">CANCEL</button>
+
+    if (this.props.centered) {
+      footerOptions += "centered ";
     }
-    {props.next &&
-      <button className="next-button">NEXT</button>
-    }
-  </div>
-)
+
+    return (
+      <div className={footerOptions + "footer-buttons"}>
+        {this.props.save &&
+          <button className={options + "save-button"}>SAVE</button>
+        }
+        {this.props.cancel &&
+          <button className="cancel-button">CANCEL</button>
+        }
+        {this.props.next &&
+          <button className="next-button">NEXT</button>
+        }
+      </div> )
+  }
+}
 
 export default FooterButtons;

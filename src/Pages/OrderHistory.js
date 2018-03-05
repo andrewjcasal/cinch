@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import Container from '../Components/Container';
+import React from 'react';
+import Container from '../Layouts/Container';
 import PageToggle from '../Components/PageToggle';
 import Table from 'react-table';
 import SectionWithHeading from '../Components/SectionWithHeading';

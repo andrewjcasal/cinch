@@ -1,6 +1,4 @@
-import React, { Component } from 'react';
-import Menubar from '../Menubar';
-import Navbar from '../Navbar';
+import React from 'react';
 require('bootstrap/dist/css/bootstrap.css');
 require('./PageToggle.css');
 

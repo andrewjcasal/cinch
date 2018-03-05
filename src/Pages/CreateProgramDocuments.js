@@ -1,17 +1,23 @@
 import React from 'react';
-import Container from '../Components/Container';
+import Container from '../Layouts/Container';
 import ProgramSteps from '../Components/ProgramSteps';
-import DragFile from '../Components/DragFile';
+import Dropzone from 'react-dropzone';
 import Table from '../Components/Table';
 import SectionWithHeading from '../Components/SectionWithHeading';
 import Ellipses from '../assets/images/ellipses.png';
-import ContentContainer from '../Components/ContentContainer';
+import ContentContainer from '../Layouts/ContentContainer';
 import Wysiwyg from '../Components/Wysiwyg';
 import FooterButtons from '../Components/FooterButtons';
-import {Row, Col} from 'react-bootstrap';
+import {Row, Col, Popover, OverlayTrigger} from 'react-bootstrap';
 require('../App.css');
 require('../Components/Table.css');
 require('./Family.css');
+
+const popoverRight = (
+  <Popover id="popover-positioned-right" title="Popover right">
+    <strong>Holy guacamole!</strong> Check this info.
+  </Popover>
+);
 
 const TableData = [{
   check: "&nbsp;",
@@ -22,67 +28,83 @@ const TableData = [{
 }];
 const TableColumns = [
   {Header: "",          accessor: "check", width: 50,
-  Cell: row => (
-    <div className="centered">
-      <input type="checkbox" />
-    </div>)},
-  {Header: "Name",      accessor: "name", width: 161},
-  {Header: "Required",  accessor: "required", width: 100,
-  Cell: row => (
-    <div className="centered">
-      <input type="checkbox" />
-    </div>)},
-  {Header: "Photo",     accessor: "photo", width: 44},
+    Cell: row => (
+      <div className="centered">
+        <input type="checkbox" />
+      </div>)},
+  {Header: "Name",      accessor: "name", width: 122},
+  {Header: () => <div className="centered">Required</div>,
+    accessor: "required", width: 130,
+    Cell: row => (
+      <div className="centered">
+        <input type="checkbox" />
+      </div>)},
+  {Header: () => <div className="centered">Photo</div>,
+    accessor: "photo", width: 54,
+    Cell: row => (
+      <div className="centered">
+        <input type="checkbox" />
+      </div>)},
   {
     Header: "",
     accessor: "more",
     width: 38, 
     Cell: row => (
-      <img src={Ellipses} data-toggle="popover" data-placement="right" data-content="Edit | Delete" />
+      <OverlayTrigger trigger="click" placement="right" overlay={popoverRight}>
+        <img src={Ellipses} data-toggle="popover" data-placement="right" data-content="Edit | Delete" />
+      </OverlayTrigger>
       )
   }
 ]
 
-const CreateProgramDocuments = () => (
-  <div id="CreateProgram">
-    <Container>
-      <ProgramSteps completed="2" />
-      <SectionWithHeading heading="Description">
-        <ContentContainer left={
-          <div>
-            <Row>
-              <Col md={12}>
-                <input type="text" placeholder="Document Name" />
-              </Col>
-            </Row>
-            <div className="file-upload">
-                <span>Upload</span>
-                <input id="uploadBtn" type="file" className="upload" />
+class CreateProgramDocuments extends React.Component {
+  constructor() {
+    super()
+    this.state = { files: [] }
+  }
+
+  onDrop(files) {
+    this.setState({
+      files
+    });
+  }
+
+  render() {
+    return (<div id="CreateProgram">
+      <Container>
+        <ProgramSteps completed="2" />
+        <SectionWithHeading heading="Description">
+          <ContentContainer type="programs" left={
+            <div>
+              <Row>
+                <Col md={12}><input type="text" placeholder="Document Name" /></Col>
+              </Row>
+              <Dropzone onDrop={this.onDrop.bind(this)} className="file-upload">Upload</Dropzone>
+              <div id="uploadFile">{this.state.files.length ? this.state.files.map(f => <span>{f.name} - {f.size} bytes</span>) : "No Document Uploaded"}</div>
+              <Row>
+                <Col md={12}>
+                  <Wysiwyg />
+                  <FooterButtons save />
+                </Col>
+              </Row>
             </div>
-            <input id="uploadFile" placeholder="No Document Uploaded" disabled="disabled" />
-            <Row>
-              <Col md={12}>
-                <Wysiwyg />
-                <FooterButtons save />
-              </Col>
-            </Row>
-          </div>
-        } right= {
-          <div class="bordered">
-            <Table
-              data={TableData}
-              columns={TableColumns}
-              minRows={0}
-              showPaginationTop={false}
-              showPaginationBottom={false}
-            />
-          </div>
-        }>
-          <FooterButtons cancel next />
-        </ ContentContainer>
-      </SectionWithHeading>
-    </Container>
-  </div>
-)
+          } right= {
+            <div class="bordered">
+              <Table
+                data={TableData}
+                columns={TableColumns}
+                minRows={0}
+                showPaginationTop={false}
+                showPaginationBottom={false}
+              />
+            </div>
+          }>
+            <FooterButtons cancel next />
+          </ ContentContainer>
+        </SectionWithHeading>
+      </Container>
+    </div>
+  )}
+}
 
 export default CreateProgramDocuments;

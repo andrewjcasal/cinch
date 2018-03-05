@@ -1,0 +1,29 @@
+.Content-Container {
+  padding-right: 23px;
+  padding-top: 48px;
+  padding-left: 24px; }
+  .Content-Container .content-left {
+    vertical-align: top;
+    display: inline-block;
+    padding-right: 15px; }
+  .Content-Container .content-right {
+    vertical-align: top;
+    display: inline-block; }
+    .Content-Container .content-right .ReactTable .rt-thead .rt-th {
+      padding-top: 14px;
+      padding-bottom: 14px; }
+  .Content-Container.Programs .content-left {
+    width: 694px; }
+  .Content-Container.Programs .content-right {
+    width: 395px; }
+  .Content-Container.Setup .content-left {
+    width: 585px; }
+  .Content-Container.DragFileTwoCol {
+    text-align: center; }
+    .Content-Container.DragFileTwoCol .content-left, .Content-Container.DragFileTwoCol .content-right {
+      width: 345px;
+      padding: 0 25px; }
+    .Content-Container.DragFileTwoCol .Drag-File > div {
+      width: 295px; }
+  .Content-Container + .Content-Container {
+    border-top: 2px solid #F6F6F6; }
