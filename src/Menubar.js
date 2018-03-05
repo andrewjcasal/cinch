@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-require('./MenuBar.css');
+require('./Menubar.css');
 
 class Menubar extends Component {
   render() {

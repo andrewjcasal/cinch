@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-require('./NavBar.css');
+require('./Navbar.css');
 
 class Navbar extends Component {
   render() {
