@@ -7,7 +7,6 @@ import Ellipses from '../assets/images/ellipses.png';
 import Table from 'react-table';
 require('bootstrap/dist/css/bootstrap.css');
 require('../containers/App/App.css');
-require('../Components/CinchTable.css');
 require('bootstrap/dist/css/bootstrap.css');
 require('./OrderHistory.css');
 

@@ -9,7 +9,6 @@ import Wysiwyg from '../Components/Wysiwyg';
 import FooterButtons from '../Components/FooterButtons';
 import Datepicker from '../Components/Datepicker';
 import {Row, Col} from 'react-bootstrap';
-require('../App.css');
 require('../Components/Table.css');
 require('./Family.css');
 

@@ -96,7 +96,7 @@ div[class*="col-md-"] {
   margin-bottom: 20px; }
 
 .datetimepicker {
-  background: url(assets/images/programs/calendar.png) right 9px top 12px no-repeat; }
+  background: url(../../assets/images/programs/calendar.png) right 9px top 12px no-repeat; }
 
 input {
   margin-bottom: 10px; }

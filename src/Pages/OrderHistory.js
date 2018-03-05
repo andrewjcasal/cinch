@@ -8,7 +8,6 @@ import Visa from '../assets/images/visa.png';
 import Mastercard from '../assets/images/mastercard.png';
 require('bootstrap/dist/css/bootstrap.css');
 require('../containers/App/App.css');
-require('../App.css');
 require('../Components/Table.css');
 require('./OrderHistory.css');
 

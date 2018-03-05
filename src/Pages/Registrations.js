@@ -56,17 +56,6 @@ const DocumentsColumns = [
   },
 ]
 
-<<<<<<< HEAD
-export default class Registrations extends Component {
-  state = {
-    options: {
-      heading: "Program Name",
-      bulk: true,
-      active: true,
-      email: true
-    }
-  }
-=======
 const Registrations = () => (
   <div id="ProgramName">
     <Container>
@@ -82,23 +71,5 @@ const Registrations = () => (
     </Container>
   </div>
 )
->>>>>>> ddde08f86201bbf23fd27617e89b567254638fb6
 
-
-  render() {
-    return (
-      <div id="ProgramName">
-        <Container>
-          <SectionWithHeading options={this.state.options} />
-            <ReactTable
-              data={DocumentsData}
-              columns={DocumentsColumns}
-              minRows={0}
-              showPaginationTop={false}
-              showPaginationBottom={false}
-            />
-        </Container>
-      </div>
-    )
-  }
-}
+export default Registrations

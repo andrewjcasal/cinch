@@ -12,7 +12,6 @@ import Wysiwyg from '../Components/Wysiwyg';
 import FooterButtons from '../Components/FooterButtons';
 import {Row, Col} from 'react-bootstrap';
 require('../containers/App/App.css');
-require('../App.css');
 require('../Components/Table.css');
 require('./Family.css');
 
@@ -56,54 +55,11 @@ const CreateProgramDocuments = () => (
             <Row>
               <Col md={12}>
                 <input type="text" placeholder="Document Name" />
-<<<<<<< HEAD
-              </div>
-          <div class="file-upload">
-              <span>Upload</span>
-              <input id="uploadBtn" type="file" class="upload" />
-          </div>
-          <input id="uploadFile" placeholder="No Document Uploaded" disabled="disabled" />
-          <div class="row">
-            <div class="col-md-12">
-              <div class="textarea">
-                <div class="wysiwyg">
-                  <a href="#">
-                    <img class="bold" src="assets/images/programs/bold.png" />
-                  </a>
-                  <a href="#">
-                    <img class="italic" src="assets/images/programs/italic.png" />
-                  </a>
-                  <a href="#">
-                    <img class="link" src="assets/images/programs/link.png" />
-                  </a>
-                  <a href="#">
-                    <img class="image" src="assets/images/programs/image.png" />
-                  </a>
-                  <a href="#">
-                    <img class="unordered" src="assets/images/programs/unordered.png" />
-                  </a>
-                  <a href="#">
-                    <img class="ordered" src="assets/images/programs/ordered.png" />
-                  </a>
-                  <a href="#">
-                    <img class="code" src="assets/images/programs/code.png" />
-                  </a>
-                  <a href="#">
-                    <img class="quote" src="assets/images/programs/quote.png" />
-                  </a>
-                </div> -->
-                <textarea></textarea>
-              </div>
-              <button class="save-button">SAVE</button>
-            </div>
-          </div>
-=======
               </Col>
             </Row>
             <div className="file-upload">
                 <span>Upload</span>
                 <input id="uploadBtn" type="file" className="upload" />
->>>>>>> ddde08f86201bbf23fd27617e89b567254638fb6
             </div>
             <input id="uploadFile" placeholder="No Document Uploaded" disabled="disabled" />
             <Row>

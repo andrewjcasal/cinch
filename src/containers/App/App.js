@@ -9,6 +9,7 @@ import Registrations from '../../Pages/Registrations';
 import Family from '../../Pages/Family';
 import OrderHistory from '../../Pages/OrderHistory';
 import Documents from '../../Pages/Documents';
+import Organizations from '../../Pages/Organizations';
 require('bootstrap/dist/css/bootstrap.css');
 require('./App.css');
 
@@ -24,6 +25,7 @@ const App = () => (
       <Route path="/create-program" exact component={CreateProgram} />
       <Route path="/divisions" component={Divisions} />
       <Route path="/family" component={Family} />
+      <Route path="/organizations" component={Organizations} />
       <Route path="/order-history" component={OrderHistory} />
       <Route path="/documents" component={Documents} />
     </div>

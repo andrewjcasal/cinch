@@ -4,13 +4,13 @@
 }
 @font-face {
   font-family: "Roboto Medium";
-  src: url("assets/fonts/Roboto-Medium.ttf") format("truetype"); }
+  src: url("../../assets/fonts/Roboto-Medium.ttf") format("truetype"); }
 @font-face {
   font-family: "Roboto Black";
-  src: url("assets/fonts/Roboto-Black.ttf") format("truetype"); }
+  src: url("../../assets/fonts/Roboto-Black.ttf") format("truetype"); }
 @font-face {
   font-family: "Roboto Bold";
-  src: url("assets/fonts/Roboto-Black.ttf") format("truetype"); }
+  src: url("../../assets/fonts/Roboto-Black.ttf") format("truetype"); }
 body {
   background-color: #FAFAFA;
   font-family: "Roboto Medium";
@@ -110,7 +110,7 @@ div[class*="col-md-"] {
 }
 
 .datetimepicker {
-  background: url(assets/images/programs/calendar.png) right 9px top 12px no-repeat;
+  background: url(../../assets/images/programs/calendar.png) right 9px top 12px no-repeat;
 
 }
 
