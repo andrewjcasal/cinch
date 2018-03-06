@@ -1,0 +1,39 @@
+
+.Drag-File {
+  text-align: center;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 35px;
+  margin-left: 80px;
+  margin-right: 80px;
+
+  > div {
+    width: 235px;
+    height: 180px;
+    border: 2px dashed #E5E5E5;
+    color: #CCCCCC;
+    background: url("../../assets/images/cloud-icon.png") center 33px no-repeat;
+    font-size: 12px;
+
+    p {
+      margin: 110px auto 0;
+    }
+
+    + p {
+      color: #666666;
+      font-size: 14px;
+      margin: 13px auto;
+      text-align: center;
+    }
+  }
+
+  p {
+    width: 100px;
+    line-height: 19px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #4A90E2;
+  }
+}

@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import Container from '../Components/Container';
-import PageToggle from '../Components/PageToggle';
-import Table from 'react-table';
-import SectionWithHeading from '../Components/SectionWithHeading';
+import Container from '../Components/UI/Container/Container';
+import PageToggle from '../Components/UI/PageToggle/PageToggle';
+import ReactTable from 'react-table';
+import SectionWithHeading from '../Components/UI/SectionWithHeading/SectionWithHeading';
 import Ellipses from '../assets/images/ellipses.png';
 import Star from '../assets/images/star.png';
+import Table from 'react-table';
+require('../containers/App/App.css');
 require('bootstrap/dist/css/bootstrap.css');
-require('../App.css');
 require('../Components/Table.css');
 require('./Family.css');
 

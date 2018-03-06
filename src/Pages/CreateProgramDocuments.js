@@ -1,15 +1,17 @@
-import React from 'react';
-import Container from '../Components/Container';
-import ProgramSteps from '../Components/ProgramSteps';
-import DragFile from '../Components/DragFile';
-import Table from '../Components/Table';
-import SectionWithHeading from '../Components/SectionWithHeading';
+import React, { Component } from 'react';
+import Container from '../Components/UI/Container/Container';
+import ProgramSteps from '../Components/ProgramSteps/ProgramSteps';
+import DragFile from '../Components/DragFile/DragFile';
+import SectionWithHeading from '../Components/UI/SectionWithHeading/SectionWithHeading';
+import ContentContainer from '../Components/UI/ContentContainer/ContentContainer';
+import Dropdown from '../Components/UI/Dropdown/Dropdown';
 import Ellipses from '../assets/images/ellipses.png';
-import ContentContainer from '../Components/ContentContainer';
+import Star from '../assets/images/star.png';
+import Table from '../Components/Table';
 import Wysiwyg from '../Components/Wysiwyg';
 import FooterButtons from '../Components/FooterButtons';
 import {Row, Col} from 'react-bootstrap';
-require('../App.css');
+require('../containers/App/App.css');
 require('../Components/Table.css');
 require('./Family.css');
 

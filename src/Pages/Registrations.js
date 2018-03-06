@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import Container from '../Components/Container';
-import PageToggle from '../Components/PageToggle';
+import Container from '../Components/UI/Container/Container';
+import PageToggle from '../Components/UI/PageToggle/PageToggle';
 import ReactTable from 'react-table';
-import SectionWithHeading from '../Components/SectionWithHeading';
+import SectionWithHeading from '../Components/UI/SectionWithHeading/SectionWithHeading';
 import Ellipses from '../assets/images/ellipses.png';
 require('bootstrap/dist/css/bootstrap.css');
-require('../App.css');
+require('../containers/App/App.css');
 require('../Components/Table.css');
 require('./OrderHistory.css');
 
@@ -72,4 +72,4 @@ const Registrations = () => (
   </div>
 )
 
-export default Registrations;
+export default Registrations
