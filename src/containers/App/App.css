@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+ul, li {
+  list-style: none; }
+
+@font-face {
+  font-family: "Roboto Medium";
+  src: url("../../assets/fonts/Roboto-Medium.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Roboto Black";
+  src: url("../../assets/fonts/Roboto-Black.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Roboto Bold";
+  src: url("../../assets/fonts/Roboto-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Roboto Regular";
+  src: url("../../assets/fonts/Roboto-Regular.ttf") format("truetype"); }
+
+body {
+  background-color: #FAFAFA;
+  font-family: "Roboto Medium"; }
+
+.Menubar, .Navbar, .sidebar, .content {
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); }
+
+.section {
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  margin-bottom: 12px;
+  position: relative; }
+
+.content-container {
+  width: 1142px;
+  margin: 0 auto; }
+
+#divisions .content-left {
+  padding-top: 12px; }
+
+#divisions #waitlist + label {
+  color: #666666;
+  font-size: 12px;
+  margin-left: 13px; }
+
+#divisions .checkbox-row {
+  margin-bottom: 4px; }
+
+#divisions .role {
+  font-size: 13px;
+  padding-left: 18px;
+  width: 246px; }
+
+#divisions .headings .role {
+  width: 232px; }
+
+#divisions .enable {
+  width: 102px; }
+
+#divisions .headings > p {
+  display: inline-block; }
+
+#divisions li > * {
+  display: inline-block; }
+
+input[type=text] {
+  border: 2px solid #F5F5F5;
+  padding: 16px 16px 17px;
+  border-radius: 4px;
+  font-size: 12px; }
+
+input[type="text"] {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 0; }
+
+div[class*="col-md-"] {
+  padding-left: 15px;
+  padding-right: 15px; }
+  div[class*="col-md-"] > * {
+    margin-bottom: 20px; }
+
+.datetimepicker {
+  background: url(../../assets/images/programs/calendar.png) right 9px top 12px no-repeat; }
+
+input {
+  margin-bottom: 10px; }
+  input::placeholder {
+    color: #999; }
+
+.form-element-group input {
+  padding-left: 21px;
+  padding-right: 21px;
+  width: 110px;
+  margin-right: 8px; }
+  .form-element-group input.state {
+    width: 87px; }
+  .form-element-group input.zip {
+    width: 113px; }
+  .form-element-group input.email {
+    width: 272px; }
+
+.button {
+  width: 104px;
+  height: 40px;
+  border-radius: 4px;
+  border: 2px solid #000;
+  box-sizing: border-box;
+  display: block;
+  text-decoration: none;
+  color: #000;
+  font-size: 10px;
+  font-family: "Roboto Black";
+  text-align: center;
+  padding-top: 12px;
+  letter-spacing: 1.25px; }
+
+.bordered {
+  border: 2px solid #F5F5F5;
+  border-radius: 4px; }
+
+.centered {
+  text-align: center; }
+
+.file-upload {
+  position: relative;
+  overflow: hidden;
+  background-color: #F5F5F5;
+  border-radius: 4px;
+  width: 81px;
+  height: 25px;
+  text-align: center;
+  color: #808080;
+  font-size: 16px;
+  box-sizing: border-box;
+  padding-top: 2px;
+  display: inline-block; }
+  .file-upload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0); }
+
+#uploadFile {
+  border: 0;
+  width: 300px;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 12px;
+  color: #999999;
+  margin-left: 13px;
+  margin-top: 5px; }
+
+p.instructions {
+  color: #999999;
+  font-size: 12px; }
+
+p.subheading {
+  color: #666666;
+  font-size: 12px;
+  margin-bottom: 7px; }
+  p.subheading input[type=checkbox] {
+    margin-right: 10px; }
+
+.logo-reg-button {
+  background-color: #141414;
+  color: #ffffff;
+  border-radius: 2px;
+  font-family: "Roboto Regular";
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: .14em;
+  background-repeat: no-repeat;
+  margin-left: 31px;
+  display: inline-block; }
+
+.large-button {
+  margin-bottom: 32px; }
+  .large-button a {
+    width: 322px;
+    height: 60px;
+    background-image: url("assets/images/programs/cinch-white-lg.png");
+    background-position: 19px;
+    padding-left: 68px;
+    padding-top: 21px; }
+
+.small-button a {
+  width: 217px;
+  height: 40px;
+  background-image: url("assets/images/programs/cinch-white-sm.png");
+  background-position: 20px;
+  padding-left: 82px;
+  padding-top: 15px; }

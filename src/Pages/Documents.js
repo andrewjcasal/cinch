@@ -1,11 +1,12 @@
 import React from 'react';
-import Container from '../Layouts/Container';
-import PageToggle from '../Components/PageToggle';
-import Table from 'react-table';
-import SectionWithHeading from '../Components/SectionWithHeading';
+import Container from '../Components/UI/Container/Container';
+import PageToggle from '../Components/UI/PageToggle/PageToggle';
+import SectionWithHeading from '../Components/UI/SectionWithHeading/SectionWithHeading';
 import Ellipses from '../assets/images/ellipses.png';
+import Table from 'react-table';
 require('bootstrap/dist/css/bootstrap.css');
-require('../App.css');
+require('../containers/App/App.css');
+require('bootstrap/dist/css/bootstrap.css');
 require('./OrderHistory.css');
 
 const DocumentsData = [{
@@ -18,8 +19,11 @@ const DocumentsData = [{
   more: "blah"
 }];
 const DocumentsColumns = [
-  {Header: "",     accessor: "empty", width: "24"},
-  {
+  { 
+    Header: "",     
+    accessor: "empty", 
+    width: "24"
+  },{
     Header: "Player",
     accessor: "player",
     width: "119",

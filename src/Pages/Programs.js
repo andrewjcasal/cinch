@@ -1,10 +1,10 @@
 import React from 'react';
-import Container from '../Layouts/Container';
+import Container from '../Components/UI/Container/Container';
 import Table from '../Components/Table';
-import SectionWithHeading from '../Components/SectionWithHeading';
+import SectionWithHeading from '../Components/UI/SectionWithHeading/SectionWithHeading';
 import Ellipses from '../assets/images/ellipses.png';
 require('bootstrap/dist/css/bootstrap.css');
-require('../App.css');
+require('../containers/App/App.css');
 require('../Components/Table.css');
 require('./Family.css');
 

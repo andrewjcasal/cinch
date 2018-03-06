@@ -1,11 +1,11 @@
 import React from 'react';
-import Container from '../Layouts/Container';
-import ProgramSteps from '../Components/ProgramSteps';
+import Container from '../Components/UI/Container/Container';
+import ProgramSteps from '../Components/ProgramSteps/ProgramSteps';
 import Dropzone from 'react-dropzone';
 import Table from '../Components/Table';
-import SectionWithHeading from '../Components/SectionWithHeading';
+import SectionWithHeading from '../Components/UI/SectionWithHeading/SectionWithHeading';
 import Ellipses from '../assets/images/ellipses.png';
-import ContentContainer from '../Layouts/ContentContainer';
+import ContentContainer from '../Components/UI/ContentContainer/ContentContainer';
 import Wysiwyg from '../Components/Wysiwyg';
 import FooterButtons from '../Components/FooterButtons';
 import {Row, Col, Popover, OverlayTrigger} from 'react-bootstrap';

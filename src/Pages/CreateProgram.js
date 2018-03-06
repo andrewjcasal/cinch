@@ -1,15 +1,14 @@
 import React from 'react';
-import Container from '../Layouts/Container';
-import ProgramSteps from '../Components/ProgramSteps';
-import SectionWithHeading from '../Components/SectionWithHeading';
-import ContentContainer from '../Layouts/ContentContainer';
-import DragFile from '../Components/DragFile';
-import Dropdown from '../Components/Dropdown';
+import Container from '../Components/UI/Container/Container';
+import ProgramSteps from '../Components/ProgramSteps/ProgramSteps';
+import SectionWithHeading from '../Components/UI/SectionWithHeading/SectionWithHeading';
+import ContentContainer from '../Components/UI/ContentContainer/ContentContainer';
+import DragFile from '../Components/DragFile/DragFile';
+import Dropdown from '../Components/UI/Dropdown/Dropdown';
 import Wysiwyg from '../Components/Wysiwyg';
 import FooterButtons from '../Components/FooterButtons';
 import Datepicker from '../Components/Datepicker';
 import {Row, Col} from 'react-bootstrap';
-require('../App.css');
 require('../Components/Table.css');
 require('./Family.css');
 
