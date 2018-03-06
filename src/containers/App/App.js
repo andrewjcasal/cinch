@@ -20,15 +20,15 @@ const App = () => (
     <div>
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route path="/registrations" component={Registrations} />
-        <Route path="/programs" component={Programs} />
-        <Route path="/create-program-documents" component={CreateProgramDocuments} />
-        <Route path="/create-program" exact component={CreateProgram} />
-        <Route path="/divisions" component={Divisions} />
-        <Route path="/family" component={Family} />
-        <Route path="/organizations" component={Organizations} />
-        <Route path="/order-history" component={OrderHistory} />
-        <Route path="/documents" component={Documents} />
+        <Route exact path="/registrations" component={Registrations} />
+        <Route exact path="/programs" component={Programs} />
+        <Route exact path="/create-program-documents" component={CreateProgramDocuments} />
+        <Route exact path="/create-program" exact component={CreateProgram} />
+        <Route exact path="/divisions" component={Divisions} />
+        <Route exact path="/family" component={Family} />
+        <Route exact path="/organizations" component={Organizations} />
+        <Route exact path="/order-history" component={OrderHistory} />
+        <Route exact path="/documents" component={Documents} />
       </Switch>
     </div>
   </Router>

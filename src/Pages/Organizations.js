@@ -16,7 +16,6 @@ class Organizations extends Component {
   }
 
   componentDidMount() {
-    console.log('hi (╯°□°)╯︵ ┻━┻ ')
     let headers;
     apiCaller.getAllOrganizations()
       .then((response) => {
@@ -29,15 +28,12 @@ class Organizations extends Component {
   }
   
   handleHeaderProcessingForTable() {
-    console.log('this.state.tableHeaders (╯°□°)╯︵ ┻━┻ ', this.state.tableHeaders)
     const TableColumns = [
       { Header: "Name", accessor: this.state.tableHeaders[1], width: 50 },
       { Header: "City", accessor: this.state.tableHeaders[6], width: 161 },
       { Header: "Sport", accessor: this.state.tableHeaders[3], width: 100 }
     ]
-    console.log('this.state.tableHeaders[0] (╯°□°)╯︵ ┻━┻ ', this.state.tableHeaders[0])
-    console.log('TableCOlumns (╯°□°)╯︵ ┻━┻ ', TableColumns)
-    return TableColumns
+    return TableColumns;
   }
 
   renderTable() {}

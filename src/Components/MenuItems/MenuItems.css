@@ -1,13 +1,8 @@
 .MenuItems {
-  position: fixed;
-  width: 68px;
-  height: 100%;
-  z-index: 2; 
-}
-.MenuItems li {
-    text-align: center;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    height: 56px;
-    box-sizing: border-box; }
-    
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  height: 100%; }
