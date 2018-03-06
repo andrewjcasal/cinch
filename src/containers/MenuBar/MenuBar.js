@@ -3,14 +3,14 @@ import MenuItems from '../../Components/MenuItems/MenuItems'
 require('./MenuBar.css');
 
 class MenuBar extends Component {
-  state = {
-    active: null
+  menuItemClicked = () => {
+    console.log('event.target (╯°□°)╯︵ ┻━┻ ')
   }
 
   render() {
     return (
       <div className="menubar">
-        <MenuItems />
+        <MenuItems navigation={this.menuItemClicked}/>
       </div>
     );
   }
