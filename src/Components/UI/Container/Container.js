@@ -31,7 +31,7 @@ class Container extends React.Component {
         <div className="content-container">
           <Navbar />
           <div className="wrapper">
-            {props.children}
+            {layout}
           </div>
         </div>
       </div> )

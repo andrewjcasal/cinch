@@ -1,18 +1,18 @@
 import React from 'react';
-import Container from '../Layouts/Container';
-import ProgramSteps from '../Components/ProgramSteps';
-import SectionWithHeading from '../Components/SectionWithHeading';
-import ContentContainer from '../Layouts/ContentContainer';
+import Container from '../Components/UI/Container/Container';
+import ContentContainer from '../Components/UI/ContentContainer/ContentContainer';
+import ProgramSteps from '../Components/ProgramSteps/ProgramSteps';
+import SectionWithHeading from '../Components/UI/SectionWithHeading/SectionWithHeading';
 import Wysiwyg from '../Components/Wysiwyg';
 import FooterButtons from '../Components/FooterButtons';
 import {Row, Col} from 'react-bootstrap';
-require('../App.css');
+require('../containers/App/App.css');
 
 const Welcome = () => (
   <Container>
     <ProgramSteps completed="5" />
     <SectionWithHeading heading="Email">
-      <ContentContainer type="programs" top={
+      <ContentContainer type="Programs" top={
         <Row>
           <Col md={12}><p className="subheading">Registration Email</p></Col>
         </Row>
@@ -35,7 +35,7 @@ const Welcome = () => (
           </Row>
         </div>
       } />
-      <ContentContainer type="programs" top={
+      <ContentContainer type="Programs" top={
         <Row>
           <Col md={12}><p className="subheading">Registration Email</p></Col>
         </Row>

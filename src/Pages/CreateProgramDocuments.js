@@ -9,7 +9,7 @@ import ContentContainer from '../Components/UI/ContentContainer/ContentContainer
 import Wysiwyg from '../Components/Wysiwyg';
 import FooterButtons from '../Components/FooterButtons';
 import {Row, Col, Popover, OverlayTrigger} from 'react-bootstrap';
-require('../App.css');
+require('../containers/App/App.css');
 require('../Components/Table.css');
 require('./Family.css');
 
@@ -74,7 +74,7 @@ class CreateProgramDocuments extends React.Component {
       <Container>
         <ProgramSteps completed="2" />
         <SectionWithHeading heading="Description">
-          <ContentContainer type="programs" left={
+          <ContentContainer type="Programs" left={
             <div>
               <Row>
                 <Col md={12}><input type="text" placeholder="Document Name" /></Col>

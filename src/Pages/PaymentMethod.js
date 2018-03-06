@@ -1,13 +1,12 @@
 import React from 'react';
-import Container from '../Layouts/Container';
-import SectionWithHeading from '../Components/SectionWithHeading';
-import ContentContainer from '../Layouts/ContentContainer';
-import Dropdown from '../Components/Dropdown';
-import Wysiwyg from '../Components/Wysiwyg';
+import Container from '../Components/UI/Container/Container';
+import ContentContainer from '../Components/UI/ContentContainer/ContentContainer';
+import SectionWithHeading from '../Components/UI/SectionWithHeading/SectionWithHeading';
+import Dropdown from '../Components/UI/Dropdown/Dropdown';
 import FooterButtons from '../Components/FooterButtons';
 import {Row, Col, Clearfix} from 'react-bootstrap';
 import SetupSidebar from '../Components/SetupSidebar';
-require('../App.css');
+require('../containers/App/App.css');
 
 const PaymentMethod = () => (
   <Container left={<SetupSidebar active="5" />}>

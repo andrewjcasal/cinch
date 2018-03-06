@@ -2,14 +2,14 @@ import React from 'react';
 import Container from '../Components/UI/Container/Container';
 import ProgramSteps from '../Components/ProgramSteps/ProgramSteps';
 import Table from '../Components/Table';
-import SectionWithHeading from '../Components/SectionWithHeading';
+import SectionWithHeading from '../Components/UI/SectionWithHeading/SectionWithHeading';
 import Ellipses from '../assets/images/ellipses.png';
-import ContentContainer from '../Layouts/ContentContainer';
-import Dropdown from '../Components/Dropdown';
+import ContentContainer from '../Components/UI/ContentContainer/ContentContainer';
+import Dropdown from '../Components/UI/Dropdown/Dropdown';
 import FooterButtons from '../Components/FooterButtons';
 import Datepicker from '../Components/Datepicker';
 import {Row, Col, Popover, OverlayTrigger} from 'react-bootstrap';
-require('../App.css');
+require('../containers/App/App.css');
 
 const popoverRight = (
   <Popover id="popover-positioned-right" title="Popover right">
@@ -55,7 +55,7 @@ const Divisions = () => (
   <Container>
     <ProgramSteps completed="4" />
     <SectionWithHeading heading="Divisions">
-      <ContentContainer type="programs" left={
+      <ContentContainer type="Programs" left={
         <div>
           <Row>
             <Col md={12}><p className="subheading">Details</p></Col>

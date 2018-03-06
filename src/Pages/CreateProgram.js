@@ -17,7 +17,7 @@ const CreateProgram = () => (
     <Container>
       <ProgramSteps completed="1" />
       <SectionWithHeading heading="Description">
-        <ContentContainer type="programs" left={
+        <ContentContainer type="Programs" left={
           <div>
             <Row>
               <Col md={12}><input type="text" placeholder="Program Name" /></Col>

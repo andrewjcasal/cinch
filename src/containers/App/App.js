@@ -1,17 +1,17 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import 'jquery'
-import BusinessDetails from './Pages/BusinessDetails';
-import LegalRepresentative from './Pages/LegalRepresentative';
-import ProofOfId from './Pages/ProofOfId';
-import BankInformation from './Pages/BankInformation';
-import PaymentMethod from './Pages/PaymentMethod';
+import BusinessDetails from '../../Pages/BusinessDetails';
+import LegalRepresentative from '../../Pages/LegalRepresentative';
+import ProofOfId from '../../Pages/ProofOfId';
+import BankInformation from '../../Pages/BankInformation';
+import PaymentMethod from '../../Pages/PaymentMethod';
 import Programs from '../../Pages/Programs';
 import CreateProgram from '../../Pages/CreateProgram';
 import CreateProgramDocuments from '../../Pages/CreateProgramDocuments';
 import Divisions from '../../Pages/Divisions';
-import Welcome from './Pages/Welcome';
-import Buttons from './Pages/Buttons';
+import Welcome from '../../Pages/Welcome';
+import Buttons from '../../Pages/Buttons';
 import Registrations from '../../Pages/Registrations';
 import Family from '../../Pages/Family';
 import OrderHistory from '../../Pages/OrderHistory';

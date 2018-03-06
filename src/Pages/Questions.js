@@ -57,7 +57,7 @@ const Questions = () => (
     <Container>
       <ProgramSteps completed="3" />
       <SectionWithHeading heading="Description">
-        <ContentContainer type="programs" left={
+        <ContentContainer type="Programs" left={
           <div>
             <Row>
               <Col md={12}>
