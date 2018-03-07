@@ -39,7 +39,6 @@ class Organizations extends Component {
   renderTable() {}
 
   showTable = () => {
-      // let organizations = this.state
       if (this.state.organizations !== null) {
       let organizations = this.state.organizations
         console.log('Organizations data ::>', organizations);
