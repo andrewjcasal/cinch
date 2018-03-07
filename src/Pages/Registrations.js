@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+
+import React from 'react';
 import Container from '../Components/UI/Container/Container';
-import PageToggle from '../Components/UI/PageToggle/PageToggle';
-import ReactTable from 'react-table';
+import Table from '../Components/Table';
 import SectionWithHeading from '../Components/UI/SectionWithHeading/SectionWithHeading';
 import Ellipses from '../assets/images/ellipses.png';
 require('bootstrap/dist/css/bootstrap.css');
@@ -60,7 +60,7 @@ const Registrations = () => (
   <div id="ProgramName">
     <Container>
       <SectionWithHeading heading="Program Name" bulk active email>
-        <ReactTable
+        <Table
           data={DocumentsData}
           columns={DocumentsColumns}
           minRows={0}

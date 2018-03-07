@@ -1,136 +1,113 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Container from '../Components/UI/Container/Container';
 import ProgramSteps from '../Components/ProgramSteps/ProgramSteps';
-require('bootstrap/dist/css/bootstrap.css');
+import Table from '../Components/Table';
+import SectionWithHeading from '../Components/UI/SectionWithHeading/SectionWithHeading';
+import Ellipses from '../assets/images/ellipses.png';
+import ContentContainer from '../Components/UI/ContentContainer/ContentContainer';
+import Dropdown from '../Components/UI/Dropdown/Dropdown';
+import FooterButtons from '../Components/FooterButtons';
+import Datepicker from '../Components/Datepicker';
+import {Row, Col, Popover, OverlayTrigger} from 'react-bootstrap';
 require('../containers/App/App.css');
+
+const popoverRight = (
+  <Popover id="popover-positioned-right" title="Popover right">
+    <strong>Holy guacamole!</strong> Check this info.
+  </Popover>
+);
+
+const TableData = [{
+  question: "Question 1"
+}, {
+  question: "Question 2"
+}, {
+  question: "Question 3"
+}, {
+  question: "Question 4"
+}];
+const TableColumns = [
+  {Header: () => <div style={{paddingLeft: 18 + 'px'}}>Question</div>,
+    accessor: "question", width: 259,
+    Cell: row => (
+      <div style={{paddingLeft: 18 + 'px'}}>
+        {row.value}
+      </div>)},
+  {Header: () => <div className="centered">Required</div>,
+    accessor: "required", width: 96,
+    Cell: row => (
+      <div className="centered">
+        <input type="checkbox" />
+      </div>)},
+  {
+    Header: "",
+    accessor: "more",
+    width: 38, 
+    Cell: row => (
+      <OverlayTrigger trigger="click" placement="right" overlay={popoverRight}>
+        <img src={Ellipses} data-toggle="popover" data-placement="right" data-content="Edit | Delete" />
+      </OverlayTrigger>
+      )
+  }
+]
 
 const Divisions = () => (
   <Container>
-    <ProgramSteps />
-    <div id="divisions" class="section programs">
-      <div class="heading">
-        Divisions
-      </div>
-      <div class="content-left container">
-        <div class="row">
-          <div class="col-md-12 subheading">
-            Details
-          </div>
+    <ProgramSteps completed="4" />
+    <SectionWithHeading heading="Divisions">
+      <ContentContainer type="Programs" left={
+        <div>
+          <Row>
+            <Col md={12}><p className="subheading">Details</p></Col>
+          </Row>
+          <Row>
+            <Col md={12}><input type="text" placeholder="Division Name" /></Col>
+          </Row>
+          <Row>
+            <Col md={3}><Datepicker placeholder="Age Range"/></Col>
+            <Col md={3}><Datepicker placeholder="Age Range"/></Col>
+            <Col md={3}><Dropdown title="Gender" options={["male","female"]}/></Col>
+            <Col md={3}><input type="text" placeholder="Max # of Players" /></Col>
+          </Row>
+          <Row>
+            <Col md={12}><p className="subheading">Dates</p></Col>
+          </Row>
+          <Row>
+            <Col md={4}><Datepicker placeholder="Registration Open"/></Col>
+            <Col md={4}><Datepicker placeholder="Late Fee Start Date"/></Col>
+            <Col md={4}><Datepicker placeholder="Registration Close"/></Col>
+          </Row>
+          <Row>
+            <Col md={12}><p className="subheading">Fees</p></Col>
+          </Row>
+          <Row>
+            <Col md={3}><input type="text" placeholder="Program Fee" /></Col>
+            <Col md={3}><input type="text" placeholder="Late Fee" /></Col>
+          </Row>
+          <Row>
+            <Col md={12}><p className="subheading"><input type="checkbox" />Enable Waitlist</p></Col>
+          </Row>
+          <Row>
+            <Col md={4}><Datepicker placeholder="Waitlist Start Date"/></Col>
+          </Row>
+          <Row>
+            <Col md={12}><FooterButtons save /></Col>
+          </Row>
         </div>
-        <div class="row">
-          <div class="col-md-12">
-            <input type="text" placeholder="Division Name" />
-          </div>
+      } right = {
+        <div class="bordered">
+          <Table
+            data={TableData}
+            columns={TableColumns}
+            minRows={0}
+            showPaginationTop={false}
+            showPaginationBottom={false}
+          />
         </div>
-        <div class="row">
-          <div class="col-md-3">
-            <input type="text" placeholder="Age Range" class="datetimepicker" id='datetimepicker1' />
-          </div>
-          <div class="col-md-3">
-            <input type="text" placeholder="Age Range" class="datetimepicker" id='datetimepicker1' />
-          </div>
-          <div class="col-md-3">
-            <div class="dropdown">
-              <button class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                <span class="dropdown-label">Gender</span>
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <input type="text" placeholder="Max # of Players" />
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12 subheading">
-            Dates
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <input type="text" placeholder="Registration Open" class="datetimepicker" id='datetimepicker1' />
-          </div>
-          <div class="col-md-4">
-            <input type="text" placeholder="Late Fee Start Date" class="datetimepicker" id='datetimepicker1' />
-          </div>
-          <div class="col-md-4">
-            <input type="text" placeholder="Registration Close" class="datetimepicker" id='datetimepicker1' />
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12 subheading">
-            Fees
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-3">
-            <input type="text" placeholder="Program Fee" />
-          </div>
-          <div class="col-md-3">
-            <input type="text" placeholder="Late Fee" />
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 checkbox-row">
-            <input type="checkbox" id="waitlist" /> <label for="waitlist">Enable Waitlist</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 checkbox-row">
-            <input type="text" placeholder="Waitlist Start Date" class="datetimepicker" id='datetimepicker1' />
-          </div>
-        </div>
-        <button class="save-button">SAVE</button>
-      </div>
-      <div class="content-right">
-        <div class="photo-form-table gray-border">
-          <div class="headings">
-            <p class="role">Role</p>
-            <p class="enable">Enable</p>
-          </div>
-          <ul class="photo-form-list">
-            <li>
-              <p class="role">2010 Boys</p>
-              <div class="enable">
-                <input type="checkbox" />
-              </div>
-              <img src="../../assets/images/ellipses.png" data-toggle="popover" data-placement="right" data-content="Edit | Delete" />
-            </li>
-            <li>
-              <p class="role">2009 Boys</p>
-              <div class="enable">
-                <input type="checkbox" />
-              </div>
-              <img src="../../assets/images/ellipses.png" data-toggle="popover" data-placement="right" data-content="Edit | Delete" />
-            </li>
-            <li>
-              <p class="role">2008 Boys</p>
-              <div class="enable">
-                <input type="checkbox" />
-              </div>
-              <img src="../../assets/images/ellipses.png" data-toggle="popover" data-placement="right" data-content="Edit | Delete" />
-            </li>
-            <li>
-              <p class="role">2007 Boys</p>
-              <div class="enable">
-                <input type="checkbox" />
-              </div>
-              <img src="../../assets/images/ellipses.png" data-toggle="popover" data-placement="right" data-content="Edit | Delete" />
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-buttons">
-        <button class="cancel-button">CANCEL</button>
-        <button class="next-button">NEXT</button>
-      </div>
-    </div>
+      }>
+        <FooterButtons cancel next />
+      </ ContentContainer>
+    </SectionWithHeading>
   </Container>
 )
 
