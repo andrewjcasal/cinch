@@ -17,7 +17,7 @@ class DragFile extends React.Component {
 
   render() {
     return (
-      <div class="Drag-File">
+      <div class={this.props.type + " Drag-File"}>
         <Dropzone style="width: 100%;">
           <p>Drag a file here or <a href="#">Browse</a> to upload</p>
         </Dropzone>

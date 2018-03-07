@@ -1,0 +1,48 @@
+
+.sidebar {
+  width: 263px;
+  font-size: 13px;
+  border-radius: 10px;
+
+  ul {
+    padding-top: 1px;
+  }
+  li {
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #F5F5F5;
+    position: relative;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+
+  a {
+    display: block;
+    border-left: 2px solid transparent;
+    color: #9B9B9B;
+    text-decoration: none;
+    padding: 12px 20px 11px 20px;
+
+    &.active {
+      border-left-color: #1875F0;
+      color: #363636;
+    }
+    span {
+      display: block;
+      background-color: #D0021B;
+      height: 18px;
+      width: 18px;
+      border-radius: 18px;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+
+      &.done {
+        background: #049539 url("../assets/images/tick.png") center no-repeat;
+      }
+    }
+  }
+}

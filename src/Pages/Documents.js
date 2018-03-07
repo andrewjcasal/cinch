@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Container from '../Components/UI/Container/Container';
 import PageToggle from '../Components/UI/PageToggle/PageToggle';
-import ReactTable from 'react-table';
 import SectionWithHeading from '../Components/UI/SectionWithHeading/SectionWithHeading';
 import Ellipses from '../assets/images/ellipses.png';
 import Table from 'react-table';

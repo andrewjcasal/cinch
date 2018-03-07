@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
 }
+
+ul, li {
+  list-style: none;
+}
 @font-face {
   font-family: "Roboto Medium";
   src: url("../../assets/fonts/Roboto-Medium.ttf") format("truetype"); }
@@ -10,7 +14,10 @@
   src: url("../../assets/fonts/Roboto-Black.ttf") format("truetype"); }
 @font-face {
   font-family: "Roboto Bold";
-  src: url("../../assets/fonts/Roboto-Black.ttf") format("truetype"); }
+  src: url("../../assets/fonts/Roboto-Bold.ttf") format("truetype"); }
+@font-face {
+  font-family: "Roboto Regular";
+  src: url("../../assets/fonts/Roboto-Regular.ttf") format("truetype"); }
 body {
   background-color: #FAFAFA;
   font-family: "Roboto Medium";
@@ -63,33 +70,6 @@ body {
   }
 }
 
-
-.programs {
-
-  div[class*="col-md-"] {
-    &.subheading {
-      font-size: 12px;
-      margin-bottom: 9px;
-      color: #666666;
-    }
-  }
-
-  .content-left {
-    width: 718px;
-    vertical-align: top;
-    display: inline-block;
-    padding-left: 24px;
-    padding-top: 48px;
-    padding-right: 15px;
-  }
-
-  .content-right {
-    width: 395px;
-    vertical-align: top;
-    display: inline-block;
-  }
-}
-
 input[type=text] {
   border: 2px solid #F5F5F5;
   padding: 16px 16px 17px;
@@ -104,9 +84,12 @@ input[type="text"] {
 }
 
 div[class*="col-md-"] {
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-bottom: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  > * {
+    margin-bottom: 20px;
+  }
 }
 
 .datetimepicker {
@@ -159,25 +142,98 @@ input {
   letter-spacing: 1.25px;
 }
 
-.content-left {
-  width: 718px;
-  vertical-align: top;
-  display: inline-block;
-  padding-left: 24px;
-  padding-top: 48px;
-  padding-right: 15px;
-}
-
-.content-right {
-  width: 395px;
-  vertical-align: top;
-  display: inline-block;
-}
-
 .bordered {
   border: 2px solid #F5F5F5;
+  border-radius: 4px;
 }
 
 .centered {
   text-align: center;
+}
+
+.file-upload {
+  position: relative;
+  overflow: hidden;
+  background-color: #F5F5F5;
+  border-radius: 4px;
+  width: 81px;
+  height: 25px;
+  text-align: center;
+  color: #808080;
+  font-size: 16px;
+  box-sizing: border-box;
+  padding-top: 2px;
+  display: inline-block;
+
+  input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+}
+
+#uploadFile {
+  border: 0;
+  width: 300px;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 12px;
+  color: #999999;
+  margin-left: 13px;
+  margin-top: 5px;
+}
+
+p.instructions {
+  color: #999999;
+  font-size: 12px;
+}
+
+p.subheading {
+  color: #666666;
+  font-size: 12px;
+  margin-bottom: 7px;
+
+  input[type=checkbox] {
+    margin-right: 10px;
+  }
+}
+
+.logo-reg-button {
+  background-color: #141414;
+  color: #ffffff;
+  border-radius: 2px;
+  font-family: "Roboto Regular";
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: .14em;
+  background-repeat: no-repeat;
+  margin-left: 31px;
+  display: inline-block;
+}
+
+
+.large-button {
+  margin-bottom: 32px;
+  a {
+    width: 322px;
+    height: 60px;
+    background-image: url("../../assets/images/programs/cinch-white-lg.png");
+    background-position: 19px;
+    padding-left: 68px;
+    padding-top: 21px;
+  }
+}
+.small-button a {
+  width: 217px;
+  height: 40px;
+  background-image: url("../../assets/images/programs/cinch-white-sm.png");
+  background-position: 20px;
+  padding-left: 82px;
+  padding-top: 15px;
 }

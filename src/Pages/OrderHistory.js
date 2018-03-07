@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+
+import React from 'react';
 import Container from '../Components/UI/Container/Container';
 import PageToggle from '../Components/UI/PageToggle/PageToggle';
 import SectionWithHeading from '../Components/UI/SectionWithHeading/SectionWithHeading';

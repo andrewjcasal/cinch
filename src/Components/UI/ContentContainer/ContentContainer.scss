@@ -1,3 +1,55 @@
 .Content-Container {
   padding-right: 23px;
+  padding-top: 48px;
+  padding-left: 24px;
+
+  .content-left {
+    vertical-align: top;
+    display: inline-block;
+    padding-right: 15px;
+  }
+  
+  .content-right {
+    vertical-align: top;
+    display: inline-block;
+
+    .ReactTable .rt-thead .rt-th {
+      padding-top: 14px;
+      padding-bottom: 14px;
+    }
+  }
+
+  &.Programs {
+    .content-left {
+      width: 694px;
+    }
+
+    .content-right {
+      width: 395px;
+    }
+  }
+  &.Setup {
+    .content-left {
+      width: 585px;
+    }
+    .content-right {
+
+    }
+  }
+  &.DragFileTwoCol {
+    text-align: center;
+
+    .content-left, .content-right {
+      width: 345px;
+      padding: 0 25px;
+    }
+
+    .Drag-File > div {
+      width: 295px;
+    }
+  }
+
+  + .Content-Container {
+    border-top: 2px solid #F6F6F6;
+  }
 }
