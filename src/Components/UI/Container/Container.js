@@ -8,7 +8,8 @@ require('../../../containers/App/App.css');
 
 const Container = (props) => (
   <div className="App">
-    <Menubar />
+    {console.log('props (╯°□°)╯︵ ┻━┻ ', props)}
+    <Menubar current={props}/>
     <div className="content-container">
       <Navbar />
       <div className="wrapper">

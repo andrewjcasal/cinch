@@ -3,16 +3,26 @@ import MenuItem from './MenuItem/MenuItem';
 
 require('./MenuItems.css');
 
-const menuItems = (props) => (
-  <ul className={'MenuItems'}>
-    <MenuItem clicked={props.navigation} linkType='logo' link="/"></MenuItem>
-    <MenuItem clicked={props.navigation} linkType='hamburger' link="/organizations"></MenuItem>
-    <MenuItem clicked={props.navigation} linkType='home' link="/organizations"></MenuItem>
-    <MenuItem clicked={props.navigation} linkType='world' exact link="/organizations"></MenuItem>
-    <MenuItem clicked={props.navigation} linkType='profile' link="/"></MenuItem>
-    <MenuItem clicked={props.navigation} linkType='money' link="/"></MenuItem>
-    <MenuItem clicked={props.navigation} linkType='settings' link="/"></MenuItem>
-  </ul>
-);
+const mapLinks = (props) => {
+  const renderLinks = props.menuPermissions.map((link, linkIndex) => {
+    return (
+      <MenuItem 
+        key={linkIndex}
+        active={ props.activeLink == props.menuPermissions[[linkIndex][0]].linkURL ? true : false }
+        linkType={props.menuPermissions[[linkIndex][0]].icon} 
+        link={props.menuPermissions[[linkIndex][0]].linkURL} /> 
+    )
+  })
+  return renderLinks
+}
+
+const menuItems = (props) => {
+  console.log('props (╯°□°)╯︵ ┻━┻ ', props)
+  return (
+    <ul className='MenuItems'>
+      {mapLinks(props)}
+    </ul>
+  )
+};
 
 export default menuItems;
