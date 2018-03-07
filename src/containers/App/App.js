@@ -10,6 +10,11 @@ import Family from '../../Pages/Family';
 import OrderHistory from '../../Pages/OrderHistory';
 import Documents from '../../Pages/Documents';
 import Organizations from '../../Pages/Organizations';
+import Homepage from '../../Pages/Homepage';
+import Login from '../../Pages/Login';
+import ProgramDetail from '../../Pages/ProgramDetail';
+import Register from '../../Pages/Register';
+import SearchResults from '../../Pages/SearchResults';
 require('bootstrap/dist/css/bootstrap.css');
 require('./App.css');
 
@@ -21,6 +26,11 @@ const App = () => (
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/registrations" component={Registrations} />
+        <Route path="/homepage" component={Homepage} />
+        <Route path="/login" component={Login} />
+        <Route path="/program-detail" component={ProgramDetail} />
+        <Route path="/register" component={Register} />
+        <Route path="/search-results" component={SearchResults} />
         <Route path="/programs" component={Programs} />
         <Route path="/create-program-documents" component={CreateProgramDocuments} />
         <Route path="/create-program" exact component={CreateProgram} />
