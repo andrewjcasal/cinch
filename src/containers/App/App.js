@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import 'jquery'
+import Index from '../../Pages/Index';
 import BusinessDetails from '../../Pages/BusinessDetails';
 import LegalRepresentative from '../../Pages/LegalRepresentative';
 import ProofOfId from '../../Pages/ProofOfId';
@@ -19,8 +20,6 @@ import Documents from '../../Pages/Documents';
 import Organizations from '../../Pages/Organizations';
 require('bootstrap/dist/css/bootstrap.css');
 require('./App.css');
-
-const Index = () => <h1>Index</h1>
 
 const App = () => (
   <Router>
