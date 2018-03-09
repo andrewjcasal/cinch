@@ -2,7 +2,8 @@
   position: fixed;
   width: 68px;
   height: 100%;
-  z-index: 2; }
+  z-index: 2;
+  margin-right: 5px; }
   .menubar li {
     text-align: center;
     padding-top: 3px;
