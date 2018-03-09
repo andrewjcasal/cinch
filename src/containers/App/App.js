@@ -18,6 +18,7 @@ import Family from '../../Pages/Family';
 import OrderHistory from '../../Pages/OrderHistory';
 import Documents from '../../Pages/Documents';
 import Organizations from '../../Pages/Organizations';
+import Login from '../../Pages/Login';
 require('bootstrap/dist/css/bootstrap.css');
 require('./App.css');
 
@@ -51,6 +52,9 @@ const App = () => (
         <Route path="/family" component={Family} />
         <Route path="/order-history" component={OrderHistory} />
         <Route path="/documents" component={Documents} />
+
+        {/*Landing*/}
+        <Route path='/login' component={Login} />
 
         {/* Admin */}
         <Route path="/organizations" component={Organizations} />
