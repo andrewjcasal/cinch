@@ -24,7 +24,7 @@ let chartOptions = {
   pointDotStrokeWidth : 4,
   tooltipFillColor: "rgba(0,0,0,0.8)",
   tooltipFontStyle: "bold",
-  tooltipTemplate: "<%if (label){%><%=label + ' hod' %>: <%}%><%= value + '°C' %>",
+  tooltipTemplate: "<%if (label){%><%=label %>: <%}%><%= value %>",
   scales: {
     xAxes: [{
       ticks: {

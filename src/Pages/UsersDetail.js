@@ -28,24 +28,18 @@ const TableData = [{
 }];
 
 const TableColumns = [
-  { 
-    Header: row => (<div style={{marginLeft: 24 + "px"}}><input type="checkbox" /></div>),
-    accessor: "empty", 
-    width: "90",
-    Cell: row => (<div style={{marginLeft: 24 + "px"}}><input type="checkbox" /></div>)
-  },{
-    Header: "Image",
-    accessor: "player",
-    width: "94",
-    Cell: row => (<div className="avatar-image"></div>)
-  },
-  {Header: "Player Name",accessor: "playerName", width: "126"},
-  {Header: "ID",       accessor: "id", width: "77"},
-  {Header: "Price",       accessor: "price", width: "99"},
-  {Header: "Quan.",       accessor: "quantity", width: "68"},
-  {Header: "Total Price",           accessor: "total", width: "107"},
-  {Header: "Customer",           accessor: "customer", width: "75"},
-  {Header: "",           accessor: "view", width: "65",
+  {Header: row => (<div style={{marginLeft: 24 + "px"}}><input type="checkbox" /></div>),
+                          accessor: "empty",      width: "90",
+    Cell: row => (<div style={{marginLeft: 24 + "px"}}><input type="checkbox" /></div>)},
+  {Header: "Image",       accessor: "player",     width: "94",
+    Cell: row => (<div className="avatar-image"></div>)},
+  {Header: "Player Name", accessor: "playerName", width: "126"},
+  {Header: "ID",          accessor: "id",         width: "77"},
+  {Header: "Price",       accessor: "price",      width: "99"},
+  {Header: "Quan.",       accessor: "quantity",   width: "68"},
+  {Header: "Total Price", accessor: "total",      width: "107"},
+  {Header: "Customer",    accessor: "customer",   width: "75"},
+  {Header: "",            accessor: "view",       width: "65",
     Cell: row => (<button className="view-button">VIEW</button>)}
 ]
 
