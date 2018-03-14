@@ -1,4 +1,4 @@
-.heading {
+.section > .heading {
   font-size: 14px;
   color: #666;
   padding: 22px 30px 21px;
@@ -17,22 +17,6 @@
     &.dropdown-toggle {
       padding-left: 17px;
       color: #B3B3B3;
-    }
-  }
-
-  .left-buttons {
-    display: inline-block;
-    margin-left: 67px;
-    margin-bottom: -12px;
-
-    > * {
-      display: inline-block;
-      vertical-align: middle;
-    }
-    button.dropdown-toggle {
-      margin-right: 9px;
-      background-image: url("../../../assets/images/dropdown.png");
-      background-position: right 11px top 11px;
     }
   }
   .right-buttons {
@@ -81,6 +65,29 @@
     width: 98px;
     height: 30px;
     padding-top: 7px;
+    font-size: 9px;
+  }
+}
+
+
+
+.left-buttons {
+  display: inline-block;
+  margin-left: 67px;
+  margin-bottom: -12px;
+  white-space: nowrap;
+
+  > * {
+    display: inline-block;
+    vertical-align: middle;
+    width: 97px;
+    margin-right: 13px;
+  }
+  button.dropdown-toggle {
+    margin-right: 9px;
+    background-image: url("../../../assets/images/dropdown.png");
+    background-position: right 11px top 11px;
+    height: 30px;
     font-size: 9px;
   }
 }

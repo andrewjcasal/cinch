@@ -1,0 +1,33 @@
+.graph-small {
+  width: 361px;
+  height: 151px;
+  display: inline-block;
+  margin-right: 29px;
+  box-sizing: border-box;
+  padding: 36px 40px 0;
+  position: relative; }
+  .graph-small:last-child {
+    margin-right: 0; }
+  .graph-small .header {
+    color: #B3B3B3; }
+  .graph-small .total {
+    color: #808080;
+    font-size: 18px;
+    margin-top: 11px; }
+  .graph-small .rate {
+    font-size: 12px;
+    margin-top: -3px; }
+    .graph-small .rate.positive {
+      color: #50D166; }
+  .graph-small .menu {
+    position: absolute;
+    top: 16px;
+    right: 20px; }
+  .graph-small .labels {
+    width: 100px;
+    display: inline-block;
+    vertical-align: top; }
+  .graph-small .chart-container {
+    width: 180px;
+    display: inline-block;
+    vertical-align: top; }
