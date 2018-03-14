@@ -26,7 +26,12 @@ const Index = () => (
     <a href="/documents">Documents</a>
 
     <h1>Admin</h1>
-    <a href="/organizations">Organizations</a>
+    <a href="/organizations">Organizations</a><br />
+    <a href="/login">Login</a><br />
+    <a href="/dashboard">Dashboard</a><br />
+    <a href="/organizations">Organizations</a><br />
+    <a href="/users">Users</a><br />
+    <a href="/users-detail">Users Detail</a><br />
   </div>
 )
 
