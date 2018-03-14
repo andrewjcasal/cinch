@@ -7,6 +7,7 @@ import LegalRepresentative from '../../Pages/LegalRepresentative';
 import ProofOfId from '../../Pages/ProofOfId';
 import BankInformation from '../../Pages/BankInformation';
 import PaymentMethod from '../../Pages/PaymentMethod';
+import Administrators from '../../Pages/Administrators';
 import Programs from '../../Pages/Programs';
 import CreateProgram from '../../Pages/CreateProgram';
 import CreateProgramDocuments from '../../Pages/CreateProgramDocuments';
@@ -17,7 +18,11 @@ import Registrations from '../../Pages/Registrations';
 import Family from '../../Pages/Family';
 import OrderHistory from '../../Pages/OrderHistory';
 import Documents from '../../Pages/Documents';
+import Login from '../../Pages/Login';
+import Dashboard from '../../Pages/Dashboard';
 import Organizations from '../../Pages/Organizations';
+import Users from '../../Pages/Users';
+import UsersDetail from '../../Pages/UsersDetail';
 require('bootstrap/dist/css/bootstrap.css');
 require('./App.css');
 
@@ -35,6 +40,7 @@ const App = () => (
         <Route path="/proof-of-id" component={ProofOfId} />
         <Route path="/bank-information" component={BankInformation} />
         <Route path="/payment-method" component={PaymentMethod} />
+        <Route path="/administrators" component={Administrators} />
 
         {/* Programs */}
         <Route path="/programs" component={Programs} />
@@ -53,7 +59,11 @@ const App = () => (
         <Route path="/documents" component={Documents} />
 
         {/* Admin */}
+        <Route path="/login" component={Login} />
+        <Route path="/dashboard" component={Dashboard} />
         <Route path="/organizations" component={Organizations} />
+        <Route path="/users" component={Users} />
+        <Route path="/users-detail" component={UsersDetail} />
       </Switch>
     </div>
   </Router>
