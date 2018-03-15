@@ -3,31 +3,29 @@
     border: none;
     color: white;
     outline: none;
-    cursor: pointer;
-    font: inherit;
     padding: 10px;
     margin: 10px;
     font-weight: bold;
+    font: inherit;
 
-    &:first-of-type {
-        margin-left: 0;
-        padding-left: 0;
+    &:hover {
+      cursor: pointer;
     }
 
-    .Success {
+    &.Success {
         color: #5C9210;
     }
 
-    .Danger {
+    &.Danger {
         color: #944317;
     }
 
-    .Facebook {
+    &.Facebook {
       background-color: rgb(59, 89, 152);
       color: white;
     }
     
-    .Cinch {
+    &.Cinch {
       background-color: black;
       color: #afafaf;
       border-radius: 6;
@@ -35,9 +33,10 @@
       letter-spacing: 1.6pt;
     }
 
-    .Google {
+    &.Google {
       -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
       -moz-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
       box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
+      color: rgb(120,120,120);
     }
 }

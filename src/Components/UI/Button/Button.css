@@ -3,28 +3,27 @@
   border: none;
   color: white;
   outline: none;
-  cursor: pointer;
-  font: inherit;
   padding: 10px;
   margin: 10px;
-  font-weight: bold; }
-  .Button:first-of-type {
-    margin-left: 0;
-    padding-left: 0; }
-  .Button .Success {
+  font-weight: bold;
+  font: inherit; }
+  .Button:hover {
+    cursor: pointer; }
+  .Button.Success {
     color: #5C9210; }
-  .Button .Danger {
+  .Button.Danger {
     color: #944317; }
-  .Button .Facebook {
+  .Button.Facebook {
     background-color: #3b5998;
     color: white; }
-  .Button .Cinch {
+  .Button.Cinch {
     background-color: black;
     color: #afafaf;
     border-radius: 6;
     font-size: 10pt;
     letter-spacing: 1.6pt; }
-  .Button .Google {
+  .Button.Google {
     -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5); }
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+    color: #787878; }

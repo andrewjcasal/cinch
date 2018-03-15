@@ -1,32 +1,39 @@
 .login-container {
   height: 667px;
   width: 470px;
-  border-radius: 10px;
+  border-radius: 10px; 
   padding: 48px 50px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+}
 
 .login-header {
-  font-size: 3em; }
+  font-size: 3em;
+}
 
 .login-form-box {
   width: 470px;
-  height: 667px; }
-  .login-form-box Col,
-  .login-form-box input {
-    width: 370px !important; }
-
+  height: 667px;
+  Col,
+  input {
+    width: 370px !important;
+  }
+}
 #login-email,
 #login-password {
-  width: 100%; }
-
+  width: 100%;
+}
 #login-email::placeholder,
-#login-password::placeholder {
+#login-password::placeholder{
   padding: 0px 20px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   font-size: 14pt;
-  letter-spacing: 0pt !important; }
+  letter-spacing: 0pt !important; 
+}
 
-.btn-row .Button {
-  width: 100%; }
+.btn-row {
+  .Button {
+    width: 100%;
+  }
+}
