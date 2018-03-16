@@ -1,0 +1,39 @@
+#key-performance-indicators ul {
+  width: 293px;
+  border-right: 2px solid #F5F5F5;
+  display: inline-block;
+  margin-bottom: 0; }
+
+#key-performance-indicators li {
+  height: 60px;
+  box-sizing: border-box;
+  list-style: none;
+  border-bottom: 2px solid #F5F5F5;
+  padding: 17px 0 0 23px; }
+  #key-performance-indicators li > * {
+    display: inline-block; }
+  #key-performance-indicators li:last-child {
+    border-bottom: 0; }
+
+#key-performance-indicators .label {
+  color: #B3B3B3;
+  font-size: 12px;
+  font-family: "Roboto Bold";
+  width: 112px;
+  text-align: left; }
+
+#key-performance-indicators .total {
+  color: #808080;
+  font-size: 16px; }
+
+#key-performance-indicators .net {
+  font-size: 12px;
+  padding-left: 8px; }
+  #key-performance-indicators .net.positive {
+    color: #4CD964; }
+  #key-performance-indicators .net.negative {
+    color: #F13A30; }
+
+#key-performance-indicators .graph {
+  width: 800px;
+  display: inline-block; }

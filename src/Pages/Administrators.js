@@ -8,14 +8,14 @@ import {Row, Col, Clearfix} from 'react-bootstrap';
 import Sidebar from '../Components/Sidebar';
 require('../containers/App/App.css');
 
-const PaymentMethod = () => (
+const Administrators = () => (
   <Container>
     <Row>
       <Col md={3}>
-        <Sidebar active="4" pageType="setup" />
+        <Sidebar active="5" pageType="setup" />
       </Col>
       <Col md={9}>
-        <SectionWithHeading heading="Payment Method">
+        <SectionWithHeading heading="Administrators" addnew>
           <ContentContainer>
             <Col md={8}>
               <Row>
@@ -55,4 +55,4 @@ const PaymentMethod = () => (
   </Container>
 )
 
-export default PaymentMethod;
+export default Administrators;
