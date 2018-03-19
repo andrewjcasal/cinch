@@ -8,6 +8,7 @@ import Wysiwyg from '../Components/Wysiwyg';
 import FooterButtons from '../Components/FooterButtons';
 import {Row, Col} from 'react-bootstrap';
 import Sidebar from '../Components/Sidebar';
+import dropdownOptions from '../Components/UI/Dropdown/dropdownOptions'
 require('../containers/App/App.css');
 
 const BusinessDetails = () => (
@@ -31,11 +32,11 @@ const BusinessDetails = () => (
               </Row>
               <Row>
                 <Col md={4}><input type="text" placeholder="City" /></Col>
-                <Col md={4}><Dropdown title="State" options={["male","female"]}/></Col>
+                <Col md={4}><Dropdown title="State" options={dropdownOptions.States}/></Col>
                 <Col md={4}><input type="text" placeholder="Zip" /></Col>
               </Row>
               <Row>
-                <Col md={4}><Dropdown title="Sport" options={["male","female"]}/></Col>
+                <Col md={4}><Dropdown title="Sport" options={dropdownOptions.Sports}/></Col>
                 <Col md={4}><Dropdown title="Affiliation" options={["male","female"]}/></Col>
                 <Col md={4}><input type="text" placeholder="Federal Tax ID" /></Col>
               </Row>

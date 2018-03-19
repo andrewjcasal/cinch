@@ -71,10 +71,10 @@ const Users = () => (
                     <input type="text" placeholder="Mobile Number" />
                   </Col>
                   <Col md={6}>
-                    <Dropdown title="Gender" />
+                    <Dropdown options={['Male', 'Female', 'Other']}title="Gender" />
                   </Col>
                   <Col md={6}>
-                    <Dropdown title="Birthday" />
+                    <Datepicker placeholder="Birthday" includeTime />
                   </Col>
                 </Row>
               </Col>
