@@ -1,5 +1,5 @@
 import getNumberRange from '../../../assets/javascript/utilities';
-import moment from '../../../assets/javascript/moment';
+import moment from 'moment';
 import api from '../../../assets/javascript/api'
 
 let allSports =  api.getAllSports()
