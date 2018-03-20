@@ -21,10 +21,13 @@ const dropDownOptions = {
       console.log('programs (╯°□°)╯︵ ┻━┻ ', programs)
     }),
   Affiliation: ['US Club Soccer', 'NHL', 'NFL'],
-  
   // api.getAllAffiliations().then((affiliations) => {
   //   console.log('affiliations (╯°□°)╯︵ ┻━┻ ', affiliations)
   // }),
+  RelationshipType: api.getAllRelationshipTypes()
+  .then((relationship) => {
+    return Object.values(relationship.data)
+  })
 }
 
 
