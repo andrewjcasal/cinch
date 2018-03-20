@@ -1,0 +1,60 @@
+.SearchListing {
+  border: 1px solid rgba(20,20,20,.20);
+  height: 171px;
+  padding-top: 20px;
+  > div {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .avatar {
+    margin-left: 47px;
+    text-align: center;
+
+    img {
+      height: 87px;
+    }
+    .group-name {
+      text-align: center;
+      font-family: "Montserrat Light";
+      font-size: 14px;
+      margin-top: 6px;
+    }
+  }
+  .event-logistics {
+    text-align: center;
+    margin-left: 87px;
+    width: 174px;
+
+    .title {
+      color: #141414;
+      font-family: "Montserrat Light";
+      text-transform: uppercase;
+      font-size: 20px;
+      letter-spacing: 0.1em;
+      padding-top: 19px;
+      margin-bottom: 5px;
+    }
+    .subtitle {
+      color: #141414;
+      font-family: "Montserrat ExtraLight";
+      font-size: 14px;
+      margin-bottom: 7px
+    }
+  }
+  .description {
+    color: #141414;
+    font-size: 18px;
+    font-family: "Montserrat ExtraLight";
+    width: 270px;
+    text-align: center;
+    margin-left: 86px;
+  }
+  .price {
+    font-family: "Montserrat Light";
+    font-size: 20px;
+    margin-left: 82px;
+    letter-spacing: 0.1em;
+    margin-right: 41px;
+  }
+}

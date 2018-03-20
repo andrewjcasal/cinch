@@ -18,10 +18,14 @@ import Registrations from '../../Pages/Registrations';
 import Family from '../../Pages/Family';
 import OrderHistory from '../../Pages/OrderHistory';
 import Documents from '../../Pages/Documents';
+import Landing from '../../Pages/Landing';
 import Login from '../../Pages/Login';
+import Register from '../../Pages/Register';
+import SearchResults from '../../Pages/SearchResults';
+import ProgramDetail from '../../Pages/ProgramDetail';
+import AdminLogin from '../../Pages/AdminLogin';
 import Dashboard from '../../Pages/Dashboard';
 import Organizations from '../../Pages/Organizations';
-import AdminLogin from '../../Pages/AdminLogin';
 import Users from '../../Pages/Users';
 import UsersDetail from '../../Pages/UsersDetail';
 require('bootstrap/dist/css/bootstrap.css');
@@ -34,6 +38,13 @@ const App = () => (
 
         {/* Index */}
         <Route exact path="/" component={Index} />
+
+        {/*Landing*/}
+        <Route path='/landing' component={Landing} />
+        <Route path='/login' component={Login} />
+        <Route path='/register' component={Register} />
+        <Route path='/search-results' component={SearchResults} />
+        <Route path='/program-detail' component={ProgramDetail} />
 
         {/* Setup */}
         <Route path="/business-details" component={BusinessDetails} />
@@ -58,9 +69,6 @@ const App = () => (
         <Route path="/family" component={Family} />
         <Route path="/order-history" component={OrderHistory} />
         <Route path="/documents" component={Documents} />
-
-        {/*Landing*/}
-        <Route path='/login' component={Login} />
 
         {/* Admin */}
         <Route path="/admin-login" component={AdminLogin} />

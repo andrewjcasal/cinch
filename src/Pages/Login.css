@@ -1,3 +1,23 @@
+.login {
+  padding-top: 100px;
+  padding-bottom: 200px; }
+  .login > * {
+    margin: 0 auto; }
+  .login h2 {
+    color: #141414;
+    font-size: 42px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center; }
+  .login input[type=checkbox] {
+    margin-right: 10px; }
+  .login p {
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: middle; }
+  .login a, .login a:hover, .login a:visited {
+    text-decoration: underline;
+    color: #141414; }
+
 .login-container {
   height: 667px;
   width: 470px;
@@ -26,8 +46,7 @@
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   font-size: 14pt;
-  letter-spacing: 0pt !important; 
-}
+  letter-spacing: 0pt !important; }
 
 .btn-row .Button {
   width: 100%; }

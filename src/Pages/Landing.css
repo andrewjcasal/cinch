@@ -1,0 +1,44 @@
+.landing h1 {
+  font-size: 62px;
+  font-family: "Montserrat Light";
+  color: #fff;
+  text-align: center;
+  margin: 160px auto 60px; }
+
+.landing .wrapper div[class*="col-md-"] {
+  padding: 0; }
+  .landing .wrapper div[class*="col-md-"] .dropdown {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000000; }
+
+.background {
+  background-image: url(../assets/images/landing-background.png);
+  height: 1000px; }
+
+.wrapper {
+  margin: 0 auto;
+  width: 1000px; }
+
+.navbarnav {
+  text-align: center; }
+  .navbarnav .logo-image {
+    margin-top: -20px; }
+  .navbarnav a {
+    font-family: "Montserrat Light";
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0 auto;
+    padding-top: 80px; }
+
+button.white {
+  width: 337px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 2px;
+  margin: 10px auto;
+  font-size: 14px;
+  font-family: "Montserrat Light";
+  text-transform: uppercase;
+  letter-spacing: 0.1em; }
