@@ -6,6 +6,7 @@ import Dropdown from '../Components/UI/Dropdown/Dropdown';
 import FooterButtons from '../Components/FooterButtons';
 import {Row, Col} from 'react-bootstrap';
 import Sidebar from '../Components/Sidebar';
+import dropdownOptions from '../Components/UI/Dropdown/dropdownOptions'; /*? wtf is in here */
 require('../containers/App/App.css');
 
 const LegalRepresentative = () => (
@@ -26,7 +27,7 @@ const LegalRepresentative = () => (
               </Row>
               <Row>
                 <Col md={4}><input type="text" placeholder="City" /></Col>
-                <Col md={4}><Dropdown title="State" options={["male","female"]}/></Col>
+                <Col md={4}><Dropdown title="State" options={dropdownOptions.States}/></Col>
                 <Col md={4}><input type="text" placeholder="Zip" /></Col>
               </Row>
               <Row>

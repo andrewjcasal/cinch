@@ -4,6 +4,7 @@ import SectionWithHeading from '../Components/UI/SectionWithHeading/SectionWithH
 import SubSection from '../Components/UI/SubSection/SubSection';
 import Dropdown from '../Components/UI/Dropdown/Dropdown';
 import Table from '../Components/Table';
+import Datepicker from '../Components/Datepicker';
 import {Row, Col} from 'react-bootstrap';
 import Sidebar from '../Components/Sidebar';
 import AddUser from '../assets/images/add-user.png';
@@ -71,10 +72,10 @@ const Users = () => (
                     <input type="text" placeholder="Mobile Number" />
                   </Col>
                   <Col md={6}>
-                    <Dropdown title="Gender" />
+                    <Dropdown options={['Male', 'Female', 'Other']}title="Gender" />
                   </Col>
                   <Col md={6}>
-                    <Dropdown title="Birthday" />
+                    <Datepicker placeholder="Birthday" includeTime />
                   </Col>
                 </Row>
               </Col>
@@ -152,7 +153,7 @@ const Users = () => (
             data={TableData}
             columns={TableColumns}
             minRows={0}
-            showPaginationTop={true}
+            showPaginationTop={false}
             showPaginationBottom={false}
           />
         </SectionWithHeading>
