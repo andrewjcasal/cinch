@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "Montserrat ExtraLight";
+  src: url("../../assets/fonts/Montserrat/Montserrat-ExtraLight.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Montserrat Light";
+  src: url("../../assets/fonts/Montserrat/Montserrat-Light.ttf") format("truetype");
+  font-weight: "300"; }
+
+.footer {
+  padding-top: 76px; }
+  .footer span {
+    font-family: "Montserrat Light";
+    color: #141414;
+    font-size: 12px;
+    display: block;
+    margin-bottom: 25px;
+    width: 100%; }
+  .footer a {
+    font-family: "Montserrat ExtraLight";
+    color: #141414;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 12px; }
+    .footer a:first-child {
+      margin-left: -8px; }
+  .footer .follow a {
+    display: inline-block;
+    width: 41px;
+    text-align: center; }
+  .footer .newsletter input {
+    background-color: #ffffff;
+    width: 261px;
+    height: 50px;
+    box-sizing: border-box;
+    padding-left: 20px; }
+    .footer .newsletter input::placeholder {
+      font-family: "Montserrat Light";
+      color: rgba(20, 20, 20, 0.3);
+      font-size: 14px; }

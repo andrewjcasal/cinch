@@ -12,9 +12,14 @@
     box-shadow: 0 0 0 !important;
     padding-left: 16px;
     padding-right: 16px;
+
+    &::after {
+      display: none;
+    }
   }
 
   .caret {
     border: 0 !important;
+    display: none;
   }
 }

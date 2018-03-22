@@ -11,5 +11,8 @@
     box-shadow: 0 0 0 !important;
     padding-left: 16px;
     padding-right: 16px; }
+    .dropdown button.dropdown-toggle::after {
+      display: none; }
   .dropdown .caret {
-    border: 0 !important; }
+    border: 0 !important;
+    display: none; }

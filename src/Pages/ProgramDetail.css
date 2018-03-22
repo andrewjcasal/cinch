@@ -1,0 +1,58 @@
+@font-face {
+  font-family: "Montserrat ExtraLight";
+  src: url("../assets/fonts/Montserrat/Montserrat-ExtraLight.ttf");
+  font-weight: "200"; }
+
+@font-face {
+  font-family: "Montserrat Light";
+  src: url("../assets/fonts/Montserrat/Montserrat-Light.ttf");
+  font-weight: "300"; }
+
+@font-face {
+  font-family: "Lato Bold";
+  src: url("../assets/fonts/Lato/Lato-Bold.ttf");
+  font-weight: "700"; }
+
+@font-face {
+  font-family: "Roboto Medium";
+  src: url("../assets/fonts/Roboto/Roboto-Medium.ttf");
+  font-weight: "500"; }
+
+.xlight-montserrat {
+  font-family: 'Montserrat ExtraLight', sans-serif; }
+
+.light-montserrat {
+  font-family: 'Montserrat Light';
+  letter-spacing: 1.7pt;
+  font-size: 10pt; }
+
+.lato {
+  font-family: 'Lato Bold', sans-serif; }
+
+.roboto {
+  font-family: 'Roboto Medium', sans-serif; }
+
+.details {
+  font-weight: 200;
+  margin-bottom: 8px;
+  color: #7f7f7f;
+  letter-spacing: .5pt;
+  font-size: 10pt;
+  padding: 0px 40px; }
+
+.main-details {
+  font-weight: 200;
+  margin-bottom: 8px;
+  color: #7f7f7f;
+  letter-spacing: .2pt;
+  font-size: 13pt;
+  padding: 20px 15px; }
+
+.title {
+  font-size: 16pt;
+  letter-spacing: .5pt;
+  font-weight: 600; }
+
+.detail-container {
+  width: 1182px;
+  margin: 0 auto; }
