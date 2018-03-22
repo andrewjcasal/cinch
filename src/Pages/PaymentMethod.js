@@ -6,6 +6,7 @@ import Dropdown from '../Components/UI/Dropdown/Dropdown';
 import FooterButtons from '../Components/FooterButtons';
 import {Row, Col, Clearfix} from 'react-bootstrap';
 import Sidebar from '../Components/Sidebar';
+import dropdownOptions from '../Components/UI/Dropdown/dropdownOptions';
 require('../containers/App/App.css');
 
 const PaymentMethod = () => (
@@ -31,11 +32,11 @@ const PaymentMethod = () => (
               <Row>
                 <Col md={4}>
                   <p class="subheading">Expire Date</p>
-                  <Dropdown title="MM" />
+                  <Dropdown options={dropdownOptions.Months} title="MM" />
                 </Col>
                 <Col md={4}>
                   <p class="subheading">&nbsp;</p>
-                  <Dropdown title="YYYY" />
+                  <Dropdown options={dropdownOptions.Years} title="YYYY" />
                 </Col>
                 <Col md={4}>
                   <p class="subheading">CVV</p>

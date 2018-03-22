@@ -29,7 +29,6 @@ class Datepicker extends React.Component {
           selected={this.state.startDate}
           onChange={this.handleChange}
           placeholderText={this.props.placeholder}
-          
           showTimeSelect
           timeFormat="HH:mm"
           timeIntervals={15}

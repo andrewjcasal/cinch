@@ -9,6 +9,7 @@ import Wysiwyg from '../Components/Wysiwyg';
 import FooterButtons from '../Components/FooterButtons';
 import Datepicker from '../Components/Datepicker';
 import {Row, Col} from 'react-bootstrap';
+import dropDownOptions from '../Components/UI/Dropdown/dropdownOptions'
 require('../Components/Table.css');
 require('./Family.css');
 
@@ -23,19 +24,19 @@ const CreateProgram = () => (
               <Col md={12}><input type="text" placeholder="Program Name" /></Col>
             </Row>
             <Row>
-              <Col md={3}><Dropdown title="Sport" /></Col>
-              <Col md={3}><Dropdown title="Type" /></Col>
-              <Col md={6}><Dropdown title="Affiliation" /></Col>
+              <Col md={3}><Dropdown title="Sport" options={dropDownOptions.Sports} /></Col>
+              <Col md={3}><Dropdown title="Type" options={dropDownOptions.ProgramType} /></Col>
+              <Col md={6}><Dropdown title="Affiliation" options={dropDownOptions.Affiliation} /></Col>
             </Row>
             <Row>
               <Col md={6}><Datepicker placeholder="Registration Open Date/Time" includeTime/></Col>
               <Col md={3}><Datepicker placeholder="Event Start" /></Col>
-              <Col md={3}><Dropdown title="Payment Plan" /></Col>
+              <Col md={3}><Dropdown options={['Monthly', 'Yearly']} title="Payment Plan" /></Col>
             </Row>
             <Row>
               <Col md={6}><Datepicker placeholder="Registration Close Date/Time" includeTime/></Col>
               <Col md={3}><Datepicker placeholder="Event End" /></Col>
-              <Col md={3}><Dropdown title="Registration Fee" /></Col>
+              <Col md={3}><Dropdown options={['$10.00','$20.00']} title="Registration Fee" /></Col>
             </Row>
             <Row>
               <Col md={12}><Wysiwyg /></Col>
