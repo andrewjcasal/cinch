@@ -11,7 +11,7 @@ import LabeledInput from '../Components/UI/LabeledInput/LabeledInput';
 require("../assets/stylesheets/bootstrap4.min.css");
 require('./Landing.css');
 
-const SearchResults = () => (
+const Landing = () => (
   <div className="landing">
     <div className="background">
       <div className="wrapper">
@@ -33,7 +33,7 @@ const SearchResults = () => (
           <Col md={4}>
             <Row>
               <Col md={4}></Col>
-              <Col md={4}><a href="#">Join</a></Col>
+              <Col md={4}><a href="#" class="white-small">Join</a></Col>
               <Col md={4}><a href="#">Login</a></Col>
             </Row>
           </Col>
@@ -68,4 +68,4 @@ const SearchResults = () => (
   </div>
 )
 
-export default SearchResults;
+export default Landing;

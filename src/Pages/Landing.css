@@ -26,11 +26,21 @@
   .navbarnav a {
     font-family: "Montserrat Light";
     color: #fff;
-    font-size: 14px;
+    font-size: 12px;
     text-transform: uppercase;
     display: inline-block;
     margin: 0 auto;
     padding-top: 80px; }
+    .navbarnav a.white-small {
+      background-color: #fff;
+      padding: 10px;
+      color: #000000;
+      font-size: 12px;
+      text-decoration: none;
+      border-radius: 2px;
+      height: 40px;
+      width: 144px;
+      margin-top: 70px; }
 
 button.white {
   width: 337px;

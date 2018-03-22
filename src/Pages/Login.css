@@ -17,6 +17,22 @@
   .login a, .login a:hover, .login a:visited {
     text-decoration: underline;
     color: #141414; }
+  .login .bordered-container {
+    border: 1px solid rgba(20, 20, 20, 0.2);
+    border-radius: 10px;
+    padding: 50px;
+    margin-top: 50px; }
+  .login .image-container {
+    text-align: center; }
+    .login .image-container > * {
+      display: inline-block;
+      margin: 20px; }
+  .login .register-instead {
+    font-size: 14px;
+    font-family: "Montserrat Light";
+    text-align: center;
+    width: 100%;
+    display: inline-block; }
 
 .login-container {
   height: 667px;

@@ -1,59 +1,43 @@
 import React from 'react';
 import SectionWithHeading from '../Components/UI/SectionWithHeading/SectionWithHeading';
 import Button from '../Components/UI/Button/Button'
-import ContentContainer from '../Components/UI/ContentContainer/ContentContainer';
+import LabeledInput from "../Components/UI/LabeledInput/LabeledInput";
 import {Row, Col} from 'react-bootstrap';
-import FieldGroup from '../Components/UI/FieldGroup/FieldGroup';
-
-        // <Row bsClass=".login-form-box">
-        //   <Col md={12}>
-        //     <input type="text" placeholder="Your Email Address" />
-        //   </Col>
-        // </Row>
-        // <Row bsClass=".login-form-box">
-        //   <Col md={12}>
-        //     <input type="text" placeholder="Password" />
-        //   </Col>
-        // </Row>
+import OrgLogo from '../assets/images/arsenal-large.png';
+import Logo from '../assets/images/cinch-large.png';
 require('./Login.css');
 
 const login = () => (
-  <div className="login-container">
-    <div className="login-header">Login</div>
-    <ContentContainer type="Login">
-      <div>
-        <form action="#">
-          <FieldGroup
-            id="login-email"
-            type="login-form-box"
-            label="E-mail"
-            placeholder="Enter email"
-            size="large"
-          />
-          <FieldGroup 
-            id="login-password" 
-            label="Password" 
-            type="login-form-box"
-            placeholder="Password"
-            size="large"
-          />
-          <Col md={12}>
-            <Row className="btn-row">
-              <Row>
-                <Button clicked={console.log('hi')} btnType="Cinch">Login</Button>
-              </Row>
-              <Row>
-                <Button clicked={console.log('hi')} btnType="Facebook">Sign In with Facebook</Button>
-              </Row>
-              <Row>
-                <Button clicked={console.log('hi')} btnType="Google">Sign In with Google</Button>
-              </Row>
-            </Row>
-          </Col>
-        </form>
+  <Row className="login">
+    <Col md={5}>
+      <Row>
+        <Col md={12}><h2>Login</h2></Col>
+      </Row>
+      <div className="bordered-container">
+        <div className="image-container">
+          <img src={Logo} />
+          <span style={{fontSize: 30 + "px"}}>+</span>
+          <img src={OrgLogo} />
+        </div>
+        <Row>
+          <Col md={12}><LabeledInput type="E-mail" placeholder="Your E-mail Address" /></Col>
+        </Row>
+        <Row>
+          <Col md={12}><LabeledInput type="Password" placeholder="Your Password" /></Col>
+        </Row>
+        <Row style={{marginTop: 20 + "px"}}>
+          <Col md={12}><Button clicked={console.log('hi')} btnType="black">Create My Account</Button></Col>
+        </Row>
+        <Row>
+          <Col md={12}><Button clicked={console.log('hi')} btnType="Facebook"><span></span>Sign In with Facebook</Button></Col>
+        </Row>
+        <Row>
+          <Col md={12}><Button clicked={console.log('hi')} btnType="Google"><span></span>Sign In with Google</Button></Col>
+        </Row>
       </div>
-    </ContentContainer>
- </div>
+      <span className="register-instead">Dont have a Cinch Account? <a href="/register">Create an Account</a></span>
+    </Col>
+  </Row>
 );
 
 export default login;

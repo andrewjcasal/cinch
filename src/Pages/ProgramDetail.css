@@ -52,3 +52,7 @@
   font-size: 16pt;
   letter-spacing: .5pt;
   font-weight: 600; }
+
+.detail-container {
+  width: 1182px;
+  margin: 0 auto; }

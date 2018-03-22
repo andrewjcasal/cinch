@@ -32,7 +32,7 @@ const main = {
 const SearchResults = () => (
   <div>
     <LandingNavbar />
-    <div className="detail-container" style={{width: "1182px", margin: "0 auto"}}>
+    <div className="detail-container">
       <SearchFilter />
       <Row>
         <Col md={12}>
