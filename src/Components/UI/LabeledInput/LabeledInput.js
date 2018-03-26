@@ -17,7 +17,8 @@ const LabeledInput = function (props) {
   return ( <div className="labeled-input">
     <span>{props.type || " "}</span>
     {input}
-  </div> )};
+  </div> )
+};
 
 
 export default LabeledInput;

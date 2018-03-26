@@ -10,11 +10,11 @@ const dropDownOptions = {
   Years: getNumberRange(currentYear, (currentYear + 20), []),
   States: api.getAllStates()
     .then((states) => {
-      return Object.values(states.data)
+      console.log('states (╯°□°)╯︵ ┻━┻ ', states)
     }),
   Sports: api.getAllSports()
     .then((sports) => {
-      return Object.values(sports.data) 
+      console.log('sports (╯°□°)╯︵ ┻━┻ ', sports)
     }),
   ProgramType: api.getAllProgramTypes()
     .then((programs) => {
@@ -26,7 +26,7 @@ const dropDownOptions = {
   // }),
   RelationshipType: api.getAllRelationshipTypes()
   .then((relationship) => {
-    return Object.values(relationship.data)
+    console.log('relationship',relationship)
   })
 }
 

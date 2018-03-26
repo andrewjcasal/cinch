@@ -17,7 +17,6 @@ const mapLinks = (props) => {
 }
 
 const menuItems = (props) => {
-  console.log('props (╯°□°)╯︵ ┻━┻ ', props)
   return (
     <ul className='MenuItems'>
       {mapLinks(props)}
