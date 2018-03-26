@@ -9,6 +9,7 @@ import Sidebar from '../Components/Sidebar';
 import AddUser from '../assets/images/add-user.png';
 import Tick from '../assets/images/tick-md.png';
 import PlaceholderAvatar from '../assets/images/placeholder-avatar.png';
+import Datepicker from '../Components/Datepicker'
 require('./UsersDetail.css');
 
 const TableData = [{

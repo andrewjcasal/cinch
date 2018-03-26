@@ -31,12 +31,12 @@ const CreateProgram = () => (
             <Row>
               <Col md={6}><Datepicker placeholder="Registration Open Date/Time" includeTime/></Col>
               <Col md={3}><Datepicker placeholder="Event Start" /></Col>
-              <Col md={3}><Dropdown options={['Monthly', 'Yearly']} title="Payment Plan" /></Col>
+              <Col md={3}>`<Dropdown options={['Monthly', 'Yearly']} title="Payment Plan" /></Col>`
             </Row>
             <Row>
               <Col md={6}><Datepicker placeholder="Registration Close Date/Time" includeTime/></Col>
               <Col md={3}><Datepicker placeholder="Event End" /></Col>
-              <Col md={3}><Dropdown options={['$10.00','$20.00']} title="Registration Fee" /></Col>
+              <Col md={3}>`<Dropdown options={['$10.00','$20.00']} title="Registration Fee" /></Col>`
             </Row>
             <Row>
               <Col md={12}><Wysiwyg /></Col>

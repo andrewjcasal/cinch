@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Container from '../Components/UI/Container/Container';
 import SectionWithHeading from '../Components/UI/SectionWithHeading/SectionWithHeading';
 import Table from '../Components/Table';
-import axios from '../axios';
 import apiCaller from '../assets/javascript/api'
 import AxiosErrorHandler from '../hoc/AxiosErrorHandler/AxiosErrorHandler';
 // import Ellipses from '../assets/images/ellipses.png'
@@ -64,4 +63,4 @@ class Organizations extends Component {
   };
 };
 
-export default AxiosErrorHandler( Organizations, axios );
+export default Organizations;
