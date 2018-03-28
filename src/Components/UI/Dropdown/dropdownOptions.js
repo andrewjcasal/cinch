@@ -10,15 +10,18 @@ const dropDownOptions = {
   Years: getNumberRange(currentYear, (currentYear + 20), []),
   States: api.getAllStates()
     .then((states) => {
-      console.log('states (╯°□°)╯︵ ┻━┻ ', states)
+      states = JSON.parse(states)
+      return Object.values(states)
     }),
   Sports: api.getAllSports()
     .then((sports) => {
-      console.log('sports (╯°□°)╯︵ ┻━┻ ', sports)
+      sports = JSON.parse(sports)
+      return Object.values(sports)
     }),
   ProgramType: api.getAllProgramTypes()
     .then((programs) => {
-      console.log('programs (╯°□°)╯︵ ┻━┻ ', programs)
+      programs = JSON.parse(programs)
+      return Object.values(programs)
     }),
   Affiliation: ['US Club Soccer', 'NHL', 'NFL'],
   // api.getAllAffiliations().then((affiliations) => {
@@ -26,7 +29,8 @@ const dropDownOptions = {
   // }),
   RelationshipType: api.getAllRelationshipTypes()
   .then((relationship) => {
-    console.log('relationship',relationship)
+    relationship = JSON.parse(relationship)
+    return Object.values(relationship)
   })
 }
 
