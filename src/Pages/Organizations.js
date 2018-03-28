@@ -2,11 +2,7 @@ import React, { Component } from 'react';
 import Container from '../Components/UI/Container/Container';
 import SectionWithHeading from '../Components/UI/SectionWithHeading/SectionWithHeading';
 import Table from '../Components/Table';
-import axios from '../axios';
 import apiCaller from '../assets/javascript/api'
-import AxiosErrorHandler from '../hoc/AxiosErrorHandler/AxiosErrorHandler';
-// import Ellipses from '../assets/images/ellipses.png'
-// import Aux from '../hoc/Aux/Aux.js'
 
 class Organizations extends Component {
   state = {
@@ -19,8 +15,9 @@ class Organizations extends Component {
     let headers;
     apiCaller.getAllOrganizations()
       .then((response) => {
-        headers = Object.keys(response.data.data[0]);
-        this.setState({ organizations: response.data.data, tableHeaders: headers })
+        let organizations = JSON.parse(response)
+        headers = Object.keys(organizations.data[0]);
+        this.setState({ organizations: organizations.data, tableHeaders: headers })
     }).catch(error => {
       console.log('organizations get', error)
       this.setState({ error: true })
@@ -64,4 +61,4 @@ class Organizations extends Component {
   };
 };
 
-export default AxiosErrorHandler( Organizations, axios );
+export default Organizations;
