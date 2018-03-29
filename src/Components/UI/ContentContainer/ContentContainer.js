@@ -1,20 +1,20 @@
 import React from 'react';
+import {Row, Col,} from 'react-bootstrap';
 require('./ContentContainer.css');
 
 const ContentContainer = (props) => (
-  <div className={props.type + " Content-Container"}>
+  <Row className={props.type + " Content-Container"}>
     {props.top}
     {props.left &&
-      <div className="content-left">
+      <Col md={8}>
         {props.left}
-      </div>}
+      </Col>}
     {props.right &&
-      <div className="content-right">
+      <Col md={4}>
         {props.right}
-      </div>
-    }
+      </Col> }
     {props.children}
-  </div>
+  </Row>
 )
 
 export default ContentContainer;

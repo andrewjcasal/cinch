@@ -3,7 +3,7 @@ import Dropdown from '../Dropdown/Dropdown';
 require('./SectionWithHeading.css');
 
 const SectionWithHeading = (props) => (
-  <div className="table section">
+  <div className="section">
     <div className="heading">
       {props.heading}
       <div className="left-buttons">

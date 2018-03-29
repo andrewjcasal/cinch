@@ -14,7 +14,7 @@ require('./Landing.css');
 const Landing = () => (
   <div className="landing">
     <div className="background">
-      <div className="wrapper">
+      <div className="landing-wrapper">
         <Row className="navbarnav">
           <Col md={4}>
             <Row>
@@ -33,8 +33,10 @@ const Landing = () => (
           <Col md={4}>
             <Row>
               <Col md={4}></Col>
-              <Col md={4}><a href="#" class="white-small">Join</a></Col>
-              <Col md={4}><a href="#">Login</a></Col>
+              <Col md={8}>
+                <a href="#" class="white-small">Join</a>
+                <a href="#">Login</a>
+              </Col>
             </Row>
           </Col>
         </Row>
@@ -62,7 +64,7 @@ const Landing = () => (
         </Row>
       </div>
     </div>
-    <div className="wrapper">
+    <div className="landing-wrapper">
       <Footer />
     </div>
   </div>

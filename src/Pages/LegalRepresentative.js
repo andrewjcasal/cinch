@@ -39,10 +39,10 @@ const LegalRepresentative = () => (
               </Row>
             </div>
           }>
-            <Row>
-              <Col md={12}><FooterButtons centered save="black" /></Col>
-            </Row>
           </ContentContainer>
+          <Row>
+            <Col md={12}><FooterButtons centered save="black" /></Col>
+          </Row>
         </SectionWithHeading>
       </Col>
     </Row>

@@ -7,7 +7,6 @@ import Footer from '../Components/Footer/Footer';
 import {Row, Col} from 'react-bootstrap';
 import Button from '../Components/UI/Button/Button';
 import LabeledInput from '../Components/UI/LabeledInput/LabeledInput';
-require("../assets/stylesheets/bootstrap4.min.css");
 require("./ProgramDetail.css");
 
 const rows = [{

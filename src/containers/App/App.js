@@ -18,6 +18,7 @@ import Registrations from '../../Pages/Registrations';
 import Family from '../../Pages/Family';
 import OrderHistory from '../../Pages/OrderHistory';
 import Documents from '../../Pages/Documents';
+import Questions from '../../Pages/Questions';
 import Landing from '../../Pages/Landing';
 import Login from '../../Pages/Login';
 import Register from '../../Pages/Register';
@@ -69,6 +70,7 @@ const App = () => (
         <Route path="/family" component={Family} />
         <Route path="/order-history" component={OrderHistory} />
         <Route path="/documents" component={Documents} />
+        <Route path="/questions" component={Questions} />
 
         {/* Admin */}
         <Route path="/admin-login" component={AdminLogin} />

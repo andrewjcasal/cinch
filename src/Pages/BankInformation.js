@@ -16,7 +16,7 @@ const BankInformation = () => (
       <Col md={9}>
         <SectionWithHeading heading="Bank Information">
           <ContentContainer>
-            <div>
+            <Col md={12}>
               <Row>
                 <Col md={6}><input type="text" placeholder="Bank Name" /></Col>
                 <Col md={6}><input type="text" placeholder="Account Type" /></Col>
@@ -29,11 +29,11 @@ const BankInformation = () => (
                 <Col md={6}><input type="text" placeholder="Repeat Routing Number" /></Col>
                 <Col md={6}><input type="text" placeholder="Repeat Account Number" /></Col>
               </Row>
-            </div>
+            </Col>
+          </ContentContainer>
             <Row>
               <Col md={12}><FooterButtons centered save="black" /></Col>
             </Row>
-          </ContentContainer>
         </SectionWithHeading>
       </Col>
     </Row>
