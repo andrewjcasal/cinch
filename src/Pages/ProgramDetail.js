@@ -36,7 +36,7 @@ const ProgramDetail = () => (
       <Row>
         <Col md={8}>
           <div class="card mb-3 detail-program-detail" style={{borderRadius: 0}}>
-            <div class="card-body text-center">
+            <div class="card-body text-center" style={{marginBottom: 20}}>
               <img src="../images/Arsenal_FC.svg.png" style={{marginTop: "15px"}} alt="Arsenal" />
               <p class="card-title light-montserrat text-uppercase pt-4">Arsenal FC</p>
               <p class="card-text text-uppercase pb-0 mb-0 pt-4 light-montserrat title">arsenal soccer schools</p>

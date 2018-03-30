@@ -22,10 +22,6 @@ body {
   background-color: #FAFAFA;
   font-family: "Roboto Medium";
 }
-.App {
-  background-color: #FAFAFA;
-  font-family: "Roboto Medium";
-}
 .menubar, .Navbar, .sidebar, .content {
   background-color: #FFFFFF;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
@@ -250,4 +246,17 @@ p.subheading {
   background-position: 20px;
   padding-left: 82px;
   padding-top: 15px;
+}
+
+.modal-dialog {
+  .section {
+    margin-bottom: 0;
+  }
+  .row {
+    padding: 20px;
+
+    .Button {
+      margin-top: 100px;
+    }
+  }
 }
