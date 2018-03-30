@@ -17,25 +17,25 @@ const ProgramsData = [{
   more: "blah"
 }];
 const ProgramsColumns = [
-  {Header: "",             accessor: "empty", width: "89"},
+  {Header: "",             accessor: "empty", width: 89},
   {
     Header: "Image",
     accessor: "image",
-    width: "95",
-    Cell: row => (<div className="avatar-image"></div>)
+    width: 95,
+    Cell: row => <div className="avatar-image"></div>
   },
-  {Header: "Name",         accessor: "name", width: "196"},
-  {Header: "Relationship", accessor: "relationship", width: "253"},
-  {Header: "Email",        accessor: "email", width: "321"},
-  {Header: "Mobile",       accessor: "mobile", width: "147"},
+  {Header: "Name",         accessor: "name", width: 196},
+  {Header: "Relationship", accessor: "relationship", width: 253},
+  {Header: "Email",        accessor: "email", width: 321},
+  {Header: "Mobile",       accessor: "mobile", width: 147},
   {
     Header: "",
     accessor: "more",
-    width: "40", 
+    width: 40, 
     Cell: row => (
       <img src={Ellipses} data-toggle="popover" data-placement="right" data-content="Edit | Delete" />
       )
-  },
+  }
 ]
 
 const Programs = () => (
