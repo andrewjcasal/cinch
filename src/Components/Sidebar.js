@@ -27,12 +27,16 @@ const Sidebar = (props) => {
       link: '/administrators'
     }];
   } else if (props.pageType == "admin") {
-    elements = [
-      'Household',
-      'Players',
-      'Coaches',
-      'Referees'
-    ]
+    elements = [{
+      title: 'Household',
+      link: '/family'
+    },{
+      title: 'Players',
+    },{
+      title: 'Coaches',
+    },{
+      title: 'Referees'
+    }]
   }
 
   var rows = [];
