@@ -1,0 +1,19 @@
+.calendar-menu {
+  position: absolute;
+  top: 18px;
+  right: 0;
+
+  > * {
+    display: inline-block;
+    color: #808080;
+    margin-right: 18px;
+
+    &:first-child {
+      margin-top: 4px;
+    }
+
+    &:last-child {
+      margin-right: 30px;
+    }
+  }
+}

@@ -1,8 +1,9 @@
 import React from 'react';
 import Container from '../Components/UI/Container/Container';
 import Table from '../Components/Table';
+import TableColumnLayout from '../Components/TableColumnLayout';
 import SectionWithHeading from '../Components/UI/SectionWithHeading/SectionWithHeading';
-import Ellipses from '../assets/images/ellipses.png';
+import Logo from '../assets/images/Arsenal_FC.svg.png';
 require('bootstrap/dist/css/bootstrap.css');
 require('../containers/App/App.css');
 require('../Components/Table.css');
@@ -10,32 +11,24 @@ require('./Family.css');
 
 const ProgramsData = [{
   image: "Brian Smith",
-  name: "Jimmy Smyth",
-  relationship: "Friend",
-  email: "jim.smith@gmail.com",
+  logo: Logo,
+  name: "Competitive Soccer",
+  registrations: "546",
+  income: "$ 686.64",
   mobile: "1(408)555-1234",
   more: "blah"
 }];
+
 const ProgramsColumns = [
-  {Header: "",             accessor: "empty", width: 89},
-  {
-    Header: "Image",
-    accessor: "image",
-    width: 95,
-    Cell: row => <div className="avatar-image"></div>
-  },
-  {Header: "Name",         accessor: "name", width: 196},
-  {Header: "Relationship", accessor: "relationship", width: 253},
-  {Header: "Email",        accessor: "email", width: 321},
-  {Header: "Mobile",       accessor: "mobile", width: 147},
-  {
-    Header: "",
-    accessor: "more",
-    width: 40, 
-    Cell: row => (
-      <img src={Ellipses} data-toggle="popover" data-placement="right" data-content="Edit | Delete" />
-      )
-  }
+  TableColumnLayout("check", 60, {isCentered: true}),
+  TableColumnLayout("logo",  89, {isCentered: true}),
+  TableColumnLayout("empty", 35),
+  {Header: "Name",          accessor: "name",   width: 434},
+  TableColumnLayout("Registrations", 173, {isCentered: true}),
+  TableColumnLayout("empty", 48),
+  {Header: "Total Income",  accessor: "income", width: 122},
+  TableColumnLayout("view",  95),
+  TableColumnLayout("more",  80, {isCentered: true})
 ]
 
 const Programs = () => (
