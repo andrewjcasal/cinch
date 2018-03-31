@@ -53,44 +53,44 @@ let chartOptions = {
 };
 
 const KeyPerformanceIndicators = () => (
-  <div id="key-performance-indicators" class="section">
-    <div class="heading">
+  <div id="key-performance-indicators" className="section">
+    <div className="heading">
       Key Performance Indicators
     </div>
     <div>
       <ul>
         <li>
-          <p class="label">Revenue</p>
-          <p class="total">$ 8749</p>
-          <p class="net positive">+54%</p>
+          <p className="label">Revenue</p>
+          <p className="total">$ 8749</p>
+          <p className="net positive">+54%</p>
         </li>
         <li>
-          <p class="label">Registrations</p>
-          <p class="total">65</p>
-          <p class="net positive">+21%</p>
+          <p className="label">Registrations</p>
+          <p className="total">65</p>
+          <p className="net positive">+21%</p>
         </li>
         <li>
-          <p class="label">Profit</p>
-          <p class="total">$ 177.62</p>
-          <p class="net negative">-11%</p>
+          <p className="label">Profit</p>
+          <p className="total">$ 177.62</p>
+          <p className="net negative">-11%</p>
         </li>
         <li>
-          <p class="label">Average Cost</p>
-          <p class="total">$ 33.11</p>
-          <p class="net negative">-11%</p>
+          <p className="label">Average Cost</p>
+          <p className="total">$ 33.11</p>
+          <p className="net negative">-11%</p>
         </li>
         <li>
-          <p class="label">Refunded</p>
-          <p class="total">25%</p>
-          <p class="net negative">-11%</p>
+          <p className="label">Refunded</p>
+          <p className="total">25%</p>
+          <p className="net negative">-11%</p>
         </li>
         <li>
-          <p class="label">Growth</p>
-          <p class="total">25</p>
-          <p class="net negative">-11%</p>
+          <p className="label">Growth</p>
+          <p className="total">25</p>
+          <p className="net negative">-11%</p>
         </li>
       </ul>
-      <div class="graph">
+      <div className="graph">
         <LineChart data={chartData} options={chartOptions} width="800" height="300"/>
       </div>
     </div>

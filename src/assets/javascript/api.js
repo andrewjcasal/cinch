@@ -8,25 +8,22 @@ const url = {
 const baseUrl = url.dev
 
 export default {
-  getAllOrganizations: function(url) {
+  getAllOrganizations: function() {
     return request(baseUrl + '/organizations') 
   },
-  getAllSports: function(url) {
+  getAllSports: function() {
     return request(baseUrl + '/ui/sports')
   },
-  getAllAffiliations: function(url) {
+  getAllAffiliations: function() {
     return request(baseUrl + '/ui/governing-bodies')
   },
-  getAllProgramTypes: function(url) {
-    return request(baseUrl + '/ui/program-types') /*? */
+  getAllProgramTypes: function() {
+    return request(baseUrl + '/ui/program-types')
   },
-  getAllStates: function(url) {
-    return request(baseUrl + '/ui/states') /*? */
+  getAllStates: function() {
+    return request(baseUrl + '/ui/states')
   },
-  getAllRelationshipTypes: function(url) {
+  getAllRelationshipTypes: function() {
     return request(baseUrl + '/ui/relationship-types')
   }
 };
-
-// http://jsonplaceholder.typicode.com/todos
-// http://ec2-34-212-245-30.us-west-2.compute.amazonaws.com/api/v1/organizations

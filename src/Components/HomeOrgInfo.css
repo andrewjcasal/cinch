@@ -1,0 +1,17 @@
+.info-display {
+  display: flex;
+  padding: 30px auto; }
+  .info-display .line-break {
+    margin: 30px auto;
+    width: 3px;
+    height: 90px;
+    border: 1px inset rgba(155, 155, 155, 0.15); }
+  .info-display .display-btn {
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    height: 64px;
+    width: 64px;
+    border-radius: 100%;
+    border: 2px solid transparent;
+    box-shadow: 1px; }

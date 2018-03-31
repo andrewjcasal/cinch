@@ -2,6 +2,16 @@ import React, { Component } from 'react';
 require('./NavBar.css');
 
 class NavBar extends Component {
+  constructor(props) {
+    super(props) 
+
+    this.handleFormSubmit.bind(this)
+  }
+
+  handleFormSubmit = (body) => {
+    console.log('body (╯°□°)╯︵ ┻━┻ ', body)
+  }
+
   render() {
     return (
       <div className="Navbar">
@@ -10,7 +20,7 @@ class NavBar extends Component {
           <p>Arsenal FC</p>
         </div>
         <div className="profile-info">
-          <div className="nameplate">
+          <div onClick={this.handleFormSubmit} className="nameplate">
             Tony Alvarez
           </div>
           <img className="avatar" src="" />

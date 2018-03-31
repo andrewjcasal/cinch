@@ -20,6 +20,9 @@ const Index = () => (
     <h1>Registrations</h1>
     <a href="/registrations">Registration</a>
 
+    <h1>Home</h1>
+    <a href="/home">Home Dashboard</a>
+
     <h1>Households</h1>
     <a href="/family">Family</a><br />
     <a href="/order-history">Order History</a><br />
