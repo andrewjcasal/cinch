@@ -3,9 +3,7 @@
   border-radius: 4px;
   box-sizing: border-box; }
   .Drag-File.Program {
-    margin-top: 35px;
-    margin-left: 80px;
-    margin-right: 80px; }
+    margin-top: 35px; }
   .Drag-File > div {
     width: 235px;
     height: 180px;

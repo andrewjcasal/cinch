@@ -4,6 +4,7 @@ import KeyPerfomanceIndicators from '../Components/KeyPerformanceIndicators/KeyP
 import GraphSmall from '../Components/GraphSmall/GraphSmall';
 import SectionWithHeading from '../Components/UI/SectionWithHeading/SectionWithHeading';
 import Table from '../Components/Table';
+import TableColumnLayout from '../Components/TableColumnLayout'
 import HomeOrgInfo from '../Components/HomeOrgInfo';
 import { Row, Col } from 'react-bootstrap';
 
@@ -29,28 +30,10 @@ const TableData = [{
   revenue: "$ 465.48"
 }];
 const TableColumns = [
-  {
-    Header: row => (
-      <div className="centered">
-        Logo
-    </div>), accessor: "logo", width: 107,
-    Cell: row => (
-      <div className="centered">
-        {row.value}
-      </div>)
-  },
+  TableColumnLayout("logo", 107, {isCentered: true}),
   { Header: "Name", accessor: "name", width: 203 },
-  {
-    Header: row => (
-      <div className="centered">
-        Registrations
-      </div>), accessor: "registrations", width: 148,
-    Cell: row => (
-      <div className="centered">
-        {row.value}
-      </div>)
-  },
-  { Header: "Revenue", accessor: "revenue", width: 100 }
+  TableColumnLayout("Registrations", 148, {isCentered: true}),
+  TableColumnLayout("Revenue", 100, {accessor: "revenue"})
 ]
 
 const HomeDashboard = () => (
@@ -62,6 +45,7 @@ const HomeDashboard = () => (
         <SectionWithHeading heading="Top Organizations">
           <Table
             data={TableData}
+            width={293}
             columns={TableColumns}
             minRows={0}
             showPaginationTop={false}

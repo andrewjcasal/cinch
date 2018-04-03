@@ -22,34 +22,34 @@ const PaymentMethodsData = [{
   more: "blah"
 }];
 const PaymentMethodsColumns = [
-  {Header: "", accessor: "empty", width: "23"},
+  {Header: "", accessor: "empty", width: 23},
   {
     Header: row => (
       <input type="checkbox" />),
     accessor: "check",
-    width: "34",
+    width: 34,
     Cell: row => (
       <input type="checkbox" />)
   }, {
     Header: "",
     accessor: "starred",
-    width: "53",
+    width: 53,
     Cell: row => (<div className="starred"><img src={Star} /></div>)
   },
   {
     Header: "Image",
     accessor: "image",
-    width: "105",
+    width: 105,
     Cell: row => (<img src={Visa} />)
   },
-  {Header: "Name",       accessor: "name", width: "235"},
-  {Header: "Type",       accessor: "type", width: "217"},
-  {Header: "Card #",     accessor: "card-number", width: "265"},
-  {Header: "Expiration", accessor: "expiration", width: "165"},
+  {Header: "Name",       accessor: "name", width: 235},
+  {Header: "Type",       accessor: "type", width: 217},
+  {Header: "Card #",     accessor: "card-number", width: 265},
+  {Header: "Expiration", accessor: "expiration", width: 165},
   {
     Header: "More",
     accessor: "more",
-    width: "40", 
+    width: 40, 
     Cell: row => (
       <img src="../assets/images/ellipses.png" data-toggle="popover" data-placement="right" data-content="Edit | Delete" />
       )
@@ -80,28 +80,28 @@ const OrdersData = [{
   balance: "$0.00"
 }];
 const OrdersColumns = [
-  {Header: "", accessor: "empty", width: "23"},
+  {Header: "", accessor: "empty", width: 23},
   {
     Header: row => (
       <input type="checkbox" />),
     accessor: "check",
-    width: "67",
+    width: 67,
     Cell: row => (
       <input type="checkbox" />)
   }, {
     Header: "Player",
     accessor: "player",
-    width: "87",
+    width: 87,
     Cell: row => (<div className="avatar-image"></div>)
   },
-  {Header: "Player Name", accessor: "playerName", width: "148"},
-  {Header: "Organization",accessor: "org",     width: "132"},
-  {Header: "Program Name",accessor: "programName", width: "247"},
-  {Header: "Type",        accessor: "type",    width: "90"},
-  {Header: "Date",        accessor: "date",    width: "99"},
-  {Header: "Order ID",    accessor: "orderId", width: "82"},
-  {Header: "Payment",     accessor: "payment", width: "91"},
-  {Header: "Balance",     accessor: "balance", width: "80"},
+  {Header: "Player Name", accessor: "playerName", width: 148},
+  {Header: "Organization",accessor: "org",     width: 132},
+  {Header: "Program Name",accessor: "programName", width: 247},
+  {Header: "Type",        accessor: "type",    width: 90},
+  {Header: "Date",        accessor: "date",    width: 99},
+  {Header: "Order ID",    accessor: "orderId", width: 82},
+  {Header: "Payment",     accessor: "payment", width: 91},
+  {Header: "Balance",     accessor: "balance", width: 80},
 ]
 
 const OrderHistory = () => (

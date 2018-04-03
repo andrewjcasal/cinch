@@ -26,25 +26,25 @@ const MembersColumns = [
   {
     Header: "",
     accessor: "starred",
-    width: "90",
+    width: 90,
     Cell: row => (<div className="starred"><img src={Star} /></div>)
   }, {
     Header: "Image",
     accessor: "image",
-    width: "95",
+    width: 95,
     Cell: row => (<div className="avatar-image"></div>)
   },
-  {Header: "Name",      accessor: "name", width: "145"},
-  {Header: "Type",      accessor: "type", width: "117"},
-  {Header: "Gender",    accessor: "gender", width: "105"},
-  {Header: "Birthdate", accessor: "birthdate", width: "131"},
-  {Header: "ID",        accessor: "id", width: "110"},
-  {Header: "Email",     accessor: "email", width: "210"},
-  {Header: "Mobile",    accessor: "mobile", width: "97"},
+  {Header: "Name",      accessor: "name", width: 145},
+  {Header: "Type",      accessor: "type", width: 117},
+  {Header: "Gender",    accessor: "gender", width: 105},
+  {Header: "Birthdate", accessor: "birthdate", width: 131},
+  {Header: "ID",        accessor: "id", width: 110},
+  {Header: "Email",     accessor: "email", width: 210},
+  {Header: "Mobile",    accessor: "mobile", width: 97},
   {
     Header: "More",
     accessor: "more",
-    width: "40", 
+    width: 40, 
     Cell: row => (
       <img src={Ellipses} data-toggle="popover" data-placement="right" data-content="Edit | Delete" />
       )
@@ -60,21 +60,21 @@ const ContactsData = [{
   more: "blah"
 }];
 const ContactsColumns = [
-  {Header: "",             accessor: "empty", width: "89"},
+  {Header: "",             accessor: "empty", width: 89},
   {
     Header: "Image",
     accessor: "image",
-    width: "95",
+    width: 95,
     Cell: row => (<div className="avatar-image"></div>)
   },
-  {Header: "Name",         accessor: "name", width: "196"},
-  {Header: "Relationship", accessor: "relationship", width: "253"},
-  {Header: "Email",        accessor: "email", width: "321"},
-  {Header: "Mobile",       accessor: "mobile", width: "147"},
+  {Header: "Name",         accessor: "name", width: 196},
+  {Header: "Relationship", accessor: "relationship", width: 253},
+  {Header: "Email",        accessor: "email", width: 321},
+  {Header: "Mobile",       accessor: "mobile", width: 147},
   {
     Header: "",
     accessor: "more",
-    width: "40", 
+    width: 40, 
     Cell: row => (
       <img src={Ellipses} data-toggle="popover" data-placement="right" data-content="Edit | Delete" />
       )

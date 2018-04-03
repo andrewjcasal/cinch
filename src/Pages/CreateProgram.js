@@ -48,8 +48,8 @@ const CreateProgram = () => (
             <DragFile type="Program" label="Program Photo" />
           </div>
         }>
-          <FooterButtons cancel next />
         </ ContentContainer>
+        <FooterButtons cancel next />
       </SectionWithHeading>
     </Container>
   </div>

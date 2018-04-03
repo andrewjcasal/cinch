@@ -1,0 +1,12 @@
+.center-menu {
+  position: absolute;
+  left: 40%;
+  top: 0; }
+  .center-menu li {
+    color: #999;
+    font-size: 14px;
+    display: inline-block;
+    padding: 21px; }
+    .center-menu li.selected {
+      color: #1875F0;
+      border-bottom: 2px solid #1875F0; }

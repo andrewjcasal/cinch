@@ -4,6 +4,7 @@ import ContentContainer from '../Components/UI/ContentContainer/ContentContainer
 import SectionWithHeading from '../Components/UI/SectionWithHeading/SectionWithHeading';
 import Dropdown from '../Components/UI/Dropdown/Dropdown';
 import FooterButtons from '../Components/FooterButtons';
+import PaymentMethodType from '../Components/PaymentMethodType/PaymentMethodType';
 import {Row, Col, Clearfix} from 'react-bootstrap';
 import Sidebar from '../Components/Sidebar';
 import dropdownOptions from '../Components/UI/Dropdown/dropdownOptions';
@@ -53,35 +54,35 @@ const PaymentMethod = () => (
           <Col md={4}>
             <ContentContainer>
               <Col md={12}>
-                  <Col md={12} className='credit-card-list'>
-                    <Row>
-                      <Col>
-                        <Row className='card'>
-                          <a href="#" className="tick selected"></a>
-                          <img src="../assets/images/visa.png" />
-                          <p>*5495 (Default)</p>
-                        </Row>
-                      </Col>
-                    </Row>
-                    <Row>
-                      <Col>
-                        <Row className='card'>
-                          <a href="#" className="tick"></a>
-                          <img src="../assets/images/visa.png" />
-                          <p>*8393</p>
-                        </Row>
-                      </Col>
-                    </Row>
-                    <Row>
-                      <Col>
-                        <Row className='card'>
-                          <a href="#" className="tick">+</a>
-                          <p>Add Bank Account</p>
-                        </Row>
-                      </Col>
-                    </Row>
-                    <a href="#" className="button save-default nowrap">SAVE AS DEFAULT</a>
-                  </Col>
+                <Col md={12} className='credit-card-list'>
+                  <Row>
+                    <Col>
+                      <Row className='card'>
+                        <a href="#" className="tick selected"></a>
+                        <img src="../assets/images/visa.png" />
+                        <p>*5495 (Default)</p>
+                      </Row>
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col>
+                      <Row className='card'>
+                        <a href="#" className="tick"></a>
+                        <img src="../assets/images/visa.png" />
+                        <p>*8393</p>
+                      </Row>
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col>
+                      <Row className='card'>
+                        <a href="#" className="tick">+</a>
+                        <p>Add Bank Account</p>
+                      </Row>
+                    </Col>
+                  </Row>
+                  <a href="#" className="button save-default nowrap">SAVE AS DEFAULT</a>
+                </Col>
               </Col>
             </ContentContainer>
           </Col>
