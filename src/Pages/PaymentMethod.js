@@ -4,6 +4,7 @@ import ContentContainer from '../Components/UI/ContentContainer/ContentContainer
 import SectionWithHeading from '../Components/UI/SectionWithHeading/SectionWithHeading';
 import Dropdown from '../Components/UI/Dropdown/Dropdown';
 import FooterButtons from '../Components/FooterButtons';
+import PaymentMethodType from '../Components/PaymentMethodType/PaymentMethodType';
 import {Row, Col, Clearfix} from 'react-bootstrap';
 import Sidebar from '../Components/Sidebar';
 import dropdownOptions from '../Components/UI/Dropdown/dropdownOptions';
@@ -47,7 +48,10 @@ const PaymentMethod = () => (
                 <Col md={12}><FooterButtons centered save="black" /></Col>
               </Row>
             </Col>
-            <Col md={4}></Col>
+            <Col md={4}>
+              <PaymentMethodType number={5495} type="visa" default />
+              <PaymentMethodType number={8393} type="visa" />
+            </Col>
             <Clearfix />
           </ContentContainer>
         </SectionWithHeading>
