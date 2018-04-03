@@ -53,28 +53,28 @@ const PaymentMethod = () => (
           <Col md={4}>
             <ContentContainer>
               <Col md={12}>
-                  <Col md={12}>
+                  <Col md={12} className={'credit-card-list'}>
                     <Row>
                       <Col>
-                        <Row>
+                        <Row className={'card'}>
                           <a href="#" className="tick selected"></a>
-                          <img src="../../assets/images/visa.png" />
+                          <img src="../assets/images/visa.png" />
                           <p>*5495 (Default)</p>
                         </Row>
                       </Col>
                     </Row>
                     <Row>
                       <Col>
-                        <Row>
+                        <Row className={'card'}>
                           <a href="#" className="tick"></a>
-                          <img src="../../assets/images/visa.png" />
+                          <img src="../assets/images/visa.png" />
                           <p>*8393</p>
                         </Row>
                       </Col>
                     </Row>
                     <Row>
                       <Col>
-                        <Row>
+                        <Row className={'card'}>
                           <a href="#" className="tick">+</a>
                           <p>Add Bank Account</p>
                         </Row>

@@ -1,0 +1,76 @@
+.credit-card-list {
+  width: 300px;
+  display: inline-block;
+  vertical-align: top;
+
+  .card {
+    margin: 32px 0;
+
+    > * {
+      display: inline-block;
+      vertical-align: middle
+    }
+
+    a {
+      border: 1px solid #979797;
+      height: 22px;
+      width: 22px;
+      border-radius: 22px;
+      box-sizing: border-box;
+      margin-left: 13px;
+
+      &.selected {
+        background-color: #141414;
+        border: 1px solid #141414;
+        background-image: url("../images/cc-tick.png");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+
+    .tick {
+      text-align: center;
+      font-family: "Roboto Medium";
+      font-size: 12px;
+      color: #666666;
+      text-decoration: none;
+      padding-top: 3px;
+    }
+  }
+
+  img {
+    margin-left: 33px;
+  }
+
+  p {
+    margin-left: 46px;
+  }
+
+  a + p {
+    margin-left: 33px;
+  }
+}
+
+#payment-method {
+  .button {
+    height: 30px;
+    font-size: 9px;
+    width: 97px;
+    padding-top: 8px;
+  }
+
+  .button.save-default {
+    width: 120px;
+  }
+
+  .new-credit-card p {
+    color: #666666;
+    font-size: 12px;
+    margin-bottom: 17px;
+  }
+
+  .credit-card-list p {
+    color: #666666;
+    font-size: 12px;
+  }
+}
