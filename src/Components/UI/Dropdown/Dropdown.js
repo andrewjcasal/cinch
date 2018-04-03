@@ -6,8 +6,6 @@ const Dropdown = (props) => {
   let options = []; 
   
   if (props.options && props.options.length) {
-    console.log("in options");
-    console.log(props.options);
     options = props.options.map((option, i) =>
       <MenuItem eventKey={i}>{option}</MenuItem>
     );

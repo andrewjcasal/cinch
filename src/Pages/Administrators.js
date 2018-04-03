@@ -8,9 +8,28 @@ import {Row, Col, Clearfix, Modal} from 'react-bootstrap';
 import Sidebar from '../Components/Sidebar';
 import dropdownOptions from '../Components/UI/Dropdown/dropdownOptions';
 import Button from '../Components/UI/Button/Button';
+import Table from '../Components/Table';
+import TableColumnLayout from '../Components/TableColumnLayout';
 require('../containers/App/App.css');
 
+const TableData = [{
+  image: "Brian Smith",
+  name: "Competitive Soccer",
+  email: "jimmy@smyth.com",
+  phone: "(408) 381-1234",
+  more: "blah"
+}];
 
+const TableColumns = [
+  TableColumnLayout("check", 65, {isCentered: true}),
+  TableColumnLayout("empty", 25),
+  TableColumnLayout("image",  89, {isCentered: true}),
+  {Header: "Name",          accessor: "name",   width: 152},
+  {Header: "Email",         accessor: "email",   width: 198},
+  {Header: "Phone",         accessor: "phone",   width: 138},
+  TableColumnLayout("access", 120),
+  TableColumnLayout("more",  72, {isCentered: true})
+]
 
 class Administrators extends Component {
 
@@ -30,39 +49,13 @@ class Administrators extends Component {
         </Col>
         <Col md={9}>
           <SectionWithHeading heading="Administrators" addnew={this.handleShow}>
-            <ContentContainer>
-              <Col md={8}>
-                <Row>
-                  <Col md={6}>
-                    <p class="subheading">Cardholder name</p>
-                    <input type="text" placeholder="Enter Name" />
-                  </Col>
-                  <Col md={6}>
-                    <p class="subheading">Card number</p>
-                    <input type="text" placeholder="Enter Card Number" />
-                  </Col>
-                </Row>
-                <Row>
-                  <Col md={4}>
-                    <p class="subheading">Expire Date</p>
-                    <Dropdown title="MM" options={dropdownOptions.Months} />
-                  </Col>
-                  <Col md={4}>
-                    <p class="subheading">&nbsp;</p>
-                    <Dropdown title="YYYY" options={dropdownOptions.Years} />
-                  </Col>
-                  <Col md={4}>
-                    <p class="subheading">CVV</p>
-                    <input type="text" placeholder="Enter Card Number" />
-                  </Col>
-                </Row>
-                <Row>
-                  <Col md={12}><FooterButtons centered save="black" /></Col>
-                </Row>
-              </Col>
-              <Col md={4}></Col>
-              <Clearfix />
-            </ContentContainer>
+            <Table
+              data={TableData}
+              columns={TableColumns}
+              minRows={0}
+              showPaginationTop={true}
+              showPaginationBottom={false}
+            />
           </SectionWithHeading>
         </Col>
       </Row>

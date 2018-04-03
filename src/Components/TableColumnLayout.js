@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactTable from 'react-table';
 import Ellipses from '../assets/images/ellipses.png';
+import Dropdown from './UI/Dropdown/Dropdown';
 
 const Align = (props) => {
   if (props.isCentered) {
@@ -27,6 +28,14 @@ const TableColumnLayout = (type, width = null, opts = {}, props ={}) => {
         accessor: "logo"
       }
       break;
+    case "image":
+      layout = {
+        Header: "Image",
+        accessor: "image",
+        width: 99,
+        Cell: row => (<div className="avatar-image"></div>)
+      }
+      break;
     case "empty":
       layout = {
         Header: "",
@@ -35,9 +44,16 @@ const TableColumnLayout = (type, width = null, opts = {}, props ={}) => {
       break;
     case "view":
       layout = {
-        Header: () => (<div className="centered">View</div>),
-        Cell: () => (<button className="view-button">VIEW</button>),
+        Header: () => <div className="centered">View</div>,
+        Cell: () => <button className="view-button">VIEW</button>,
         accessor: "view"
+      }
+      break;
+    case "access":
+      layout = {
+        Header: () => <div className="centered">Access</div>,
+        Cell: () => <Dropdown title="SUPER ADMIN" />,
+        accessor: "access"
       }
       break;
     case "more":
