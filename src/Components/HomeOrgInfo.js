@@ -1,5 +1,9 @@
 import React from 'react'
 import { Row, Col } from 'react-bootstrap';
+import EyeCon from '../assets/images/eye icon.png';
+import DollarIcon from '../assets/images/dollar icon.png';
+import CartIcon from '../assets/images/cart-icon.png';
+import UserIcon from '../assets/images/cart-icon.png';
 
 require('./HomeOrgInfo.css')
 
@@ -7,9 +11,9 @@ const HomeOrgInfo = () => {
   return(
     <Row className="info-display section content">
       <Col md={3} className="info-display__container">
-        <Col md={5}>
+        <Col md={4}>
           <div className="button display-btn content centered">
-            <img src="../assets/images/cart-icon.png" alt="shopping cart"/>
+            <img src={CartIcon} alt="shopping cart"/>
           </div>
         </Col>
         <Col md={5} className="centered">
@@ -19,9 +23,9 @@ const HomeOrgInfo = () => {
       </Col>
       <span className="line-break centered"></span>
       <Col md={3} className="info-display__container">
-        <Col md={5}>
+        <Col md={4}>
           <div className="button display-btn content centered">
-            <img src="../assets/images/dollar icon.png" alt="Annual Income"/>
+            <img src={DollarIcon} alt="Annual Income"/>
           </div>
         </Col>
         <Col md={5} className="centered">
@@ -31,9 +35,9 @@ const HomeOrgInfo = () => {
       </Col>
       <span className="line-break centered"></span>
       <Col md={3} className="info-display__container">
-        <Col md={5}>
+        <Col md={4}>
           <div className="button display-btn content centered">
-            <img src="../assets/images/users icon.png" alt="Total Members" />
+            <img src={UserIcon} alt="Total Members" />
           </div>
         </Col>
         <Col md={5} className="centered">
@@ -43,9 +47,9 @@ const HomeOrgInfo = () => {
       </Col>
       <span className="line-break centered"></span>
       <Col md={3} className="info-display__container">
-        <Col md={5}>
+        <Col md={4}>
           <div className="button display-btn content centered">
-            <img src="../assets/images/eye icon.png" alt="Active Programs" />
+            <img src={EyeCon} alt="Active Programs" />
           </div>
         </Col>
         <Col md={5} className="centered">

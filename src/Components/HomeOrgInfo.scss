@@ -13,14 +13,24 @@
     border: 1px inset rgba(155, 155, 155, 0.15);
   }
   .display-btn{
-    align-items: center;
+    display: flex;
+    align-content: center;
     justify-content: center;
     height: 64px;
     width: 64px;
     border-radius: 100%;
-    border: 2px solid transparent;
+    border: 1px solid rgba(155, 155, 155, 0.35);
     box-shadow: 1px;
     margin-bottom: 0;
+    padding-top: 0;
+    > img {
+      align-self: center;
+    }
+    &:hover {
+      border: 1px solid rgba(155, 155, 155, 0.15);
+      cursor: pointer;
+      box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.05);
+    }
   }
   .info-display__container {
     display: flex;
@@ -29,6 +39,9 @@
     padding: 0 !important;
   }
   .info-display__content {
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
     margin-bottom: 0;
     padding-bottom: 1.5rem;
   }
@@ -37,7 +50,6 @@
     color: #808080
   }
   .content-title {
-    justify-content: flex-start;
     font-size: 1.4rem;
     white-space: nowrap;
     color: #b3b3b3
