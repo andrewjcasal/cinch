@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Arsenal from '../../assets/images/programs/Arsenal_FC_lg.png';
+import DropdownCaret from '../../assets/images/dropdown.png';
 require('./NavBar.css');
 
 class NavBar extends Component {
@@ -6,7 +8,7 @@ class NavBar extends Component {
     return (
       <div className="Navbar">
         <div className="group-logo">
-          <img src="../../assets/images/programs/Arsenal_FC_lg.png" />
+          <img src={Arsenal} />
           <p>Arsenal FC</p>
         </div>
         <div className="profile-info">
@@ -14,7 +16,7 @@ class NavBar extends Component {
             Tony Alvarez
           </div>
           <img className="avatar" src="" />
-          <img className="dropdown" src="../../assets/images/dropdown.png" />
+          <img className="dropdown-icon" src={DropdownCaret} />
         </div>
       </div>
     );
