@@ -52,6 +52,45 @@ let chartOptions = {
   }
 };
 
+const IndicatorLayout = (props) => {
+  const net = props.net * 100;
+  const netClass = net > 0 ? "positive" : "negative";
+
+  return (
+    <li>
+      <p className="label">{props.label}</p>
+      <p className="total">{props.total}</p>
+      <p className={"net " + netClass}>{(net > 0 && "+") + net}%</p>
+    </li>
+  )
+}
+
+const Indicators = [{
+  label: "Revenue",
+  total: "$ 8749",
+  net: .54
+}, {
+  label: "Registrations",
+  total: 65,
+  net: .21
+},{
+  label: "Profit",
+  total: "$ 177.62",
+  net: -.11
+},{
+  label: "Average Cost",
+  total: "$ 33.11",
+  net: -.11
+},{
+  label: "Refunded",
+  total: "25%",
+  net: -.11
+},{
+  label: "Growth",
+  total: 25,
+  net: -.11
+}]
+
 const KeyPerformanceIndicators = () => (
   <div id="key-performance-indicators" className="section">
     <div className="heading">
@@ -59,36 +98,13 @@ const KeyPerformanceIndicators = () => (
     </div>
     <div>
       <ul>
-        <li>
-          <p className="label">Revenue</p>
-          <p className="total">$ 8749</p>
-          <p className="net positive">+54%</p>
-        </li>
-        <li>
-          <p className="label">Registrations</p>
-          <p className="total">65</p>
-          <p className="net positive">+21%</p>
-        </li>
-        <li>
-          <p className="label">Profit</p>
-          <p className="total">$ 177.62</p>
-          <p className="net negative">-11%</p>
-        </li>
-        <li>
-          <p className="label">Average Cost</p>
-          <p className="total">$ 33.11</p>
-          <p className="net negative">-11%</p>
-        </li>
-        <li>
-          <p className="label">Refunded</p>
-          <p className="total">25%</p>
-          <p className="net negative">-11%</p>
-        </li>
-        <li>
-          <p className="label">Growth</p>
-          <p className="total">25</p>
-          <p className="net negative">-11%</p>
-        </li>
+        {Indicators.map( ind => {
+          return (
+            <IndicatorLayout 
+              label={ind.label}
+              total={ind.total}
+              net={ind.net} /> )
+          })}
       </ul>
       <div className="graph">
         <LineChart data={chartData} options={chartOptions} width="800" height="300"/>
