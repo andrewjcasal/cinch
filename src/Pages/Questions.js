@@ -1,15 +1,14 @@
 import React from 'react';
-import Container from '../Layouts/Container';
-import ProgramSteps from '../Components/ProgramSteps';
+import Container from '../Components/UI/Container/Container';
+import ProgramSteps from '../Components/ProgramSteps/ProgramSteps';
 import Table from '../Components/Table';
-import SectionWithHeading from '../Components/SectionWithHeading';
+import SectionWithHeading from '../Components/UI/SectionWithHeading/SectionWithHeading';
 import Ellipses from '../assets/images/ellipses.png';
-import ContentContainer from '../Layouts/ContentContainer';
-import Dropdown from '../Components/Dropdown';
+import ContentContainer from '../Components/UI/ContentContainer/ContentContainer';
+import Dropdown from '../Components/UI/Dropdown/Dropdown';
 import FooterButtons from '../Components/FooterButtons';
 import {Row, Col, Popover, OverlayTrigger} from 'react-bootstrap';
-require('../App.css');
-require('../Components/Table.css');
+require('../containers/App/App.css');
 require('./Family.css');
 
 const popoverRight = (

@@ -95,8 +95,7 @@ const Users = () => (
                   </Col>
                 </Row>
               </Col>
-            </Row>
-            
+            </Row> 
           </SubSection>
           <SubSection heading="Address">
             <Row>

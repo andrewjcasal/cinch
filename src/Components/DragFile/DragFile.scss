@@ -6,8 +6,6 @@
 
   &.Program {
     margin-top: 35px;
-    margin-left: 80px;
-    margin-right: 80px;
   }
 
   > div {
@@ -17,6 +15,7 @@
     color: #CCCCCC;
     background: url("../../assets/images/cloud-icon.png") center 33px no-repeat;
     font-size: 12px;
+    margin: 0 auto;
 
     p {
       margin: 110px auto 0;

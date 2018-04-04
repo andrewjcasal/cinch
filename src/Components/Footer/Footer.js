@@ -5,7 +5,6 @@ import Facebook from '../../assets/images/facebook.png';
 import Google from '../../assets/images/google.png';
 import Tumblr from '../../assets/images/tumblr.png';
 import Button from '../../Components/UI/Button/Button';
-require("../../assets/stylesheets/bootstrap4.min.css");
 require('./Footer.css');
 
 const Footer = () => (

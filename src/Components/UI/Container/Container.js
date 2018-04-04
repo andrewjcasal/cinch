@@ -1,6 +1,7 @@
 import React from 'react';
 import Menubar from '../../../containers/MenuBar/MenuBar';
 import Navbar from '../../../containers/NavBar/NavBar';
+import BodyColor from '../BodyColor/BodyColor';
 
 
 require('bootstrap/dist/css/bootstrap.css');
@@ -26,15 +27,17 @@ class Container extends React.Component {
     }
 
     return (
-      <div className="App">
-        <Menubar />
-        <div className="content-container">
-          <Navbar />
-          <div className="wrapper">
-            {layout}
+      <BodyColor isGray="true">
+        <div className="App">
+          <Menubar />
+          <div className="content-container">
+            <Navbar />
+            <div className="wrapper">
+              {layout}
+            </div>
           </div>
         </div>
-      </div> )
+      </BodyColor> )
   }
 };
 

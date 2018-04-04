@@ -1,9 +1,11 @@
 import React from 'react';
 import Dropdown from '../Dropdown/Dropdown';
+import CenterMenu from '../../CenterMenu';
+import CalendarMenu from '../../CalendarMenu';
 require('./SectionWithHeading.css');
 
 const SectionWithHeading = (props) => (
-  <div className="table section">
+  <div className="section">
     <div className="heading">
       {props.heading}
       <div className="left-buttons">
@@ -14,10 +16,13 @@ const SectionWithHeading = (props) => (
         {props.active &&
           <Dropdown title="ACTIVE" /> }
       </div>
-      {props.addnew && <a href="#" className="add-new button">ADD NEW</a>}
+      {props.addnew && <a href="#" className="add-new button" onClick={props.addnew}>ADD NEW</a>}
       {props.createnew && <a href="#" className="add-new button">CREATE NEW</a>}
       {props.export && <a href="#" className="export button">EXPORT</a>}
       {props.email && <a href="#" className="email button">EMAIL</a>}
+      {props.other}
+      {props.centermenu && <CenterMenu />}
+      {props.calendarmenu && <CalendarMenu />}
     </div>
     {props.children}
   </div>

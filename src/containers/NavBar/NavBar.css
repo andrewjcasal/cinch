@@ -27,11 +27,12 @@
       color: #666; }
   .Navbar .profile-info {
     width: 300px;
-    margin-top: 28px; }
+    margin-top: 28px;
+    margin-right: 38px; }
     .Navbar .profile-info > * {
       display: inline-block; }
     .Navbar .profile-info .nameplate {
-      padding-right: 12px;
+      padding-right: 16px;
       color: #999; }
     .Navbar .profile-info .avatar {
       height: 36px;
@@ -39,5 +40,5 @@
       border-radius: 36px;
       background-color: #ccc;
       margin: 0 10px; }
-    .Navbar .profile-info .dropdown {
-      padding: 0 36px 0 7px; }
+    .Navbar .profile-info .dropdown-icon {
+      margin-left: 10px; }

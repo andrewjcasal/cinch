@@ -7,7 +7,8 @@ const Index = () => (
     <a href="/legal-representative">Legal Representative</a><br />
     <a href="/proof-of-id">Proof of ID</a><br />
     <a href="/bank-information">Bank Information</a><br />
-    <a href="/payment-method">Payment Method</a>
+    <a href="/payment-method">Payment Method</a><br />
+    <a href="/administrators">Administrators</a>
 
     <h1>Programs</h1>
     <a href="/programs">Programs</a><br />
@@ -20,13 +21,15 @@ const Index = () => (
     <h1>Registrations</h1>
     <a href="/registrations">Registration</a>
 
+    <h1>Home</h1>
+    <a href="/home">Home Dashboard</a>
+
     <h1>Households</h1>
     <a href="/family">Family</a><br />
     <a href="/order-history">Order History</a><br />
     <a href="/documents">Documents</a>
 
     <h1>Admin</h1>
-    <a href="/organizations">Organizations</a><br />
     <a href="/login">Login</a><br />
     <a href="/dashboard">Dashboard</a><br />
     <a href="/organizations">Organizations</a><br />

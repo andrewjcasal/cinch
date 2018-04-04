@@ -16,19 +16,20 @@ const ProofOfId = () => (
       </Col>
       <Col md={9}>
         <SectionWithHeading heading="Proof of ID">
-          <ContentContainer type="DragFileTwoCol" top={
-            <Row>
-              <Col md={12}><p class="subheading centered">Upload any form of Government ID</p></Col>
-            </Row>
-          }left={
-            <DragFile label="Front" />
-          } right={
-            <DragFile label="Back" />
-          }>
-            <Row>
-              <Col md={12}><FooterButtons centered save="black" /></Col>
-            </Row>
-          </ContentContainer>
+          <Row>
+            <Col md={12}><p class="subheading centered" style={{margin: "20px auto"}}>Upload any form of Government ID</p></Col>
+          </Row>
+          <Row>
+            <Col md={6}>
+              <DragFile label="Front" />
+            </Col>
+            <Col md={6}>
+              <DragFile label="Back" />
+            </Col>
+          </Row>
+          <Row>
+            <Col md={12}><FooterButtons centered save="black" /></Col>
+          </Row>
         </SectionWithHeading>
       </Col>
     </Row>

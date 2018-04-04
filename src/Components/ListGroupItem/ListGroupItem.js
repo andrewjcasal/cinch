@@ -1,6 +1,5 @@
 import React from 'react';
 import Logo from '../../assets/images/programs/Arsenal_FC_lg.png';
-require("../../assets/stylesheets/bootstrap4.min.css");
 
 const ListGroupItem = (props) => (
   <li class="list-group-item mb-3" style={{borderRadius: 2 + "px"}}>

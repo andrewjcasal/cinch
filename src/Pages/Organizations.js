@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import Container from '../Components/UI/Container/Container';
 import SectionWithHeading from '../Components/UI/SectionWithHeading/SectionWithHeading';
 import Table from '../Components/Table';
-import apiCaller from '../assets/javascript/api'
+import TableColumnLayout from '../Components/TableColumnLayout';
+import apiCaller from '../assets/javascript/api';
+import CenterMenu from '../Components/CenterMenu';
+import CalendarMenu from '../Components/CalendarMenu';
 
 class Organizations extends Component {
   state = {
@@ -26,9 +29,19 @@ class Organizations extends Component {
   
   handleHeaderProcessingForTable() {
     const TableColumns = [
-      { Header: "Name", accessor: this.state.tableHeaders[1], width: 50 },
-      { Header: "City", accessor: this.state.tableHeaders[6], width: 161 },
-      { Header: "Sport", accessor: this.state.tableHeaders[3], width: 100 }
+      TableColumnLayout("check", 60, {isCentered: true}),
+      TableColumnLayout("empty", 20, {isCentered: true}),
+      TableColumnLayout("logo", 60, {isCentered: true}),
+      TableColumnLayout("empty", 46, {isCentered: true}),
+      { Header: "Name", accessor: this.state.tableHeaders[1], width: 192 },
+      TableColumnLayout("Programs", 120, {isCentered: true}),
+      TableColumnLayout("Registrations", 106, {isCentered: true}),
+      TableColumnLayout("Revenue", 115, {isCentered: true}),
+      TableColumnLayout("Quantity", 60),
+      TableColumnLayout("Created", 100, {isCentered: true}),
+      TableColumnLayout("empty", 30, {isCentered: true}),
+      TableColumnLayout("Sales Rep", 96),
+      TableColumnLayout("view", 100, {isCentered: true})
     ]
     return TableColumns;
   }
@@ -40,7 +53,7 @@ class Organizations extends Component {
       let organizations = this.state.organizations
         console.log('Organizations data ::>', organizations);
         return (
-          <SectionWithHeading heading="Organizations">
+          <SectionWithHeading heading="Organizations" centermenu calendarmenu>
             <Table 
               data={ organizations } 
               columns={ this.handleHeaderProcessingForTable() }

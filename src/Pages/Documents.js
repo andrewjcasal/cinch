@@ -22,22 +22,22 @@ const DocumentsColumns = [
   { 
     Header: "",     
     accessor: "empty", 
-    width: "24"
+    width: 24
   },{
     Header: "Player",
     accessor: "player",
-    width: "119",
+    width: 119,
     Cell: row => (<div className="avatar-image"></div>)
   },
-  {Header: "Player Name",accessor: "playerName", width: "222"},
-  {Header: "Name",       accessor: "name", width: "292"},
-  {Header: "Type",       accessor: "type", width: "156"},
-  {Header: "Date",       accessor: "date", width: "165"},
-  {Header: "",           accessor: "view", width: "65"},
+  {Header: "Player Name",accessor: "playerName", width: 222},
+  {Header: "Name",       accessor: "name", width: 292},
+  {Header: "Type",       accessor: "type", width: 156},
+  {Header: "Date",       accessor: "date", width: 165},
+  {Header: "",           accessor: "view", width: 65},
   {
     Header: "More",
     accessor: "more",
-    width: "40", 
+    width: 40, 
     Cell: row => (
       <img src={Ellipses} data-toggle="popover" data-placement="right" data-content="Edit | Delete" />
       )

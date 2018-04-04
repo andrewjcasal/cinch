@@ -6,11 +6,11 @@
     text-align: center;
     margin: 160px auto 60px;
   }
-  .wrapper div[class*="col-md-"] {
+  .landing-wrapper div[class*="col-md-"] {
     padding: 0;
 
     .dropdown {
-      background-color:rgba(255,255,255,0.8);
+      background-color:rgba(255,255,255,1);
       color: #000000;
     }
   }
@@ -21,9 +21,13 @@
   height: 1000px;
 }
 
-.wrapper {
+.landing-wrapper {
   margin: 0 auto;
   width: 1000px;
+
+  .navbarnav a.white-small {
+    margin-right: 14px;
+  }
 }
 
 .navbarnav {
