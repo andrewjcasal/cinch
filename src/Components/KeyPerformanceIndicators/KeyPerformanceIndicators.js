@@ -57,7 +57,7 @@ const IndicatorLayout = (props) => {
   const netClass = net > 0 ? "positive" : "negative";
 
   return (
-    <li>
+    <li key={props.label}>
       <p className="label">{props.label}</p>
       <p className="total">{props.total}</p>
       <p className={"net " + netClass}>{(net > 0 && "+") + net}%</p>
@@ -100,7 +100,8 @@ const KeyPerformanceIndicators = () => (
       <ul>
         {Indicators.map( ind => {
           return (
-            <IndicatorLayout 
+            <IndicatorLayout
+              key={ind.label}
               label={ind.label}
               total={ind.total}
               net={ind.net} /> )

@@ -22,7 +22,7 @@ class HomeOrgInfo extends Component {
       numbers: '$7841.78'
     },
     {
-      title: "Total Memebers",
+      title: "Total Members",
       icon: UserIcon,
       numbers: '6521'
     },
@@ -33,15 +33,11 @@ class HomeOrgInfo extends Component {
     },
   ]}
 
-  ComponentDidMount() {
-    
-  }
   render(){
-    const renderDisplay = (displayInfo) => {
-      { console.log('displayInfo (╯°□°)╯︵ ┻━┻ ', displayInfo) }
-      return (
-        displayInfo.map((item, i, arr) => {
-          <Aux>
+    return(
+      <Row className="info-display section content">
+        {this.state.displayInfoObject.map((item, i, arr) => {
+          return ( <Aux>
             <HomeOrgInfoItem
               key={i}
               icon={item.icon}
@@ -49,65 +45,12 @@ class HomeOrgInfo extends Component {
               numbers={item.numbers}
             />
             { i !== arr.length - 1 && <span className="line-break centered"></span> } 
-          </Aux>
-        })
-      )
-    }
-    return(
-      <Row className="info-display section content">
-        {renderDisplay(this.state.displayInfoObject)}
+          </Aux> )
+        })}
       </Row>
     )
   }
 };
-    {/*<Col md={3} className="info-display__container">
-      <Col md={4}>
-        <div className="button display-btn content centered">
-          <img src={CartIcon} alt="shopping cart" />
-        </div>
-      </Col>
-      <Col md={5} className="info-display-content__container">
-        <div className="info-display__content numbers"> 8956 </div>
-        <div className="info-display__content content-title"> Total Registrations </div>
-      </Col>
-    </Col>
-      <span className="line-break centered"></span>
-      <Col md={3} className="info-display__container">
-        <Col md={4}>
-          <div className="button display-btn content centered">
-            <img src={DollarIcon} alt="Annual Income" />
-          </div>
-        </Col>
-        <Col md={5} className="info-display-content__container">
-          <div className="info-display__content numbers"> $7841.78 </div>
-          <div className="info-display__content content-title"> Annual Income </div>
-        </Col>
-      </Col>
-      <span className="line-break centered"></span>
-      <Col md={3} className="info-display__container">
-        <Col md={4}>
-          <div className="button display-btn content centered">
-            <img src={UserIcon} alt="Total Members" />
-          </div>
-        </Col>
-        <Col md={5} className="info-display-content__container">
-          <div className="info-display__content numbers"> 6521 </div>
-          <div className="info-display__content content-title"> Total Members </div>
-        </Col>
-      </Col>
-      <span className="line-break centered"></span>
-      <Col md={3} className="info-display__container">
-        <Col md={4}>
-          <div className="button display-btn content centered">
-            <img src={EyeCon} alt="Active Programs" />
-          </div>
-        </Col>
-        <Col md={5} className="info-display-content__container">
-          <div className="info-display__content numbers"> 5 </div>
-          <div className="info-display__content content-title"> Active Programs </div>
-        </Col>
-      </Col>*/}
-
 
 export default HomeOrgInfo;
 
