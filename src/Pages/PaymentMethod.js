@@ -5,14 +5,16 @@ import SectionWithHeading from '../Components/UI/SectionWithHeading/SectionWithH
 import Dropdown from '../Components/UI/Dropdown/Dropdown';
 import FooterButtons from '../Components/FooterButtons';
 import PaymentMethodType from '../Components/PaymentMethodType/PaymentMethodType';
+import AddPaymentType from '../Components/PaymentMethodType/AddPaymentType';
 import {Row, Col, Clearfix} from 'react-bootstrap';
 import Sidebar from '../Components/Sidebar';
 import dropdownOptions from '../Components/UI/Dropdown/dropdownOptions';
 require('../containers/App/App.css');
+require('./PaymentMethod.css');
 
 const PaymentMethod = () => (
   <Container>
-    <Row>
+    <Row className="payment-method-container">
       <Col md={3}>
         <Sidebar active="4" pageType="setup" />
       </Col>
@@ -51,39 +53,12 @@ const PaymentMethod = () => (
               </Col>
             </ContentContainer>
           </Col>
-          <Col md={4}>
+          <Col md={4} style={{borderLeft: "2px solid #F5F5F5"}}>
             <ContentContainer>
-              <Col md={12}>
-                <Col md={12} className='credit-card-list'>
-                  <Row>
-                    <Col>
-                      <Row className='card'>
-                        <a href="#" className="tick selected"></a>
-                        <img src="../assets/images/visa.png" />
-                        <p>*5495 (Default)</p>
-                      </Row>
-                    </Col>
-                  </Row>
-                  <Row>
-                    <Col>
-                      <Row className='card'>
-                        <a href="#" className="tick"></a>
-                        <img src="../assets/images/visa.png" />
-                        <p>*8393</p>
-                      </Row>
-                    </Col>
-                  </Row>
-                  <Row>
-                    <Col>
-                      <Row className='card'>
-                        <a href="#" className="tick">+</a>
-                        <p>Add Bank Account</p>
-                      </Row>
-                    </Col>
-                  </Row>
-                  <a href="#" className="button save-default nowrap">SAVE AS DEFAULT</a>
-                </Col>
-              </Col>
+              <PaymentMethodType type="visa" number={5495} default />
+              <PaymentMethodType type="visa" number={8393} />
+              <AddPaymentType />
+              <a href="#" className="button save-default">SAVE AS DEFAULT</a>
             </ContentContainer>
           </Col>
           <Clearfix />
