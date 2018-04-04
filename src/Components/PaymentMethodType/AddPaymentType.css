@@ -1,0 +1,17 @@
+.add-payment {
+  margin-bottom: 24px; }
+  .add-payment > * > * {
+    display: inline-block; }
+  .add-payment .circle-box {
+    margin-left: 17px;
+    height: 22px;
+    width: 22px;
+    border: 1px solid #979797;
+    border-radius: 22px;
+    margin-right: 37px;
+    vertical-align: -10px; }
+  .add-payment .payment-icon {
+    margin-right: 50px; }
+  .add-payment p {
+    color: #666666;
+    font-size: 12px; }

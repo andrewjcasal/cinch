@@ -6,7 +6,7 @@ import Hamburger from '../assets/images/landing-hamburger.png';
 import LabeledInput from '../Components/UI/LabeledInput/LabeledInput';
 require('./LandingNavbar.css');
 
-const LandingNavbar = (props) => (
+const LandingNavbar = () => (
   <div className="landing-navbar">
     <div className="detail-container">
       <a href="#" className="navbar-left">

@@ -29,6 +29,7 @@ import Dashboard from '../../Pages/Dashboard';
 import Organizations from '../../Pages/Organizations';
 import Users from '../../Pages/Users';
 import UsersDetail from '../../Pages/UsersDetail';
+import HomeDashboard from '../../Pages/HomeDashboard';
 require('bootstrap/dist/css/bootstrap.css');
 require('./App.css');
 
@@ -66,6 +67,9 @@ const App = () => (
         {/* Registrations */}
         <Route path="/registrations" component={Registrations} />
 
+        {/* Home */}
+        <Route path="/home" component={HomeDashboard} />
+
         {/* Households */}
         <Route path="/family" component={Family} />
         <Route path="/order-history" component={OrderHistory} />
@@ -78,6 +82,7 @@ const App = () => (
         <Route path="/organizations" component={Organizations} />
         <Route path="/users" component={Users} />
         <Route path="/users-detail" component={UsersDetail} />
+
       </Switch>
     </div>
   </Router>

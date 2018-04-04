@@ -1,0 +1,53 @@
+.credit-card-list {
+  width: 300px;
+  display: inline-block;
+  vertical-align: top; }
+  .credit-card-list .card {
+    margin: 32px 0; }
+    .credit-card-list .card > * {
+      display: inline-block;
+      vertical-align: middle; }
+    .credit-card-list .card a {
+      border: 1px solid #979797;
+      height: 22px;
+      width: 22px;
+      border-radius: 22px;
+      box-sizing: border-box;
+      margin-left: 13px; }
+      .credit-card-list .card a.selected {
+        background-color: #141414;
+        border: 1px solid #141414;
+        background-image: url("../images/cc-tick.png");
+        background-repeat: no-repeat;
+        background-position: center; }
+    .credit-card-list .card .tick {
+      text-align: center;
+      font-family: "Roboto Medium";
+      font-size: 12px;
+      color: #666666;
+      text-decoration: none;
+      padding-top: 3px; }
+  .credit-card-list img {
+    margin-left: 33px; }
+  .credit-card-list p {
+    margin-left: 46px; }
+  .credit-card-list a + p {
+    margin-left: 33px; }
+
+#payment-method .button {
+  height: 30px;
+  font-size: 9px;
+  width: 97px;
+  padding-top: 8px; }
+
+#payment-method .button.save-default {
+  width: 120px; }
+
+#payment-method .new-credit-card p {
+  color: #666666;
+  font-size: 12px;
+  margin-bottom: 17px; }
+
+#payment-method .credit-card-list p {
+  color: #666666;
+  font-size: 12px; }
