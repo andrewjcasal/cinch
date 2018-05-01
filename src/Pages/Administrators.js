@@ -41,6 +41,10 @@ class Administrators extends Component {
     this.setState({ show: true });
   }
 
+  handleHide = () => {
+    this.setState({ show: false });
+  }
+
   render() {
     return ( <Container>
       <Row>
@@ -64,6 +68,7 @@ class Administrators extends Component {
         <div className="section">
           <div className="heading">
             Invite New Administrator
+            <a href="#" onClick={this.handleHide} class="close-button">X</a>
           </div>
           <Row>
             <Col md={12}>

@@ -10,6 +10,9 @@
   box-sizing: border-box;
   vertical-align: middle; }
 
+.ReactTable .rt-tr-group:last-child .rt-tr {
+  border-bottom: 0; }
+
 .ReactTable .rt-tr {
   border-bottom: 2px solid #F5F5F5;
   list-style: none;

@@ -9,13 +9,8 @@ import Dropdown from '../Components/UI/Dropdown/Dropdown';
 import FooterButtons from '../Components/FooterButtons';
 import Datepicker from '../Components/Datepicker';
 import {Row, Col, Popover, OverlayTrigger} from 'react-bootstrap';
+import TableColumnLayout from '../Components/TableColumnLayout';
 require('../containers/App/App.css');
-
-const popoverRight = (
-  <Popover id="popover-positioned-right" title="Popover right">
-    <strong>Holy guacamole!</strong> Check this info.
-  </Popover>
-);
 
 const TableData = [{
   question: "Question 1"
@@ -28,7 +23,7 @@ const TableData = [{
 }];
 const TableColumns = [
   {Header: () => <div style={{paddingLeft: 18 + 'px'}}>Question</div>,
-    accessor: "question", width: 259,
+    accessor: "question", width: 189,
     Cell: row => (
       <div style={{paddingLeft: 18 + 'px'}}>
         {row.value}
@@ -39,16 +34,7 @@ const TableColumns = [
       <div className="centered">
         <input type="checkbox" />
       </div>)},
-  {
-    Header: "",
-    accessor: "more",
-    width: 38, 
-    Cell: row => (
-      <OverlayTrigger trigger="click" placement="right" overlay={popoverRight}>
-        <img src={Ellipses} data-toggle="popover" data-placement="right" data-content="Edit | Delete" />
-      </OverlayTrigger>
-      )
-  }
+  TableColumnLayout("more",  40, {isCentered: true})
 ]
 
 const Divisions = () => (
@@ -105,7 +91,7 @@ const Divisions = () => (
           />
         </div>
       }>
-        <FooterButtons cancel next />
+        <FooterButtons cancel next="/welcome" />
       </ ContentContainer>
     </SectionWithHeading>
   </Container>

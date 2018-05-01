@@ -3,7 +3,7 @@
   text-align: right; }
   .footer-buttons.centered {
     text-align: center; }
-  .footer-buttons button {
+  .footer-buttons button, .footer-buttons a {
     font-family: "Roboto-Black";
     padding: 11px 0 9px 0;
     width: 104px;
@@ -14,7 +14,11 @@
     color: #B3B3B3; }
   .footer-buttons .next-button {
     border: 2px solid #000000;
-    border-radius: 4px; }
+    border-radius: 4px;
+    display: inline-block;
+    text-align: center;
+    color: #141414;
+    text-decoration: none; }
   .footer-buttons .save-button {
     display: inline-block;
     margin-top: 5px;
@@ -24,4 +28,8 @@
     border-radius: 4px; }
     .footer-buttons .save-button.black {
       border-color: #000;
-      color: #000; }
+      color: #000;
+      transition: background-color 0.25s, color 0.25s; }
+      .footer-buttons .save-button.black:hover {
+        color: #FFFFFF;
+        background-color: #141414; }

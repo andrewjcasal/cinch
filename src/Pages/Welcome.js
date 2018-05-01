@@ -49,7 +49,7 @@ const Welcome = () => (
           </Row>
         </div>
       }>
-        <FooterButtons cancel next />
+        <FooterButtons cancel next="/buttons" />
       </ContentContainer>
     </SectionWithHeading>
   </Container>

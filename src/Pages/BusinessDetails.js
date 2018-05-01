@@ -53,13 +53,13 @@ class BusinessDetails extends React.Component {
                     <Col md={12}><input type="text" name="organization" onChange={this.handleChange} placeholder="Organization Name" /></Col>
                   </Row>
                   <Row>
-                    <Col md={12}><input type="text" placeholder="YOURCLUB.cinchsports.com" /></Col>
+                    <Col md={12}><input type="text" name="website" onChange={this.handleChange} placeholder="YOURCLUB.cinchsports.com" /></Col>
                   </Row>
                   <Row>
-                    <Col md={12}><input type="text" placeholder="Address" /></Col>
+                    <Col md={12}><input type="text" name="address" placeholder="Address" /></Col>
                   </Row>
                   <Row>
-                    <Col md={4}><input type="text" placeholder="City" /></Col>
+                    <Col md={4}><input type="text" name="city" placeholder="City" /></Col>
                     <Col md={4}><Dropdown title="State" options={this.state.states}/></Col>
                     <Col md={4}><input type="text" placeholder="Zip" /></Col>
                   </Row>
@@ -68,13 +68,15 @@ class BusinessDetails extends React.Component {
                     <Col md={4}><Dropdown title="Affiliation" options={["male","female"]}/></Col>
                     <Col md={4}><input type="text" placeholder="Federal Tax ID" /></Col>
                   </Row>
-                  <Row>
-                    <Col md={12}><Wysiwyg /></Col>
-                  </Row>
                 </div>
               } right={
                 <DragFile label="Organization Logo" />
               }>
+                <Col md={12}>
+                  <Row>
+                    <Col md={12}><Wysiwyg /></Col>
+                  </Row>
+                </Col>
               </ContentContainer>
               <Row>
                 <Col md={12}><FooterButtons centered save="black" /></Col>

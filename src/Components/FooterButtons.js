@@ -1,4 +1,6 @@
 import React from 'react';
+import {Col} from 'react-bootstrap';
+import {Link} from 'react-router-dom';
 require('./FooterButtons.css');
 
 class FooterButtons extends React.Component {
@@ -15,7 +17,7 @@ class FooterButtons extends React.Component {
     }
 
     return (
-      <div className={footerOptions + "footer-buttons"}>
+      <Col md={12} className={footerOptions + "footer-buttons"}>
         {this.props.save &&
           <button className={options + "save-button"}>SAVE</button>
         }
@@ -23,9 +25,9 @@ class FooterButtons extends React.Component {
           <button className="cancel-button">CANCEL</button>
         }
         {this.props.next &&
-          <button className="next-button">NEXT</button>
+          <Link to={this.props.next} className="next-button">NEXT</Link>
         }
-      </div> )
+      </Col> )
   }
 }
 

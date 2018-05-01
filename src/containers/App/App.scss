@@ -33,6 +33,7 @@ body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
   margin-bottom: 12px;
   position: relative;
+  width: 100%;
 }
 .content-container {
     width: 1142px;
@@ -95,7 +96,7 @@ div[class*="col-md-"] {
   padding-right: 15px;
 
   > * {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 
     > div[class*="col-md-"] > * {
       margin-bottom: 0;
@@ -209,6 +210,7 @@ p.subheading {
   color: #666666;
   font-size: 12px;
   margin-bottom: 7px;
+  margin-top: 5px;
 
   input[type=checkbox] {
     margin-right: 10px;
@@ -258,6 +260,54 @@ p.subheading {
 
     .Button {
       margin-top: 100px;
+    }
+  }
+}
+
+.row:before, .row:after {
+  content: normal;
+}
+
+.close-button {
+  color: #141414;
+  font-size: 17px;
+  position: absolute;
+  top: 19px;
+  right: 20px;
+
+  &:hover {
+    color: #141414;
+    text-decoration: none;
+  }
+}
+
+.ellipses-container {
+  width: 50px;
+  display: block;
+  height: 35px;
+  margin: 0 auto;
+  padding-top: 6px;
+}
+
+.popover.right > .arrow:after {
+  bottom: -8px;
+  left: 3px;
+}
+.popover-title {
+  display: none;
+}
+
+.popover-content {
+  padding: 0;
+  font-size: 14px;
+  color: #808080;
+  text-align: center;
+
+  >div {
+    padding: 10px 30px;
+
+    &:first-child {
+      border-bottom: 1px solid #F5F5F5;
     }
   }
 }

@@ -34,7 +34,11 @@ const ProgramsColumns = [
 const Programs = () => (
   <div id="Programs">
     <Container>
-      <SectionWithHeading heading="Program Name" bulk="true" active="true" createnew="true">
+      <SectionWithHeading
+        heading="Program Name"
+        bulk="true"
+        active="true"
+        createnew={{link: "/create-program"}}>
         <Table
           data={ProgramsData}
           columns={ProgramsColumns}

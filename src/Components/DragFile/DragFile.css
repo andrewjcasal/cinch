@@ -1,7 +1,8 @@
 .Drag-File {
   text-align: center;
   border-radius: 4px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  margin: 0 auto; }
   .Drag-File.Program {
     margin-top: 35px; }
   .Drag-File > div {

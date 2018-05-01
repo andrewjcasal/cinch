@@ -9,15 +9,10 @@ import ContentContainer from '../Components/UI/ContentContainer/ContentContainer
 import Wysiwyg from '../Components/Wysiwyg';
 import FooterButtons from '../Components/FooterButtons';
 import {Row, Col, Popover, OverlayTrigger} from 'react-bootstrap';
+import TableColumnLayout from '../Components/TableColumnLayout';
 require('../containers/App/App.css');
 require('../Components/Table.css');
 require('./Family.css');
-
-const popoverRight = (
-  <Popover id="popover-positioned-right" title="Popover right">
-    <strong>Holy guacamole!</strong> Check this info.
-  </Popover>
-);
 
 const TableData = [{
   check: "&nbsp;",
@@ -34,7 +29,7 @@ const TableColumns = [
       </div>)},
   {Header: "Name",      accessor: "name", width: 122},
   {Header: () => <div className="centered">Required</div>,
-    accessor: "required", width: 130,
+    accessor: "required", width: 70,
     Cell: row => (
       <div className="centered">
         <input type="checkbox" />
@@ -45,16 +40,7 @@ const TableColumns = [
       <div className="centered">
         <input type="checkbox" />
       </div>)},
-  {
-    Header: "",
-    accessor: "more",
-    width: 38, 
-    Cell: row => (
-      <OverlayTrigger trigger="click" placement="right" overlay={popoverRight}>
-        <img src={Ellipses} data-toggle="popover" data-placement="right" data-content="Edit | Delete" />
-      </OverlayTrigger>
-      )
-  }
+  TableColumnLayout("more",  40, {isCentered: true})
 ]
 
 class CreateProgramDocuments extends React.Component {
@@ -99,7 +85,7 @@ class CreateProgramDocuments extends React.Component {
               />
             </div>
           }>
-            <FooterButtons cancel next />
+            <FooterButtons cancel next="/questions" />
           </ ContentContainer>
         </SectionWithHeading>
       </Container>
