@@ -11,7 +11,8 @@ class Datepicker extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      startDate: ''
+      startDate: '',
+      name: this.props.name
     };
     this.handleChange = this.handleChange.bind(this);
   }
@@ -27,7 +28,7 @@ class Datepicker extends React.Component {
       return (
         <DatePicker
           selected={this.state.startDate}
-          onChange={this.handleChange}
+          onChange={this.props.onChange}
           placeholderText={this.props.placeholder}
           showTimeSelect
           timeFormat="HH:mm"
