@@ -7,7 +7,14 @@ const Dropdown = (props) => {
   
   if (props.options && props.options.length) {
     options = props.options.map((option, i) =>
-      <MenuItem eventKey={i}>{option}</MenuItem>
+      <MenuItem 
+        active={false}
+        onSelect={() => this.active = true}
+        eventKey={i}
+        value={option}
+      >
+        {option}
+      </MenuItem>
     );
   }
 
