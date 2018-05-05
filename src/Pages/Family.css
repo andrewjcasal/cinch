@@ -9,7 +9,7 @@
   margin-right: 28px; }
 
 .gen-info-content {
-  padding: 22px 34px; }
+  padding: 18px 34px; }
 
 .gen-info-content .name-label {
   display: inline-block;
@@ -17,17 +17,19 @@
   vertical-align: top;
   margin-bottom: 25px;
   color: #666666;
-  font-size: 13px; }
+  font-size: 13px;
+  line-height: 25px; }
 
 .gen-info-content .info {
   vertical-align: top;
   display: inline-block;
   width: 200px;
   color: #B3B3B3;
-  font-size: 13px; }
+  font-size: 13px;
+  line-height: 25px; }
 
 .gen-info .heading .options,
 .notes .heading .options {
   position: absolute;
-  top: 23px;
-  right: 30px; }
+  top: 17px;
+  right: 0px; }

@@ -1,6 +1,6 @@
 .login {
-  padding-top: 100px;
-  padding-bottom: 200px; }
+  padding-top: 20px;
+  padding-bottom: 50px; }
   .login > * {
     margin: 0 auto; }
   .login h2 {
@@ -20,13 +20,13 @@
   .login .bordered-container {
     border: 1px solid rgba(20, 20, 20, 0.2);
     border-radius: 10px;
-    padding: 50px;
-    margin-top: 50px; }
+    padding: 40px;
+    margin-top: 20px; }
   .login .image-container {
     text-align: center; }
     .login .image-container > * {
       display: inline-block;
-      margin: 20px; }
+      margin: 10px; }
   .login .register-instead {
     font-size: 14px;
     font-family: "Montserrat Light";
@@ -35,8 +35,7 @@
     display: inline-block; }
 
 .login-container {
-  height: 667px;
-  width: 470px;
+  width: 420px;
   border-radius: 10px;
   padding: 48px 50px;
   margin-left: auto;

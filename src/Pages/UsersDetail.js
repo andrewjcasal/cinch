@@ -45,120 +45,111 @@ const TableColumns = [
 ]
 
 const Users = () => (
-  <Container>
-    <Row>
-      <Col md={3}>
-        <Sidebar active="1" pageType="admin" />
-      </Col>
-      <Col md={9}>
-        <SectionWithHeading heading="View Member Details">
-          <SubSection>
-            <Row>
-              <Col md={3}>
-                <img src={PlaceholderAvatar} style={{marginLeft: 30 + "px"}} />
-              </Col>
-              <Col md={8}>
-                <Row>
-                  <Col md={6}>
-                    <input type="text" placeholder="First Name" />
-                  </Col>
-                  <Col md={6}>
-                    <input type="text" placeholder="Last Name" />
-                  </Col>
-                  <Col md={6}>
-                    <input type="text" placeholder="Email" />
-                  </Col>
-                  <Col md={6}>
-                    <input type="text" placeholder="Mobile Number" />
-                  </Col>
-                  <Col md={6}>
-                    <Dropdown options={['Male', 'Female', 'Other']}title="Gender" />
-                  </Col>
-                  <Col md={6}>
-                    <Datepicker placeholder="Birthday" includeTime />
-                  </Col>
-                </Row>
-              </Col>
-            </Row>
-          </SubSection>
-          <SubSection heading="Login">
-            <Row>
-              <Col md={3}></Col>
-              <Col md={8}>
-                <Row>
-                  <Col md={6}>
-                    <input type="text" />
-                  </Col>
-                  <Col md={6}>
-                    <button class="send-invite">SEND INVITE</button>
-                    <button class="reset-password">Reset Password?</button>
-                  </Col>
-                </Row>
-              </Col>
-            </Row> 
-          </SubSection>
-          <SubSection heading="Address">
-            <Row>
-              <Col md={3}>
-              </Col>
-              <Col md={8}>
-                <Row>
-                  <Col md={12}>
-                    <input type="text" placeholder="Street Address" />
-                  </Col>
-                  <Col md={4}>
-                    <input type="text" placeholder="City" />
-                  </Col>
-                  <Col md={4}>
-                    <input type="text" placeholder="State" />
-                  </Col>
-                  <Col md={4}>
-                    <input type="text" placeholder="Zip" />
-                  </Col>
-                </Row>
-              </Col>
-            </Row>
-          </SubSection>
-          <SubSection heading="Relationships">
-            <Row>
-              <Col md={3}>
-              </Col>
-              <Col md={8}>
-                <Row>
-                  <Col md={4}>
-                    <Dropdown title="Select Member" />
-                  </Col>
-                  <Col md={4}>
-                    <Dropdown title="Relationship" />
-                  </Col>
-                  <Col md={4}>
-                    <a class="with-icon" href="#">
-                      <span class="tick-mark"><img src={Tick} /></span>
-                      Access Financials</a>
-                  </Col>
-                </Row>
-                <Row>
-                  <Col md={4}>
-                    <a class="with-icon" href="#">
-                      <img src={AddUser} />Add Another</a>
-                  </Col>
-                </Row>
-              </Col>
-            </Row>
-          </SubSection>
-          <SubSection heading="Orders" all>
-          </SubSection>
-          <Table
-            data={TableData}
-            columns={TableColumns}
-            minRows={0}
-            showPaginationTop={false}
-            showPaginationBottom={false}
-          />
-        </SectionWithHeading>
-      </Col>
-    </Row>
-  </Container>
+  <SectionWithHeading heading="View Member Details">
+    <SubSection>
+      <Row>
+        <Col md={3}>
+          <img src={PlaceholderAvatar} style={{marginLeft: 30 + "px"}} />
+        </Col>
+        <Col md={8}>
+          <Row>
+            <Col md={6}>
+              <input type="text" placeholder="First Name" />
+            </Col>
+            <Col md={6}>
+              <input type="text" placeholder="Last Name" />
+            </Col>
+            <Col md={6}>
+              <input type="text" placeholder="Email" />
+            </Col>
+            <Col md={6}>
+              <input type="text" placeholder="Mobile Number" />
+            </Col>
+            <Col md={6}>
+              <Dropdown options={['Male', 'Female', 'Other']}title="Gender" />
+            </Col>
+            <Col md={6}>
+              <Datepicker placeholder="Birthday" includeTime />
+            </Col>
+          </Row>
+        </Col>
+      </Row>
+    </SubSection>
+    <SubSection heading="Login">
+      <Row>
+        <Col md={3}></Col>
+        <Col md={8}>
+          <Row>
+            <Col md={6}>
+              <input type="text" />
+            </Col>
+            <Col md={6}>
+              <button class="send-invite">SEND INVITE</button>
+              <button class="reset-password">Reset Password?</button>
+            </Col>
+          </Row>
+        </Col>
+      </Row> 
+    </SubSection>
+    <SubSection heading="Address">
+      <Row>
+        <Col md={3}>
+        </Col>
+        <Col md={8}>
+          <Row>
+            <Col md={12}>
+              <input type="text" placeholder="Street Address" />
+            </Col>
+            <Col md={4}>
+              <input type="text" placeholder="City" />
+            </Col>
+            <Col md={4}>
+              <input type="text" placeholder="State" />
+            </Col>
+            <Col md={4}>
+              <input type="text" placeholder="Zip" />
+            </Col>
+          </Row>
+        </Col>
+      </Row>
+    </SubSection>
+    <SubSection heading="Relationships">
+      <Row>
+        <Col md={3}>
+        </Col>
+        <Col md={8}>
+          <Row>
+            <Col md={4}>
+              <Dropdown title="Select Member" />
+            </Col>
+            <Col md={4}>
+              <Dropdown title="Relationship" />
+            </Col>
+            <Col md={4}>
+              <a class="with-icon" href="#">
+                <span class="tick-mark"><img src={Tick} /></span>
+                Access Financials</a>
+            </Col>
+          </Row>
+          <Row>
+            <Col md={4}>
+              <a class="with-icon" href="#">
+                <img src={AddUser} />Add Another</a>
+            </Col>
+          </Row>
+        </Col>
+      </Row>
+    </SubSection>
+    <SubSection heading="Orders" all>
+    </SubSection>
+    <Table
+      data={TableData}
+      columns={TableColumns}
+      minRows={0}
+      showPaginationTop={false}
+      showPaginationBottom={false}
+    />
+  </SectionWithHeading>
 )
 
 export default Users;

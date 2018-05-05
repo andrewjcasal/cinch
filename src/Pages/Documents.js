@@ -4,6 +4,7 @@ import PageToggle from '../Components/UI/PageToggle/PageToggle';
 import SectionWithHeading from '../Components/UI/SectionWithHeading/SectionWithHeading';
 import Ellipses from '../assets/images/ellipses.png';
 import Table from 'react-table';
+import TableColumnLayout from '../Components/TableColumnLayout';
 require('bootstrap/dist/css/bootstrap.css');
 require('../containers/App/App.css');
 require('bootstrap/dist/css/bootstrap.css');
@@ -34,14 +35,7 @@ const DocumentsColumns = [
   {Header: "Type",       accessor: "type", width: 156},
   {Header: "Date",       accessor: "date", width: 165},
   {Header: "",           accessor: "view", width: 65},
-  {
-    Header: "More",
-    accessor: "more",
-    width: 40, 
-    Cell: row => (
-      <img src={Ellipses} data-toggle="popover" data-placement="right" data-content="Edit | Delete" />
-      )
-  },
+  TableColumnLayout("more", 40, {isCentered: true})
 ]
 
 const Documents = () => (

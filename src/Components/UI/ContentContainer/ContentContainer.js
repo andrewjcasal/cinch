@@ -13,7 +13,11 @@ const ContentContainer = (props) => (
       <Col md={4}>
         {props.right}
       </Col> }
-    {props.children}
+    {props.children &&
+      <Col md={12}>
+        {props.children}
+      </Col>
+    }
   </Row>
 )
 

@@ -2,9 +2,9 @@ import React from 'react';
 import Container from '../Components/UI/Container/Container';
 import PageToggle from '../Components/UI/PageToggle/PageToggle';
 import SectionWithHeading from '../Components/UI/SectionWithHeading/SectionWithHeading';
-import Ellipses from '../assets/images/ellipses.png';
-import Star from '../assets/images/star.png';
 import Table from 'react-table';
+import TableColumnLayout from '../Components/TableColumnLayout';
+import Ellipses from '../Components/Ellipses';
 require('../containers/App/App.css');
 require('bootstrap/dist/css/bootstrap.css');
 require('../Components/Table.css');
@@ -23,12 +23,8 @@ const MembersData = [{
   more: "blah"
 }];
 const MembersColumns = [
+  TableColumnLayout("starred",  90, {isCentered: true}),
   {
-    Header: "",
-    accessor: "starred",
-    width: 90,
-    Cell: row => (<div className="starred"><img src={Star} /></div>)
-  }, {
     Header: "Image",
     accessor: "image",
     width: 95,
@@ -40,15 +36,8 @@ const MembersColumns = [
   {Header: "Birthdate", accessor: "birthdate", width: 131},
   {Header: "ID",        accessor: "id", width: 110},
   {Header: "Email",     accessor: "email", width: 210},
-  {Header: "Mobile",    accessor: "mobile", width: 97},
-  {
-    Header: "More",
-    accessor: "more",
-    width: 40, 
-    Cell: row => (
-      <img src={Ellipses} data-toggle="popover" data-placement="right" data-content="Edit | Delete" />
-      )
-  },
+  {Header: "Mobile",    accessor: "mobile", width: 80},
+  TableColumnLayout("more", 40, {isCentered: true})
 ]
 
 const ContactsData = [{
@@ -70,15 +59,8 @@ const ContactsColumns = [
   {Header: "Name",         accessor: "name", width: 196},
   {Header: "Relationship", accessor: "relationship", width: 253},
   {Header: "Email",        accessor: "email", width: 321},
-  {Header: "Mobile",       accessor: "mobile", width: 147},
-  {
-    Header: "",
-    accessor: "more",
-    width: 40, 
-    Cell: row => (
-      <img src={Ellipses} data-toggle="popover" data-placement="right" data-content="Edit | Delete" />
-      )
-  },
+  {Header: "Mobile",       accessor: "mobile", width: 127},
+  TableColumnLayout("more", 40, {isCentered: true})
 ]
 
 const Family = () => (
@@ -89,7 +71,7 @@ const Family = () => (
         <div className="heading">
           General Information
           <div className="options">
-            <img src={Ellipses} />
+            <Ellipses />
           </div>
         </div>
         <div className="gen-info-content">
@@ -98,9 +80,8 @@ const Family = () => (
 
           <p className="name-label">Address</p>
           <p className="info">
-            1234 Main Street
-          </p>
-          <p className="info">
+            1234 Main Street<br />
+
             Any Town, CA 95124
           </p>
         </div>
@@ -109,7 +90,7 @@ const Family = () => (
         <div className="heading">
           Notes
           <div className="options">
-            <img src={Ellipses} />
+            <Ellipses />
           </div>
         </div>
       </div>

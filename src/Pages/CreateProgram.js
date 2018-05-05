@@ -37,7 +37,7 @@ class CreateProgram extends React.Component {
             <ContentContainer type="Programs" left={
               <div>
                 <Row>
-                  <Col md={12}><input type="text" placeholder="Program Name" /></Col>
+                  <Col md={12}><input type="text" placeholder="Program Name" onChange={this.handleInput} /></Col>
                 </Row>
                 <Row>
                   <Col md={3}><Dropdown title="Sport" options={this.state.sports} /></Col>

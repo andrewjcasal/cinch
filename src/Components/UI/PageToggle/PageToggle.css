@@ -1,5 +1,6 @@
 .households-selection {
-  padding-left: 16px; }
+  padding-left: 16px;
+  font-size: 14px; }
   .households-selection li {
     display: inline-block; }
     .households-selection li div {

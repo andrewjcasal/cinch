@@ -28,7 +28,6 @@ import AdminLogin from '../../Pages/AdminLogin';
 import Dashboard from '../../Pages/Dashboard';
 import Organizations from '../../Pages/Organizations';
 import Users from '../../Pages/Users';
-import UsersDetail from '../../Pages/UsersDetail';
 import HomeDashboard from '../../Pages/HomeDashboard';
 require('bootstrap/dist/css/bootstrap.css');
 require('./App.css');
@@ -60,6 +59,7 @@ const App = () => (
         <Route path="/programs" component={Programs} />
         <Route path="/create-program-documents" component={CreateProgramDocuments} />
         <Route path="/create-program" exact component={CreateProgram} />
+        <Route path="/questions" component={Questions} />
         <Route path="/divisions" component={Divisions} />
         <Route path="/welcome" component={Welcome} />
         <Route path="/buttons" component={Buttons} />
@@ -74,14 +74,12 @@ const App = () => (
         <Route path="/family" component={Family} />
         <Route path="/order-history" component={OrderHistory} />
         <Route path="/documents" component={Documents} />
-        <Route path="/questions" component={Questions} />
 
         {/* Admin */}
         <Route path="/admin-login" component={AdminLogin} />
         <Route path="/dashboard" component={Dashboard} />
         <Route path="/organizations" component={Organizations} />
         <Route path="/users" component={Users} />
-        <Route path="/users-detail" component={UsersDetail} />
 
       </Switch>
     </div>

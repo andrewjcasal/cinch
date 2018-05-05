@@ -27,6 +27,9 @@ class FooterButtons extends React.Component {
         {this.props.next &&
           <Link to={this.props.next} className="next-button">NEXT</Link>
         }
+        {this.props.complete &&
+          <Link to={this.props.complete} className="next-button">COMPLETE</Link>
+        }
       </Col> )
   }
 }

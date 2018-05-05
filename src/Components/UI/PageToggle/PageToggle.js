@@ -5,15 +5,15 @@ require('./PageToggle.css');
 const PageToggle = (props) => (
   <ul className="households-selection section">
     <li className={props.selected == "family" && "selected"}>
-      <a href="#">Family</a>
+      <a href="/family">Family</a>
       <div></div>
     </li>
     <li className={props.selected == "order-history" && "selected"}>
-      <a href="#">Order History</a>
+      <a href="/order-history">Order History</a>
       <div></div>
     </li>
     <li className={props.selected == "documents" && "selected"}>
-      <a href="#">Documents</a>
+      <a href="/documents">Documents</a>
       <div></div>
     </li>
   </ul>

@@ -28,10 +28,10 @@ const Buttons = () => (
             </ul>
           </Col>
           <Col md={6}>
-            <div class="gray-border"></div>
+            <div class="gray-border" style={{height: 547}}></div>
           </Col>
         </Row>
-        <FooterButtons cancel next />
+        <FooterButtons cancel complete="/" />
       </ContentContainer>
     </SectionWithHeading>
   </Container>

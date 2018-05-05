@@ -4,6 +4,7 @@ import Container from '../Components/UI/Container/Container';
 import PageToggle from '../Components/UI/PageToggle/PageToggle';
 import SectionWithHeading from '../Components/UI/SectionWithHeading/SectionWithHeading';
 import Table from 'react-table';
+import TableColumnLayout from '../Components/TableColumnLayout';
 import Star from '../assets/images/star.png';
 import Visa from '../assets/images/visa.png';
 import Mastercard from '../assets/images/mastercard.png';

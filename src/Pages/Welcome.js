@@ -13,9 +13,7 @@ const Welcome = () => (
     <ProgramSteps completed="5" />
     <SectionWithHeading heading="Email">
       <ContentContainer type="Programs" top={
-        <Row>
-          <Col md={12}><p className="subheading">Registration Email</p></Col>
-        </Row>
+        <Col md={12}><p className="subheading">Welcome Email</p></Col>
       } left={
         <div>
           <Row>
@@ -36,9 +34,7 @@ const Welcome = () => (
         </div>
       } />
       <ContentContainer type="Programs" top={
-        <Row>
-          <Col md={12}><p className="subheading">Registration Email</p></Col>
-        </Row>
+        <Col md={12}><p className="subheading">Waitlist Email</p></Col>
       } left={
         <div>
           <Row>

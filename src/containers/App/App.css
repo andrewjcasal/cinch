@@ -255,3 +255,7 @@ p.subheading {
     padding: 10px 30px; }
     .popover-content > div:first-child {
       border-bottom: 1px solid #F5F5F5; }
+
+.gray-border {
+  border: 2px solid #F5F5F5;
+  border-radius: 4px; }

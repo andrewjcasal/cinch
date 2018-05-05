@@ -12,16 +12,16 @@
     position: relative; }
     .sidebar li:last-child {
       border-bottom: 0; }
-  .sidebar a {
+  .sidebar .link-item {
     display: block;
     border-left: 2px solid transparent;
     color: #9B9B9B;
     text-decoration: none;
     padding: 12px 20px 11px 20px; }
-    .sidebar a.active {
+    .sidebar .link-item.active {
       border-left-color: #1875F0;
       color: #363636; }
-    .sidebar a span {
+    .sidebar .link-item span {
       display: block;
       background-color: #D0021B;
       height: 18px;
@@ -30,5 +30,5 @@
       position: absolute;
       top: 20px;
       right: 20px; }
-      .sidebar a span.done {
+      .sidebar .link-item span.done {
         background: #049539 url("../assets/images/tick.png") center no-repeat; }

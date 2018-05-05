@@ -1,9 +1,10 @@
 import React from 'react';
 
 import ReactTable from 'react-table';
-import Ellipses from '../assets/images/ellipses.png';
 import Dropdown from './UI/Dropdown/Dropdown';
 import {Popover, OverlayTrigger} from 'react-bootstrap';
+import Star from '../assets/images/star.png';
+import Ellipses from './Ellipses';
 
 const Align = (props) => {
   if (props.isCentered) {
@@ -12,21 +13,17 @@ const Align = (props) => {
   return props.children || null;
 }
 
-const popoverRight = (
-  <Popover id="popover-positioned-right" title="Popover right">
-    <div>
-      Edit
-    </div>
-    <div>
-      Delete
-    </div>
-  </Popover>
-);
-
 const TableColumnLayout = (type, width = null, opts = {}, props ={}) => {
   let layout;
 
   switch (type) {
+    case "starred":
+      layout = {
+        Header: "",
+        accessor: "starred",
+        Cell: () => <Align isCentered={opts.isCentered}><div className="starred"><img src={Star} /></div></Align>
+      }
+      break;
     case "check":
       layout = {
         Header: () => <Align isCentered={opts.isCentered}><input type="checkbox" /></Align>,
@@ -73,20 +70,12 @@ const TableColumnLayout = (type, width = null, opts = {}, props ={}) => {
       layout = {
         Header: () => (
           <Align isCentered={opts.isCentered}>
-            <a href="javascript:;"
-              className="ellipses-container">
-              <img src={Ellipses} />
-            </a>
+            <Ellipses />
           </Align>
           ),
         Cell: () => (
           <Align isCentered={opts.isCentered}>
-            <OverlayTrigger trigger="click" placement="right" rootClose overlay={popoverRight}>
-              <a href="javascript:;"
-                className="ellipses-container">
-                <img src={Ellipses} />
-              </a>
-            </OverlayTrigger>
+            <Ellipses />
           </Align>
           ),
         accessor: "more",
