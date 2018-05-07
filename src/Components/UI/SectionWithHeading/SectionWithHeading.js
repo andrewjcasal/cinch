@@ -24,6 +24,7 @@ const SectionWithHeading = (props) => (
       {props.other}
       {props.centermenu && <CenterMenu />}
       {props.calendarmenu && <CalendarMenu />}
+      {props.close && <a href="#" onClick={props.close.handleClose} class="close-button">X</a>}
     </div>
     {props.children}
   </div>

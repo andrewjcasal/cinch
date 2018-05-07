@@ -5,11 +5,13 @@ require('./FooterButtons.css');
 
 class FooterButtons extends React.Component {
   render() {
-    let options = "";
-    let footerOptions = "";
+    let footerOptions = ""
+    let buttonType, handleClick
 
-    if (this.props.save == "black") {
-      options += "black ";
+    if (this.props.save) {
+      buttonType = this.props.save.buttonType
+      handleClick = this.props.save.handleClick
+      console.log(buttonType);
     }
 
     if (this.props.centered) {
@@ -19,7 +21,7 @@ class FooterButtons extends React.Component {
     return (
       <Col md={12} className={footerOptions + "footer-buttons"}>
         {this.props.save &&
-          <button className={options + "save-button"}>SAVE</button>
+          <button className={buttonType + " save-button"} onClick={handleClick}>SAVE</button>
         }
         {this.props.cancel &&
           <button className="cancel-button">CANCEL</button>

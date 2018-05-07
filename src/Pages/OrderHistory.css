@@ -1,7 +1,8 @@
 #OrderHistory .total-bar {
   padding-top: 20px;
   padding-bottom: 20px;
-  color: #808080; }
+  color: #808080;
+  font-size: 14px; }
   #OrderHistory .total-bar .left {
     float: left;
     padding-left: 30px; }

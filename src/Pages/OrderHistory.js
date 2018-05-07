@@ -1,13 +1,15 @@
 
-import React from 'react';
+import React, {Component} from 'react';
 import Container from '../Components/UI/Container/Container';
 import PageToggle from '../Components/UI/PageToggle/PageToggle';
 import SectionWithHeading from '../Components/UI/SectionWithHeading/SectionWithHeading';
 import Table from 'react-table';
 import TableColumnLayout from '../Components/TableColumnLayout';
+import NewPaymentMethod from '../Components/PaymentMethodType/NewPaymentMethod';
 import Star from '../assets/images/star.png';
 import Visa from '../assets/images/visa.png';
 import Mastercard from '../assets/images/mastercard.png';
+import {Row, Col, Clearfix, Modal} from 'react-bootstrap';
 require('bootstrap/dist/css/bootstrap.css');
 require('../containers/App/App.css');
 require('../Components/Table.css');
@@ -46,15 +48,8 @@ const PaymentMethodsColumns = [
   {Header: "Name",       accessor: "name", width: 235},
   {Header: "Type",       accessor: "type", width: 217},
   {Header: "Card #",     accessor: "card-number", width: 265},
-  {Header: "Expiration", accessor: "expiration", width: 165},
-  {
-    Header: "More",
-    accessor: "more",
-    width: 40, 
-    Cell: row => (
-      <img src="../assets/images/ellipses.png" data-toggle="popover" data-placement="right" data-content="Edit | Delete" />
-      )
-  },
+  {Header: "Expiration", accessor: "expiration", width: 160},
+  TableColumnLayout("more", 40, {isCentered: true}),
 ]
 
 const OrdersData = [{
@@ -105,34 +100,60 @@ const OrdersColumns = [
   {Header: "Balance",     accessor: "balance", width: 80},
 ]
 
-const OrderHistory = () => (
-  <div id="OrderHistory">
-    <Container>
-      <PageToggle selected="order-history" />
-      <SectionWithHeading heading="Payment Methods" addnew="true">
-        <Table
-          data={PaymentMethodsData}
-          columns={PaymentMethodsColumns}
-          minRows={0}
-          showPaginationTop={false}
-          showPaginationBottom={false}
-        />
-      </SectionWithHeading>
-      <SectionWithHeading heading="Orders" export="true" dropdown="true">
-        <Table
-          data={OrdersData}
-          columns={OrdersColumns}
-          minRows={0}
-          showPaginationTop={false}
-          showPaginationBottom={false}
-        />
-      </SectionWithHeading>
-      <div className="clearfix section total-bar">
-        <div class="left">Total</div>
-        <div class="right">$60.64</div>
-      </div>
-    </Container>
-  </div>
-)
+class OrderHistory extends Component {
+
+  state = {
+    show: false
+  }
+
+  handleShow = () => {
+    this.setState({ show: true });
+  }
+
+  handleHide = () => {
+    this.setState({ show: false });
+  }
+
+  saveNewPaymentMethod = () => {
+    alert('hello')
+    this.handleHide()
+  }
+
+  render() {
+    return (
+      <div id="OrderHistory">
+        <Container>
+          <PageToggle selected="order-history" />
+          <SectionWithHeading heading="Payment Methods" addnew={this.handleShow}>
+            <Table
+              data={PaymentMethodsData}
+              columns={PaymentMethodsColumns}
+              minRows={0}
+              showPaginationTop={false}
+              showPaginationBottom={false}
+            />
+          </SectionWithHeading>
+          <SectionWithHeading heading="Orders" export="true" dropdown="true">
+            <Table
+              data={OrdersData}
+              columns={OrdersColumns}
+              minRows={0}
+              showPaginationTop={false}
+              showPaginationBottom={false}
+            />
+          </SectionWithHeading>
+          <div className="clearfix section total-bar">
+            <div class="left">Total</div>
+            <div class="right">$60.64</div>
+          </div>
+
+          <Modal style={{paddingTop: 200}} show={this.state.show}>
+            <SectionWithHeading heading="New Payment Method" close={{handleClose: this.handleHide}}>
+              <NewPaymentMethod onSave={this.saveNewPaymentMethod} />
+            </SectionWithHeading>
+          </Modal>
+        </Container>
+      </div> )}
+}
 
 export default OrderHistory;
