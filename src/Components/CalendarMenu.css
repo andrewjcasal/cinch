@@ -1,7 +1,7 @@
 .calendar-menu {
   position: absolute;
   top: 18px;
-  right: 0; }
+  right: 40px; }
   .calendar-menu > * {
     display: inline-block;
     color: #808080;

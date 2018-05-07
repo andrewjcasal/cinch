@@ -4,7 +4,7 @@ import PageToggle from '../Components/UI/PageToggle/PageToggle';
 import SectionWithHeading from '../Components/UI/SectionWithHeading/SectionWithHeading';
 import Table from 'react-table';
 import TableColumnLayout from '../Components/TableColumnLayout';
-import Ellipses from '../Components/Ellipses';
+import {Row, Col} from 'react-bootstrap'
 require('../containers/App/App.css');
 require('bootstrap/dist/css/bootstrap.css');
 require('../Components/Table.css');
@@ -67,33 +67,28 @@ const Family = () => (
   <div id="Family">
     <Container>
       <PageToggle selected="family" />
-      <div className="gen-info section">
-        <div className="heading">
-          General Information
-          <div className="options">
-            <Ellipses />
-          </div>
-        </div>
-        <div className="gen-info-content">
-          <p className="name-label">Household Name</p>
-          <p className="info">Gray</p>
+      <Row>
+      <Col md={6}>
+        <SectionWithHeading heading="General Information" more>
+          <div className="gen-info-content " style={{height: 156}}>
+            <p className="name-label">Household Name</p>
+            <p className="info">Gray</p>
 
-          <p className="name-label">Address</p>
-          <p className="info">
-            1234 Main Street<br />
+            <p className="name-label">Address</p>
+            <p className="info">
+              1234 Main Street<br />
 
-            Any Town, CA 95124
-          </p>
-        </div>
-      </div>
-      <div className="notes section">
-        <div className="heading">
-          Notes
-          <div className="options">
-            <Ellipses />
+              Any Town, CA 95124
+            </p>
           </div>
-        </div>
-      </div>
+        </SectionWithHeading>
+      </Col>
+      <Col md={6}>
+        <SectionWithHeading heading="Notes" more>
+          <div style={{height: 156}}></div>
+        </SectionWithHeading>
+      </Col>
+      </Row>
       <SectionWithHeading heading="Members">
         <Table
           data={MembersData}

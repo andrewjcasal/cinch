@@ -53,7 +53,7 @@ class Organizations extends Component {
       let organizations = this.state.organizations
         console.log('Organizations data ::>', organizations);
         return (
-          <SectionWithHeading heading="Organizations" centermenu calendarmenu>
+          <SectionWithHeading heading="Organizations" centermenu calendarmenu more>
             <Table 
               data={ organizations } 
               columns={ this.handleHeaderProcessingForTable() }

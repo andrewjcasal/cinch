@@ -58,7 +58,7 @@ const Dashboard = () => (
     <KeyPerfomanceIndicators />
     <Row>
       <Col md={6}>
-        <SectionWithHeading heading="Top Organizations">
+        <SectionWithHeading heading="Top Organizations" more>
           <Table 
             data={ TableData } 
             columns={ TableColumns }

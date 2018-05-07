@@ -11,9 +11,6 @@ const CalendarMenu = () => (
     <div>
       <img src={CalendarIcon} alt="Additional Dates" />
     </div>
-    <div class="organizations-list-image">
-      <img src={Ellipses} alt="Options" />
-    </div>
   </div>
 )
 

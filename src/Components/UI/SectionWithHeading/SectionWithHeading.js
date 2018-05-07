@@ -2,6 +2,7 @@ import React from 'react';
 import Dropdown from '../Dropdown/Dropdown';
 import CenterMenu from '../../CenterMenu';
 import CalendarMenu from '../../CalendarMenu';
+import Ellipses from '../../Ellipses';
 require('./SectionWithHeading.css');
 
 const SectionWithHeading = (props) => (
@@ -25,6 +26,7 @@ const SectionWithHeading = (props) => (
       {props.centermenu && <CenterMenu />}
       {props.calendarmenu && <CalendarMenu />}
       {props.close && <a href="#" onClick={props.close.handleClose} class="close-button">X</a>}
+      {props.more && <div className="options"><Ellipses /></div>}
     </div>
     {props.children}
   </div>

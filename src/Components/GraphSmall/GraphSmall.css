@@ -31,3 +31,7 @@
     width: 180px;
     display: inline-block;
     vertical-align: top; }
+  .graph-small .options {
+    position: absolute;
+    top: 17px;
+    right: 0px; }

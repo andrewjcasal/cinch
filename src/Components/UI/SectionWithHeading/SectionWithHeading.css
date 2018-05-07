@@ -4,6 +4,10 @@
   padding: 22px 30px 21px;
   border-bottom: 2px solid #F5F5F5;
   text-align: left; }
+  .section > .heading .options {
+    position: absolute;
+    top: 17px;
+    right: 0px; }
   .section > .heading button {
     height: 30px;
     width: 97px;

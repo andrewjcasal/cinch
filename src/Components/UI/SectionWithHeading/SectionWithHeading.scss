@@ -4,6 +4,12 @@
   padding: 22px 30px 21px;
   border-bottom: 2px solid #F5F5F5;
   text-align: left;
+  
+  .options {
+    position: absolute;
+    top: 17px;
+    right: 0px;
+  }
 
   button {
     height: 30px;

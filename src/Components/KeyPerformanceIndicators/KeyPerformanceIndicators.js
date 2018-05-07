@@ -1,5 +1,6 @@
 import React from 'react';
 import {Line as LineChart} from 'react-chartjs';
+import SectionWithHeading from '../UI/SectionWithHeading/SectionWithHeading';
 require('./KeyPerformanceIndicators.css');
 
 let chartData = {
@@ -92,11 +93,8 @@ const Indicators = [{
 }]
 
 const KeyPerformanceIndicators = () => (
-  <div id="key-performance-indicators" className="section">
-    <div className="heading">
-      Key Performance Indicators
-    </div>
-    <div>
+  <SectionWithHeading heading="Key Performance Indicators" more>
+    <div id="key-performance-indicators">
       <ul>
         {Indicators.map( ind => {
           return (
@@ -111,7 +109,7 @@ const KeyPerformanceIndicators = () => (
         <LineChart data={chartData} options={chartOptions} width="800" height="300"/>
       </div>
     </div>
-  </div>
+  </SectionWithHeading>
 );
 
 export default KeyPerformanceIndicators;

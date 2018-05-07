@@ -1,6 +1,6 @@
 import React from 'react';
 import {Line as LineChart} from 'react-chartjs';
-import Ellipses from '../../assets/images/ellipses.png';
+import Ellipses from '../Ellipses';
 require('./GraphSmall.css');
 
 let chartData = {
@@ -69,9 +69,8 @@ let chartOptions = {
 
 const GraphSmall = () => (
   <div className="graph-small section">
-    <a className="menu" href="#">
-      <img src={Ellipses} alt="menu"/>
-    </a>
+	<div class="options">
+    <Ellipses /></div>
     <div className="header">Monthly Active Android Users</div>
     <div className="body">
       <div className="labels">
