@@ -32,9 +32,7 @@ class Users extends Component {
     {Header: "Total Price", accessor: "total",      width: 107},
     {Header: "Customer",    accessor: "customer",   width: 75},
     {Header: "",            accessor: "view",       width: 65,
-      Cell:   row => {
-        console.log(row.original.id)
-        return <button className="view-button" onClick={this.viewButton}>VIEW</button>}}
+      Cell:   row => <button className="view-button" onClick={() => this.viewButton(row.original.id)}>VIEW</button>}
   ]
   
   fetchUsers(page) {

@@ -1,6 +1,6 @@
 .add-payment {
   margin-bottom: 24px; }
-  .add-payment > * > * {
+  .add-payment > * {
     display: inline-block; }
   .add-payment .circle-box {
     margin-left: 17px;

@@ -17,6 +17,7 @@ const SectionWithHeading = (props) => (
           <Dropdown title="ACTIVE" /> }
       </div>
       {props.addnew && <a href="#" className="add-new button" onClick={props.addnew}>ADD NEW</a>}
+      {props.edit && <a href="#" className="add-new button" onClick={props.edit}>EDIT</a>}
       {props.createnew && <a href={props.createnew.link} className="add-new button">CREATE NEW</a>}
       {props.export && <a href="#" className="export button">EXPORT</a>}
       {props.email && <a href="#" className="email button">EMAIL</a>}

@@ -21,7 +21,7 @@ const PaymentMethod = () => (
       <Col md={9}>
         <SectionWithHeading heading="Payment Method">
           <Col md={8}>
-            <ContentContainer>
+            <Row>
               <Col md={12}>
                   <Row>
                     <Col md={6}>
@@ -51,15 +51,15 @@ const PaymentMethod = () => (
                     <Col md={12}><FooterButtons centered save="black" /></Col>
                   </Row>
               </Col>
-            </ContentContainer>
+            </Row>
           </Col>
           <Col md={4} style={{borderLeft: "2px solid #F5F5F5"}}>
-            <ContentContainer>
+            <Row>
               <PaymentMethodType type="visa" number={5495} default />
               <PaymentMethodType type="visa" number={8393} />
               <AddPaymentType />
               <a href="#" className="button save-default">SAVE AS DEFAULT</a>
-            </ContentContainer>
+            </Row>
           </Col>
           <Clearfix />
         </SectionWithHeading>

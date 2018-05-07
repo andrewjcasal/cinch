@@ -5,13 +5,11 @@ require('./PaymentMethodType.css')
 
 const PaymentMethodType = (props) => {
   return (
-    <Row className="payment-method-type">
-      <Col>
-        <div className="circle-box"></div>
-        <img className="payment-icon" src={Visa} />
-        <p>*{props.number} {props.default && "(Default)"}</p>
-      </Col>
-    </Row> )
+    <Col md={12} className="payment-method-type">
+      <div className="circle-box"></div>
+      <img className="payment-icon" src={Visa} />
+      <p>*{props.number} {props.default && "(Default)"}</p>
+    </Col>)
 }
 
 export default PaymentMethodType;

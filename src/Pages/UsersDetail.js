@@ -45,13 +45,13 @@ const TableColumns = [
 ]
 
 const Users = () => (
-  <SectionWithHeading heading="View Member Details">
+  <SectionWithHeading heading="View Member Details" edit>
     <SubSection>
       <Row>
         <Col md={3}>
           <img src={PlaceholderAvatar} style={{marginLeft: 30 + "px"}} />
         </Col>
-        <Col md={8}>
+        <Col md={9}>
           <Row>
             <Col md={6}>
               <input type="text" placeholder="First Name" />
@@ -59,12 +59,16 @@ const Users = () => (
             <Col md={6}>
               <input type="text" placeholder="Last Name" />
             </Col>
+          </Row>
+          <Row>
             <Col md={6}>
               <input type="text" placeholder="Email" />
             </Col>
             <Col md={6}>
               <input type="text" placeholder="Mobile Number" />
             </Col>
+          </Row>
+          <Row>
             <Col md={6}>
               <Dropdown options={['Male', 'Female', 'Other']}title="Gender" />
             </Col>
@@ -100,6 +104,8 @@ const Users = () => (
             <Col md={12}>
               <input type="text" placeholder="Street Address" />
             </Col>
+          </Row>
+          <Row>
             <Col md={4}>
               <input type="text" placeholder="City" />
             </Col>

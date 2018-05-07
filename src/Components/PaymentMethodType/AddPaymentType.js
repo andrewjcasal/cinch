@@ -4,12 +4,10 @@ require('./AddPaymentType.css')
 
 const AddPaymentType = (props) => {
   return (
-    <Row className="add-payment">
-      <Col>
-        <div className="circle-box"></div>
-        <p>Add Bank Account</p>
-      </Col>
-    </Row> )
+    <Col md={12} className="add-payment">
+      <div className="circle-box"></div>
+      <p>Add Bank Account</p>
+    </Col>)
 }
 
 export default AddPaymentType;

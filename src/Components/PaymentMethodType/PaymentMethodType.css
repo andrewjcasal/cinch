@@ -1,6 +1,6 @@
 .payment-method-type {
   margin-bottom: 24px; }
-  .payment-method-type > * > * {
+  .payment-method-type > * {
     display: inline-block; }
   .payment-method-type .circle-box {
     margin-left: 17px;
@@ -11,7 +11,7 @@
     margin-right: 37px;
     vertical-align: -10px; }
   .payment-method-type .payment-icon {
-    margin-right: 50px; }
+    margin-right: 40px; }
   .payment-method-type p {
     color: #666666;
     font-size: 12px; }

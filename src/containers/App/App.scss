@@ -80,6 +80,7 @@ input[type=text], input[type=password] {
   width: 100%;
   height: 50px;
   margin-bottom: 0;
+  box-shadow: 0 0 0;
 }
 .wrapper > .row {
   margin-left: -8px;
@@ -91,16 +92,20 @@ input[type=text], input[type=password] {
   }
 }
 
+.section > div[class*="col-md-"] > .row {
+  padding-top: 20px;
+}
+
 div[class*="col-md-"] {
   padding-left: 15px;
   padding-right: 15px;
 
-  > * {
+  > .row, > div > .row {
     margin-bottom: 10px;
 
-    > div[class*="col-md-"] > * {
-      margin-bottom: 0;
-    }
+    // > div[class*="col-md-"] > * {
+    //   margin-bottom: 0;
+    // }
   }
 }
 
